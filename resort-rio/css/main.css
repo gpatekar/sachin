@@ -323,3 +323,27 @@ body {
   color: #fff;
   padding-right: 42px;
 }
+
+
+
+/* banner */
+.banner .col  {
+  height: 230px;
+}
+
+@media (min-width: 992px) {
+  .banner .col { 
+    height: 490px;
+  }
+}
+
+.banner video {
+  width: 100%;
+  height: 230px;
+}
+
+@media (min-width: 992px) {
+  .banner video { 
+    height: 490px;
+  }
+}
