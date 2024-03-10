@@ -1,0 +1,314 @@
+.wedding-wrap h1,
+.wedding-wrap h2,
+.wedding-wrap h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+.wedding-wrap .banner {
+  background: url("../images/wedding-banner.png") center top no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+.wedding-wrap h2 {
+  font-size: 40px;
+  line-height: 1.4;
+  color: #1C1C1C;
+  text-transform: capitalize;
+}
+
+.wedding-wrap h2.center-line {
+  margin: 0 0 30px;
+  position: relative;
+  text-align: center;
+  padding: 0 0 20px;
+}
+
+.wedding-wrap h2.center-line:after {
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 1px;
+  background: #1C1C1C;
+  bottom: 0;
+  left: calc(50% - 45px);
+}
+
+.wedding-wrap h2.left-line {
+  margin: 0 0 30px;
+}
+
+.wedding-wrap h3.left-line span {
+  width: 90px;
+  height: 1px;
+  background: #1C1C1C;
+  display: inline-block;
+}
+
+.wedding-wrap h3.left-line {
+  margin: 0;
+}
+
+.wedding-wrap h3.left-line span {
+  width: 80px;
+  height: 1px;
+  background: #1C1C1C;
+  display: inline-block;
+}
+
+.wedding-wrap .grey-bg {
+  background: #F1F1F1;
+}
+
+.wedding-wrap .intro {
+  padding: 35px 0;
+  position: relative;
+}
+
+.wedding-wrap .intro::before {
+  content: '';
+  background: url(../images/bg-design.png) no-repeat;
+  width: 100px;
+  height: 233px;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  bottom: 20%;
+  z-index: -1;
+}
+
+.wedding-wrap .intro p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  color: #1C1C1C;
+}
+
+.wedding-wrap .intro .btn.btn-primary {
+  background: #344A71;
+  border: 1px solid #344A71;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 0 20px 35px 0;
+  padding: 8px 15px;
+  border-radius: 6px;
+}
+
+.wedding-wrap .resort-promo-section {
+  padding: 50px 0 90px;
+}
+
+.wedding-wrap .resort-promo-section h2 {
+  margin-bottom: 40px;
+}
+
+.wedding-wrap .img-frame {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 0 20px;
+}
+
+.wedding-wrap .resort-img {
+  position: relative;
+  background: url(../images/resort-thumb.png) center center no-repeat;
+  background-size: cover;
+  width: calc(100% - 20px);
+  height: 350px;
+  z-index: 2;
+}
+
+.wedding-wrap .location-section{
+  padding: 50px 0 90px;
+}
+
+.wedding-wrap .testimonial-section{
+  padding: 50px 0 70px;
+  position: relative;
+}
+.wedding-wrap .testimonial-section h3{
+  font-size: 200px;
+  line-height: 60px;
+  font-family: "Catamaran", sans-serif;
+  rotate: 180deg;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  height: 50px;
+  top: 110px;
+  left: 0;
+  width: 100%;
+}
+.wedding-wrap .testimonial-section p{
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 120px 0 0;
+}
+
+.wedding-wrap .testimonial-section small{
+  display: block;
+  font-size: 16px;
+  margin: 30px 0 0;
+  color: #4C4C4C;
+}
+
+.wedding-wrap .img-frame::before {
+  position: absolute;
+  content: '';
+  border: 1px solid #000;
+  width: calc(100% - 20px);
+  height: 100%;
+  left: -10px;
+  bottom: -10px;
+  z-index: 1;
+}
+
+.wedding-wrap .img-frame img {
+  z-index: 2;
+  position: relative;
+}
+
+.wedding-wrap .list {
+  color: #4C4C4C;
+  list-style: disc;
+}
+
+.wedding-wrap .list li {
+  padding: 0 0 25px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.wedding-wrap .speciality-section {
+  padding: 50px 0;
+}
+
+.wedding-wrap .speciality-section h2{
+  margin-bottom: 40px;
+}
+
+.special-wrap {
+  background: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  margin: 0 0 30px;
+  position: relative;
+  z-index: 1;
+  padding: 25px;
+}
+
+.special-wrap:before {
+  content: '';
+  position: absolute;
+  height: 25%;
+  width: 100%;
+  background: #344A71;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.special-wrap h4{
+  font-size: 24px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+.special-wrap p{
+  margin: 0 0 20px;
+}
+
+.special-wrap .link{
+  font-size: 14px;
+  color: #344A71;
+  margin: 0;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+/*** MEDIA QUERIES ***/
+@media (min-width: 768px) {
+  .wedding-wrap .banner {
+    height: 500px;
+  }
+
+  .wedding-wrap .intro {
+    padding: 60px 0;
+  }
+
+  .wedding-wrap h2 {
+    font-size: 50px;
+  }
+
+  .wedding-wrap h2 {
+    margin: 0 0 50px;
+  }
+
+  .wedding-wrap .intro .btn.btn-primary {
+    margin: 0 20px 20px 0;
+  }
+
+  .wedding-wrap .img-frame {
+    margin: 0 0 70px 0;
+  }
+
+  .wedding-wrap .resort-promo-section h2 {
+    margin-bottom: 70px;
+  }
+
+  .wedding-wrap .resort-promo-section h3 {
+    font-size: 32px;
+    line-height: 1.4;
+    width: 80%;
+  }
+  .wedding-wrap .speciality-section h2{
+    margin-bottom: 70px;
+  }
+  .wedding-wrap .testimonial-section .testimonial-wrap{
+    width: 50%;
+    margin: 0 auto;
+  }
+  .wedding-wrap .testimonial-section h3{
+    top: 140px;
+  }
+  .wedding-wrap .testimonial-section p{
+    margin: 145px 0 0;
+    font-size: 24px;
+    line-height: 1.7;
+  }
+}
+
+@media (min-width: 992px) {
+  .px-md-100px {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .wedding-wrap .banner {
+    height: 600px;
+  }
+
+  .wedding-wrap .resort-img {
+    width: calc(100% - 68px);
+    height: 350px;
+  }
+
+  .wedding-wrap .img-frame::before {
+    width: calc(100% - 68px);
+  }
+
+  .wedding-wrap .resort-promo-section h3 {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wedding-wrap .banner {
+    height: 800px;
+  }
+  .special-wrap {
+    min-height: 505px;
+  }
+}
