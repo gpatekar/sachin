@@ -199,6 +199,15 @@ body {
 
 .main-footer {
   font-size: 0.9rem;
+  background-color: #344a71;
+  color: #fff;
+  padding-top: 2.3rem;
+}
+
+.main-footer a,
+.main-footer h5,
+.main-footer .accordion-header button {
+  color: #fff;
 }
 
 .main-footer h2 button,
@@ -206,7 +215,13 @@ body {
   font-size: 1.25rem;
   font-family: "Playfair Display", serif;
   font-weight: 400;
-  text-transform: uppercase ;
+  text-transform: uppercase;
+}
+
+.main-footer h5 {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  margin-top: 1rem;
 }
 
 @media (min-width: 992px) {
@@ -217,6 +232,7 @@ body {
 
 #footerAccordion .accordion-button {
   background-color: transparent;
+  box-shadow: none;
 }
 
 @media (min-width: 992px) {
@@ -238,15 +254,12 @@ body {
 }
 
 #footerAccordion .accordion-header {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
   border-left: 0;
   border-right: 0;
   border-radius: 0;
-}
-
-#footerAccordion .accordion-item {
-  border-left: 0;
-  border-right: 0;
-  border-radius: 0;
+  color: #fff;
 }
 
 @media (min-width: 992px) {
@@ -255,8 +268,58 @@ body {
   }
 }
 
+#footerAccordion .accordion-button::after {
+  background-image: url("../images/icons/arrow-down.svg");
+  position: relative;
+  top: 5px;
+}
+
+#footerAccordion .accordion-button:not(.collapsed)::after {
+  top: -5px;
+}
+
+#footerAccordion .accordion-body {
+  padding-top: 0;
+}
+
+#footerAccordion .accordion-item {
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  background-color: #344a71;
+  border-bottom-width: 0;
+}
+
 @media (min-width: 992px) {
   #footerAccordion .accordion-item {
     border: 0;
   }
+}
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 1.4rem;
+}
+
+.input-wrapper::after {
+  content: '';
+  position: absolute;
+  right: 13px;
+  top: 13px; 
+  background-image: url(../images/icons/input-arrow.svg);
+  width: 18px;
+  height: 18px;
+}
+
+#footerAccordion .last-accordion {
+  border-bottom-width: 1px;
+}
+
+#footerAccordion input {
+  height: 44px;
+  background: #485c7f;
+  border: 0;
+  box-shadow: none;
+  color: #fff;
+  padding-right: 42px;
 }
