@@ -1,3 +1,4 @@
+/* Global */
 .wedding-wrap h1,
 .wedding-wrap h2,
 .wedding-wrap h3 {
@@ -62,6 +63,109 @@
   background: #F1F1F1;
 }
 
+.wedding-wrap .blue-bg{
+  background: #344A71;
+}
+
+.slick-disabled {
+  opacity : 0.5;
+  pointer-events:none;
+}
+.slick-prev, .slick-next{
+  color: #1C1C1C;
+  border: 0;
+  margin: 0 5px 0 0;
+}
+.slick-nav .line{
+  height: 4px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  position: relative;
+  width: calc(100% - 100px);
+}
+.slick-nav .line:after{
+  content: '';
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  width: 90%;
+  left: 0;
+  top: 2px;
+}
+
+.slick-dots{
+  bottom: -45px;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.slick-dots li{
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button{
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: 0;
+    background: 0 0;
+}
+.slick-dots li button:before {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  content: '';
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.slick-dots li.slick-active button:before {
+  background: #fff;
+}
+
+.wedding-wrap .img-frame::before {
+  position: absolute;
+  content: '';
+  border: 1px solid #000;
+  width: calc(100% - 20px);
+  height: 100%;
+  left: -10px;
+  bottom: -10px;
+  z-index: 1;
+}
+
+.wedding-wrap .img-frame img {
+  z-index: 2;
+  position: relative;
+}
+
+.wedding-wrap .list {
+  color: #4C4C4C;
+  list-style: disc;
+}
+
+.wedding-wrap .list li {
+  padding: 0 0 25px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+/**** Sections ****/
 .wedding-wrap .intro {
   padding: 35px 0;
   position: relative;
@@ -84,16 +188,6 @@
   line-height: 1.8;
   margin-bottom: 25px;
   color: #1C1C1C;
-}
-
-.wedding-wrap .intro .btn.btn-primary {
-  background: #344A71;
-  border: 1px solid #344A71;
-  text-transform: uppercase;
-  font-size: 14px;
-  margin: 0 20px 35px 0;
-  padding: 8px 15px;
-  border-radius: 6px;
 }
 
 .wedding-wrap .resort-promo-section {
@@ -153,33 +247,6 @@
   color: #4C4C4C;
 }
 
-.wedding-wrap .img-frame::before {
-  position: absolute;
-  content: '';
-  border: 1px solid #000;
-  width: calc(100% - 20px);
-  height: 100%;
-  left: -10px;
-  bottom: -10px;
-  z-index: 1;
-}
-
-.wedding-wrap .img-frame img {
-  z-index: 2;
-  position: relative;
-}
-
-.wedding-wrap .list {
-  color: #4C4C4C;
-  list-style: disc;
-}
-
-.wedding-wrap .list li {
-  padding: 0 0 25px;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
 .wedding-wrap .speciality-section {
   padding: 50px 0;
 }
@@ -227,6 +294,66 @@
   font-weight: 600;
 }
 
+.best-day-section .best-day-wrap{
+  padding: 0 0 50px;
+}
+.best-day-section .best-day-wrap{
+  color: #fff;
+  margin: 0;
+}
+.best-day-section .best-day-wrap h4{
+  font-size: 24px;
+  line-height: 1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 20px 0;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin: 0;
+}
+.best-day-section .best-day-wrap p{
+  margin: 0;
+  padding: 20px 0 0;
+}
+.best-day-section .best-day-wrap p small{
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.wedding-wrap .best-day-section .title {
+  padding: 50px 0 50px;
+}
+.wedding-wrap .best-day-section h2 {
+  color: #fff;
+  margin: 0 0 40px;
+  text-align: center;
+}
+
+.wedding-wrap .best-day-section .title h2.center-line:after {
+  background: #fff;
+}
+.wedding-wrap .best-day-section .title h2.left-line{
+  margin: 0;
+}
+.wedding-wrap .best-day-section .title h2.left-line span{
+  background: #fff;
+}
+
+.wedding-wrap .best-day-section .title p{
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.best-day-section .slick-nav{
+  padding: 0 0 80px;
+}
+.slick-slider img{
+  display: inline-block !important;
+}
 
 /*** MEDIA QUERIES ***/
 @media (min-width: 768px) {
@@ -278,6 +405,9 @@
     font-size: 24px;
     line-height: 1.7;
   }
+  .best-day-section .best-day-wrap{
+    margin: 0 50px 0 0;
+  }
 }
 
 @media (min-width: 992px) {
@@ -301,6 +431,13 @@
 
   .wedding-wrap .resort-promo-section h3 {
     width: 90%;
+  }
+  .wedding-wrap .best-day-section h2 {
+    width: 40%;
+    text-align: left;
+  }
+  .wedding-wrap .best-day-section .title p{
+    text-align: left;
   }
 }
 

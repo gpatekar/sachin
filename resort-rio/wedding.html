@@ -23,11 +23,17 @@
   <link rel="stylesheet"
     href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="./css/main.css" />
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+
   <title>Resort Rio</title>
 </head>
 
@@ -292,7 +298,8 @@
               <div class="resort-img"></div>
             </div>
             <h3 class="left-line d-none d-md-block">The only choice for an extraordinary wedding and priceless memories
-              <span></span></h3>
+              <span></span>
+            </h3>
           </div>
         </div>
       </div>
@@ -335,6 +342,51 @@
       </div>
     </div>
 
+    <div class="best-day-section blue-bg">
+      <div class="container">
+        <div class="d-lg-flex align-items-end title">
+          <h2 class="center-line d-block d-lg-none">Creating the Best<br> Day Ever</h2>
+          <h2 class="left-line d-none d-lg-block">Creating the Best<br> Day Ever <span></span></h2>
+          <p>Indoor and outdoor venues including one of the Largest open air venue in Goa</p>
+        </div>
+
+        <div class="slick-slider">
+          <div class="best-day-wrap">
+            <div class="text-center"><img src="./images/event-1.png" alt="Event" class="img-fluid">
+            </div>
+            <h4>Rio Ballroom</h4>
+            <p class="d-flex justify-content-between"><small>16,000 Sq Ft</small> <small>1500 PAX</small></p>
+          </div>
+          <div class="best-day-wrap">
+            <div class="text-center"><img src="./images/event-2.png" alt="Event" class="img-fluid">
+            </div>
+            <h4>Rio Royale Lawns</h4>
+            <p class="d-flex justify-content-between"><small>9,975 Sq Ft</small> <small>600 PAX</small></p>
+          </div>
+          <div class="best-day-wrap">
+            <div class="text-center"><img src="./images/event-3.png" alt="Event" class="img-fluid">
+            </div>
+            <h4>Rio Courtyard</h4>
+            <p class="d-flex justify-content-between"><small>2,300 SQ FT</small> <small>150 PAX</small></p>
+          </div>
+          <div class="best-day-wrap">
+            <div class="text-center"><img src="./images/event-1.png" alt="Event" class="img-fluid">
+            </div>
+            <h4>Rio Ballroom</h4>
+            <p class="d-flex justify-content-between"><small>16,000 Sq Ft</small> <small>1500 PAX</small></p>
+          </div>
+        </div>
+        <div class="slick-nav d-none d-xl-flex align-items-end justify-content-between">
+          <div class="line"></div>
+          <div>
+            <button class="slick-prev"><i class="las la-angle-left"></i></button>
+            <button class="slick-next"><i class="las la-angle-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Location -->
     <div class="location-section">
       <div class="container">
         <h2 class="center-line">Location</h2>
@@ -342,6 +394,7 @@
       </div>
     </div>
 
+    <!-- Testimonial -->
     <div class="testimonial-section grey-bg text-center">
       <div class="container">
         <h2 class="center-line">Testimonials</h2>
@@ -521,6 +574,50 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    $(document).ready(function () {
+      $('.slick-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        // arrows: true,
+        // dots: true,
+        speed: 300,
+        infinite: false,
+        autoplaySpeed: 2000,
+        autoplay: false,
+        prevArrow: '.slick-prev',
+        nextArrow: '.slick-next',
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              dots: true,
+            }
+          }
+        ]
+      });
+    });
+    // $(".slick-slider").slick({
+    //   slidesToShow: 3,
+    //   infinite: false,
+    //   slidesToScroll: 1,
+    //   autoplay: true,
+    //   autoplaySpeed: 2000,
+    //   // dots: false, Boolean
+    //   // arrows: false, Boolean
+    //   prevArrow: '.slick-prev',
+    //   nextArrow: '.slick-next',
+    // });
+  </script>
 </body>
 
 </html>

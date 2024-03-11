@@ -4,6 +4,17 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+/* Button */
+.btn.btn-primary {
+  background: #344A71;
+  border: 1px solid #344A71;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 0 20px 35px 0;
+  padding: 8px 15px;
+  border-radius: 6px;
+}
+
 /* top header */
 .header-top {
   font-size: 12px;
