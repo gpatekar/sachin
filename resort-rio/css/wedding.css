@@ -72,20 +72,21 @@
   pointer-events:none;
 }
 .slick-prev, .slick-next{
-  color: #1C1C1C;
+  color: #fff;
   border: 0;
   margin: 0 5px 0 0;
+  background: #1C1C1C;
 }
 .slick-nav .line{
   height: 4px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(97, 97, 97, 0.5);
   position: relative;
   width: calc(100% - 100px);
 }
 .slick-nav .line:after{
   content: '';
   height: 2px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(97, 97, 97, 0.5);
   position: absolute;
   width: 90%;
   left: 0;
@@ -130,10 +131,28 @@
   height: 10px;
   content: '';
   text-align: center;
-  border: 1px solid #fff;
+  border: 1px solid #1C1C1C;
   border-radius: 50%;
 }
 .slick-dots li.slick-active button:before {
+  background: #1C1C1C;
+}
+
+.blue-bg .slick-prev, .blue-bg .slick-next{
+  color: #1C1C1C;
+  background: #fff;
+}
+.blue-bg .slick-nav .line{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.blue-bg .slick-nav .line:after{
+  content: '';
+  background: rgba(255, 255, 255, 0.5);
+}
+.blue-bg .slick-dots li button:before {
+  border: 1px solid #fff;
+}
+.blue-bg .slick-dots li.slick-active button:before {
   background: #fff;
 }
 
@@ -286,7 +305,7 @@
   margin: 0 0 20px;
 }
 
-.special-wrap .link{
+.wedding-wrap .link{
   font-size: 14px;
   color: #344A71;
   margin: 0;
@@ -294,14 +313,14 @@
   font-weight: 600;
 }
 
-.best-day-section .best-day-wrap{
+.wedding-wrap .slider-box{
   padding: 0 0 50px;
 }
-.best-day-section .best-day-wrap{
+.best-day-section .slider-box {
   color: #fff;
   margin: 0;
 }
-.best-day-section .best-day-wrap h4{
+.wedding-wrap .slider-box h4{
   font-size: 24px;
   line-height: 1;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -311,17 +330,17 @@
   font-weight: 400;
   margin: 0;
 }
-.best-day-section .best-day-wrap p{
+.wedding-wrap .slider-box p{
   margin: 0;
   padding: 20px 0 0;
 }
-.best-day-section .best-day-wrap p small{
+.wedding-wrap .slider-box p small{
   font-size: 16px;
   line-height: 1;
   text-transform: uppercase;
 }
 
-.wedding-wrap .best-day-section .title {
+.wedding-wrap .title {
   padding: 50px 0 50px;
 }
 .wedding-wrap .best-day-section h2 {
@@ -330,29 +349,45 @@
   text-align: center;
 }
 
-.wedding-wrap .best-day-section .title h2.center-line:after {
+.wedding-wrap .blue-bg .title h2.center-line:after {
   background: #fff;
 }
-.wedding-wrap .best-day-section .title h2.left-line{
+.wedding-wrap .title h2.left-line{
   margin: 0;
 }
-.wedding-wrap .best-day-section .title h2.left-line span{
+.wedding-wrap .blue-bg .title h2.left-line span{
   background: #fff;
 }
 
-.wedding-wrap .best-day-section .title p{
+.wedding-wrap .title p{
   margin: 0;
-  color: #fff;
-  font-size: 20px;
-  line-height: 1.6;
+  color: #1C1C1C;
+  font-size: 14px;
+  line-height: 1.4;
   text-align: center;
 }
+.wedding-wrap .blue-bg .title p{
+  color: #fff;
+}
 
-.best-day-section .slick-nav{
+.wedding-wrap .slick-nav{
   padding: 0 0 80px;
 }
+
 .slick-slider img{
   display: inline-block !important;
+}
+
+.wedding-wrap .stay-section .title p{
+  margin-left: 20px;
+}
+
+.wedding-wrap .stay-section .slider-box h4{
+  border-bottom: 1px solid rgba(97, 97, 97, 0.5);
+}
+
+.wedding-wrap .stay-section .slider-box p{
+  margin-bottom: 30px;
 }
 
 /*** MEDIA QUERIES ***/
@@ -405,8 +440,12 @@
     font-size: 24px;
     line-height: 1.7;
   }
-  .best-day-section .best-day-wrap{
+  .wedding-wrap .slider-box {
     margin: 0 50px 0 0;
+  }
+  .wedding-wrap .title p{
+    font-size: 20px;
+    line-height: 1.6;
   }
 }
 
@@ -436,7 +475,7 @@
     width: 40%;
     text-align: left;
   }
-  .wedding-wrap .best-day-section .title p{
+  .wedding-wrap .title p{
     text-align: left;
   }
 }

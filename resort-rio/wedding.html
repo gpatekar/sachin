@@ -350,30 +350,78 @@
           <p>Indoor and outdoor venues including one of the Largest open air venue in Goa</p>
         </div>
 
-        <div class="slick-slider">
-          <div class="best-day-wrap">
+        <div class="slick-slider slick-slider1">
+          <div class="slider-box">
             <div class="text-center"><img src="./images/event-1.png" alt="Event" class="img-fluid">
             </div>
             <h4>Rio Ballroom</h4>
             <p class="d-flex justify-content-between"><small>16,000 Sq Ft</small> <small>1500 PAX</small></p>
           </div>
-          <div class="best-day-wrap">
+          <div class="slider-box">
             <div class="text-center"><img src="./images/event-2.png" alt="Event" class="img-fluid">
             </div>
             <h4>Rio Royale Lawns</h4>
             <p class="d-flex justify-content-between"><small>9,975 Sq Ft</small> <small>600 PAX</small></p>
           </div>
-          <div class="best-day-wrap">
+          <div class="slider-box">
             <div class="text-center"><img src="./images/event-3.png" alt="Event" class="img-fluid">
             </div>
             <h4>Rio Courtyard</h4>
             <p class="d-flex justify-content-between"><small>2,300 SQ FT</small> <small>150 PAX</small></p>
           </div>
-          <div class="best-day-wrap">
+          <div class="slider-box">
             <div class="text-center"><img src="./images/event-1.png" alt="Event" class="img-fluid">
             </div>
             <h4>Rio Ballroom</h4>
             <p class="d-flex justify-content-between"><small>16,000 Sq Ft</small> <small>1500 PAX</small></p>
+          </div>
+        </div>
+        <div class="slick-nav d-none d-xl-flex align-items-end justify-content-between">
+          <div class="line"></div>
+          <div>
+            <button class="slick-prev"><i class="las la-angle-left"></i></button>
+            <button class="slick-next"><i class="las la-angle-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stay-section">
+      <div class="container">
+        <div class="d-lg-flex align-items-end title">
+          <h2 class="center-line d-block d-lg-none">Stay at Resort Rio<br> Luxury Hotel Goa</h2>
+          <h2 class="left-line d-none d-lg-block">Stay at Resort Rio<br> Luxury Hotel Goa <span></span></h2>
+          <p>The pleasure of luxury</p>
+        </div>
+
+        <div class="slick-slider slick-slider2">
+          <div class="slider-box">
+            <div class="text-center"><img src="./images/stay-1.png" alt="stay" class="img-fluid">
+            </div>
+            <h4>luxury villa</h4>
+            <p class="d-flex justify-content-between"><small>3 AND 4 Bedroom Villa</small> <small>2800 Sq Ft</small></p>
+            <a href="javascript:void(0);" class="link">VIEW DETAILS <i class="las la-arrow-right"></i></a>
+          </div>
+          <div class="slider-box">
+            <div class="text-center"><img src="./images/stay-2.png" alt="stay" class="img-fluid">
+            </div>
+            <h4>4 Bedroom Villa</h4>
+            <p class="d-flex justify-content-between"><small>3 Bedroom Villa</small> <small>2800 Sq Ft</small></p>
+            <a href="javascript:void(0);" class="link">VIEW DETAILS <i class="las la-arrow-right"></i></a>
+          </div>
+          <div class="slider-box">
+            <div class="text-center"><img src="./images/stay-3.png" alt="stay" class="img-fluid">
+            </div>
+            <h4>Villa Rooms</h4>
+            <p class="d-flex justify-content-between"><small>4 Bedroom Villa</small> <small>2800 Sq Ft</small></p>
+            <a href="javascript:void(0);" class="link">VIEW DETAILS <i class="las la-arrow-right"></i></a>
+          </div>
+          <div class="slider-box">
+            <div class="text-center"><img src="./images/stay-1.png" alt="stay" class="img-fluid">
+            </div>
+            <h4>Rio Wing</h4>
+            <p class="d-flex justify-content-between"><small>3 Bedroom Villa</small> <small>2800 Sq Ft</small></p>
+            <a href="javascript:void(0);" class="link">VIEW DETAILS <i class="las la-arrow-right"></i></a>
           </div>
         </div>
         <div class="slick-nav d-none d-xl-flex align-items-end justify-content-between">
@@ -577,7 +625,36 @@
 
   <script>
     $(document).ready(function () {
-      $('.slick-slider').slick({
+      $('.slick-slider1').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        // arrows: true,
+        // dots: true,
+        speed: 300,
+        infinite: false,
+        autoplaySpeed: 2000,
+        autoplay: false,
+        prevArrow: '.slick-prev',
+        nextArrow: '.slick-next',
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              dots: true,
+            }
+          }
+        ]
+      });
+
+      $('.slick-slider2').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         // arrows: true,
