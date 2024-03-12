@@ -15,6 +15,31 @@ body {
   border-radius: 6px;
 }
 
+h2.heading {
+  font-size: 30px;
+  line-height: 1.4;
+  color: #1c1c1c;
+  font-family: "Playfair Display", serif;
+  text-transform: capitalize;
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  h2.heading {
+    font-size: 48px;
+  }
+}
+
+h2.heading:after {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 1px;
+  background: #a5a5a5;
+  bottom: -3px;
+  left: 0;
+}
+
 /* top header */
 .header-top {
   font-size: 12px;
@@ -313,10 +338,10 @@ body {
 }
 
 .input-wrapper::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 13px;
-  top: 13px; 
+  top: 13px;
   background-image: url(../images/icons/input-arrow.svg);
   width: 18px;
   height: 18px;
@@ -335,16 +360,15 @@ body {
   padding-right: 42px;
 }
 
-
-
 /* banner */
-.banner .col  {
+.banner .col {
   height: 230px;
+  background-color: #1c1c1c;
 }
 
 @media (min-width: 992px) {
-  .banner .col { 
-    height: 490px;
+  .banner .col {
+    height: 650px;
   }
 }
 
@@ -354,7 +378,152 @@ body {
 }
 
 @media (min-width: 992px) {
-  .banner video { 
-    height: 490px;
+  .banner video {
+    height: 650px;
   }
+}
+
+/* book-direct-offer */
+.book-direct-offer {
+  padding: 23px 0;
+  background: #fff;
+}
+
+@media (min-width: 992px) {
+  .book-direct-offer {
+    padding: 35px;
+    position: relative;
+    top: -26px;
+    box-shadow: 1px 8px 10px #f3f3f3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .book-direct-offer {
+    padding: 55px;
+  }
+}
+
+.book-direct-offer .left h2 {
+  margin-bottom: 1.4rem;
+}
+
+@media (min-width: 992px) {
+  .book-direct-offer .left h2 {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.book-direct-offer .left p {
+  margin-bottom: 1.6rem;
+}
+
+@media (min-width: 992px) {
+  .book-direct-offer .left p {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.book-direct-offer .left a {
+  color: #344a71;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.book-direct-offer .left .btn-primary {
+  margin-top: 2.2rem;
+  width: 100%;
+}
+
+/* book direct offer form */
+
+@media (min-width: 1200px) {
+  .book-direct-offer .form {
+    padding-left: 4rem;
+  }
+}
+
+.book-direct-offer label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #4c4c4c;
+  margin-bottom: 0;
+}
+
+.book-direct-offer .mb-4 {
+  margin-bottom: 2.3rem !important;
+}
+
+.book-direct-offer .form .form-control,
+.book-direct-offer .form .dropdown-toggle {
+  font-size: 18px;
+  font-weight: 400;
+  color: #1c1c1c;
+  border: 0;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: left;
+}
+
+.book-direct-offer .form .dropdown-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.book-direct-offer .form .form-input {
+  position: relative;
+}
+
+.book-direct-offer .form .dropdown-toggle::after,
+.book-direct-offer .form .form-input::after {
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  background-image: url("../images/icons/chevron-down.svg");
+  border: 0;
+  width: 12px;
+  height: 7px;
+}
+
+.book-direct-offer .form .form-input.no-arrow::after {
+  display: none;
+}
+
+.book-direct-offer .form .form-input::after {
+  position: absolute;
+  right: 0;
+  top: 21px;
+}
+
+.guest .dropdown {
+  flex: 1;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+}
+
+.form-check .form-check-input {
+  width: 2.5rem;
+  height: 2.3rem;
+  margin-top: 0;
+}
+
+.form-check-input:checked {
+  background-color: #344a71;
+  border-color: #344a71;
+}
+
+.book-direct-offer .btn.btn-primary {
+  background: #344a71;
+  border: 1px solid #344a71;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 6px;
+  color: #fff;
 }
