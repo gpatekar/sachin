@@ -316,6 +316,7 @@
 .wedding-wrap .slider-box{
   padding: 0 0 50px;
 }
+
 .best-day-section .slider-box {
   color: #fff;
   margin: 0;
@@ -390,6 +391,14 @@
   margin-bottom: 30px;
 }
 
+.slick-slider4 .slick-prev, .slick-slider5 .slick-prev, .slick-slider4 .slick-next, .slick-slider5 .slick-next{
+  display: none !important;
+}
+
+.slick-slider4 .slick-dots{
+  margin: 40px 0 0;
+}
+
 /*** MEDIA QUERIES ***/
 @media (min-width: 768px) {
   .wedding-wrap .banner {
@@ -436,12 +445,18 @@
     top: 140px;
   }
   .wedding-wrap .testimonial-section p{
-    margin: 145px 0 0;
+    margin: 110px 0 0;
     font-size: 24px;
     line-height: 1.7;
   }
   .wedding-wrap .slider-box {
     margin: 0 50px 0 0;
+  }
+  .wedding-wrap .special-wrap {
+    margin-right: 20px;
+  }
+  .wedding-wrap .wedding-setup-section .slider-box{
+    margin: 0 15px 0 0;
   }
   .wedding-wrap .title p{
     font-size: 20px;
