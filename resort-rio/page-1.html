@@ -28,6 +28,7 @@
       rel="stylesheet"
       href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <link rel="stylesheet" href="./css/main.css" />
 
@@ -497,6 +498,44 @@
       </section>
     </div>
 
+    <!-- Our Speciality -->
+    <div class="speciality-section grey-bg">
+      <div class="container">
+        <div class="d-lg-flex align-items-end title">
+          <h2 class="center-line d-block d-lg-none mb-40">Special Offers And<br> Packages</h2>
+          <h2 class="left-line d-none d-lg-block">Special Offers And<br> Packages <span></span></h2>
+          <p>Book Direct to avail Best discount </p>
+        </div>
+        <div class="slick-slider slick-slider1">
+          <div class="special-wrap">
+            <div class="text-center"><img src="./images/speciality-thumb1.png" alt="our speciality" class="img-fluid">
+            </div>
+            <h4>Resort Rio & Rio Royale</h4>
+            <p>Two Deluxe Resorts side by side, One exclusively for the Bride & the other specially for the Groom.
+            </p>
+            <a href="javascript:void(0);" class="link">VIEW DETAILS <i class="las la-arrow-right"></i></a>
+          </div>
+
+          <div class="special-wrap">
+            <div class="text-center"><img src="./images/speciality-thumb2.png" alt="our speciality" class="img-fluid">
+            </div>
+            <h4>Family Rooms</h4>
+            <p>Two rooms and two bathrooms within each room easily accommodating up to 4 persons and thus providing
+              value.</p>
+            <a href="javascript:void(0);" class="link">VIEW DETAILS <i class="las la-arrow-right"></i></a>
+          </div>
+
+          <div class="special-wrap">
+            <div class="text-center"><img src="./images/speciality-thumb3.png" alt="our speciality" class="img-fluid">
+            </div>
+            <h4>Goa's largest resort</h4>
+            <p>Goa's largest banquet resort with multiple indoor and outdoor venues totaling over 61,000 sq ft </p>
+            <a href="javascript:void(0);" class="link">VIEW DETAILS <i class="las la-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- footer -->
     <footer class="main-footer">
       <div class="container">
@@ -746,9 +785,40 @@
     crossorigin="anonymous"
   ></script>
 
+  <script src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+
   <script>
     $(function () {
       $(".datepicker").datepicker();
     });
-  </script>
+    
+  $(document).ready(function () {
+    $('.slick-slider1').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        // arrows: true,
+        dots: true,
+        speed: 300,
+        infinite: false,
+        autoplaySpeed: 5000,
+        autoplay: true,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+              dots: true,
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              dots: true,
+            }
+          }
+        ]
+      });
+  });
+</script>
 </html>

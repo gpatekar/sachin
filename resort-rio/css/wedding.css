@@ -20,34 +20,6 @@
   text-transform: capitalize;
 }
 
-.wedding-wrap h2.center-line {
-  margin: 0 0 30px;
-  position: relative;
-  text-align: center;
-  padding: 0 0 20px;
-}
-
-.wedding-wrap h2.center-line:after {
-  content: '';
-  position: absolute;
-  width: 90px;
-  height: 1px;
-  background: #1C1C1C;
-  bottom: 0;
-  left: calc(50% - 45px);
-}
-
-.wedding-wrap h2.left-line {
-  margin: 0 0 30px;
-}
-
-.wedding-wrap h2.left-line span {
-  width: 90px;
-  height: 1px;
-  background: #1C1C1C;
-  display: inline-block;
-}
-
 .wedding-wrap h3.left-line {
   margin: 0;
 }
@@ -57,14 +29,6 @@
   height: 1px;
   background: #1C1C1C;
   display: inline-block;
-}
-
-.wedding-wrap .grey-bg {
-  background: #F1F1F1;
-}
-
-.wedding-wrap .blue-bg{
-  background: #344A71;
 }
 
 .slick-disabled {
@@ -266,53 +230,6 @@
   color: #4C4C4C;
 }
 
-.wedding-wrap .speciality-section {
-  padding: 50px 0;
-}
-
-.wedding-wrap .speciality-section h2{
-  margin-bottom: 40px;
-}
-
-.special-wrap {
-  background: #fff;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  margin: 0 0 30px;
-  position: relative;
-  z-index: 1;
-  padding: 25px;
-}
-
-.special-wrap:before {
-  content: '';
-  position: absolute;
-  height: 25%;
-  width: 100%;
-  background: #344A71;
-  z-index: -1;
-  top: 0;
-  left: 0;
-}
-
-.special-wrap h4{
-  font-size: 24px;
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
-  margin: 20px 0;
-}
-
-.special-wrap p{
-  margin: 0 0 20px;
-}
-
-.wedding-wrap .link{
-  font-size: 14px;
-  color: #344A71;
-  margin: 0;
-  text-decoration: none;
-  font-weight: 600;
-}
-
 .wedding-wrap .slider-box{
   padding: 0 0 50px;
 }
@@ -340,10 +257,6 @@
   line-height: 1;
   text-transform: uppercase;
 }
-
-.wedding-wrap .title {
-  padding: 50px 0 50px;
-}
 .wedding-wrap .best-day-section h2 {
   color: #fff;
   margin: 0 0 40px;
@@ -360,13 +273,6 @@
   background: #fff;
 }
 
-.wedding-wrap .title p{
-  margin: 0;
-  color: #1C1C1C;
-  font-size: 14px;
-  line-height: 1.4;
-  text-align: center;
-}
 .wedding-wrap .blue-bg .title p{
   color: #fff;
 }
@@ -391,7 +297,7 @@
   margin-bottom: 30px;
 }
 
-.slick-slider4 .slick-prev, .slick-slider5 .slick-prev, .slick-slider4 .slick-next, .slick-slider5 .slick-next{
+.slick-slider4 .slick-prev, .slick-slider4 .slick-next {
   display: none !important;
 }
 
@@ -434,9 +340,6 @@
     line-height: 1.4;
     width: 80%;
   }
-  .wedding-wrap .speciality-section h2{
-    margin-bottom: 70px;
-  }
   .wedding-wrap .testimonial-section .testimonial-wrap{
     width: 50%;
     margin: 0 auto;
@@ -452,15 +355,8 @@
   .wedding-wrap .slider-box {
     margin: 0 50px 0 0;
   }
-  .wedding-wrap .special-wrap {
-    margin-right: 20px;
-  }
   .wedding-wrap .wedding-setup-section .slider-box{
     margin: 0 15px 0 0;
-  }
-  .wedding-wrap .title p{
-    font-size: 20px;
-    line-height: 1.6;
   }
 }
 
@@ -490,16 +386,10 @@
     width: 40%;
     text-align: left;
   }
-  .wedding-wrap .title p{
-    text-align: left;
-  }
 }
 
 @media (min-width: 1200px) {
   .wedding-wrap .banner {
     height: 800px;
-  }
-  .special-wrap {
-    min-height: 505px;
   }
 }
