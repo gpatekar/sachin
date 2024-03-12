@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/jalsa.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <title>Resort Rio</title>
+  </head>
+  <body>
+
+        <!-- top header starts here -->
+    <nav class="d-none d-lg-block header-top">
+        <div class="container d-flex">
+            <ul class="nav ms-auto">
+            <li class="nav-item">
+                <a
+                href="#"
+                class="nav-link link-body-emphasis align-items-center home"
+                >
+                <img src="./images//icons/home.svg" alt="Home | Resort Rio" />
+                Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link link-body-emphasis">
+                <img
+                    src="./images//icons/review.svg"
+                    alt="Reviews | Resort Rio"
+                />
+                Reviews
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link link-body-emphasis">
+                <img
+                    src="./images//icons/deals.svg"
+                    alt="Today's deals | Resort Rio"
+                />
+                Today's deals
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link link-body-emphasis">
+                <img
+                    src="./images//icons/quick-pay.svg"
+                    alt="Quick pay | Resort Rio"
+                />
+                Quick pay
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link link-body-emphasis">
+                <img
+                    src="./images//icons/contact.svg"
+                    alt="Contact | Resort Rio"
+                />
+                +91 9922996920
+                </a>
+            </li>
+            <li class="nav-item d-flex social-media">
+                <a href="#" class="nav-link link-body-emphasis">
+                <img
+                    src="./images//icons/facebook.svg"
+                    alt="Facebook | Resort Rio"
+                />
+                </a>
+                <a href="#" class="nav-link link-body-emphasis">
+                <img
+                    src="./images//icons/instagram.svg"
+                    alt="Instagram | Resort Rio"
+                />
+                </a>
+                <a href="#" class="nav-link link-body-emphasis">
+                <img
+                    src="./images//icons/youtube.svg"
+                    alt="Youtube | Resort Rio"
+                />
+                </a>
+            </li>
+            </ul>
+        </div>
+        </nav>
+    
+        <!-- main header starts here -->
+        <div class="main-header">
+        <div class="container d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+            <button
+                class="navbar-toggler d-none d-lg-block"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="./images/resort-rio-logo.png" alt="Resort Rio"
+            /></a>
+            </div>
+    
+            <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="d-none d-lg-flex align-items-center ms-md-auto">
+            <a class="py-2 text-decoration-none" href="#">ROOMS</a>
+            <a class="py-2 text-decoration-none" href="#">VILLAS</a>
+            <a class="py-2 text-decoration-none" href="#">OFFERS</a>
+            <a class="py-2 text-decoration-none" href="#">Pricing</a>
+            <a class="py-2 text-decoration-none" href="#">DINNING</a>
+            <a class="py-2 text-decoration-none" href="#">Wedding</a>
+            <a class="py-2 text-decoration-none" href="#">events</a>
+            <a class="py-2 text-decoration-none" href="#">CONTACT</a>
+            <a class="py-2 text-decoration-none btn btn-outline-light" href="#"
+                >BOOK NOW</a
+            >
+            </nav>
+            <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            >
+            <div class="offcanvas-header align-items-center">
+                <div class="container">
+                <button
+                    type="button"
+                    class="btn-close btn-close-white d-none d-lg-block"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                ></button>
+                <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                >
+                    <a class="navbar-brand" href="#">
+                    <img src="./images/resort-rio-logo.png" alt="Resort Rio"
+                    /></a>
+    
+                    <a href="#" class="btn btn-lg btn-light d-none d-lg-block"
+                    >BOOK NOW</a
+                    >
+    
+                    <button
+                    type="button"
+                    class="btn-close btn-close-white d-lg-none"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                    ></button>
+                </div>
+                </div>
+            </div>
+    
+            <div class="offcanvas-body">
+                <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4">
+                    <h5><a aria-current="Home" href="#">Resort rio</a></h5>
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="About" href="#"
+                            >About</a
+                        >
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="facilities" href="#"
+                            >Facilities</a
+                        >
+                        </li>
+                        <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            aria-current="Why choose Resort Rio"
+                            href="#"
+                            >Why choose resort Rio</a
+                        >
+                        </li>
+                        <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            aria-current="Why Book Direct"
+                            href="#"
+                            >Why book direct</a
+                        >
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="Guest Reviews" href="#"
+                            >Guest reviews</a
+                        >
+                        </li>
+                    </ul>
+                    <h5><a aria-current="Others" href="#">Others</a></h5>
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="career" href="#"
+                            >Career</a
+                        >
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="awards" href="#"
+                            >Awards</a
+                        >
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="brochures" href="#"
+                            >Brochures</a
+                        >
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                    <h5>
+                        <a aria-current="DINING & BAR" href="#">DINING & BAR</a>
+                    </h5>
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            aria-current="AUR JALSA
+                        (pure vEG RESTAURENT)"
+                            href="#"
+                            >Aur Jalsa (pure veg restaurant)</a
+                        >
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Pickled Mango</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Sweet Caju</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Cafe Rio bar</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Rio beach shack</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Bebdo bar</a>
+                        </li>
+                    </ul>
+                    <h5>
+                        <a aria-current="ROOMS" href="#">ROOMS</a>
+                    </h5>
+                    <h5>
+                        <a aria-current="villas" href="#">Villas</a>
+                    </h5>
+                    <h5>
+                        <a aria-current="OFFERS & PACKAGE" href="#"
+                        >OFFERS & PACKAGE</a
+                        >
+                    </h5>
+                    </div>
+                    <div class="col-lg-4">
+                    <h5>
+                        <a aria-current="MEETINGS & EVENTS" href="#"
+                        >MEETINGS & EVENTS</a
+                        >
+                    </h5>
+                    <h5>
+                        <a aria-current="WEDDINGS & FUNCTIONS" href="#"
+                        >WEDDINGS & FUNCTIONS</a
+                        >
+                    </h5>
+                    <h5>
+                        <a aria-current="riO LUXURY SPA & WELLNESS" href="#"
+                        >RiO LUXURY SPA & WELLNESS</a
+                        >
+                    </h5>
+                    <h5>
+                        <a aria-current="GALLERY" href="#">GALLERY</a>
+                    </h5>
+                    <h5>
+                        <a aria-current="360 VIRTUAL TOUR" href="#"
+                        >360 VIRTUAL TOUR</a
+                        >
+                    </h5>
+                    <h5>
+                        <a aria-current="CONTACT US" href="#">CONTACT US</a>
+                    </h5>
+                    <h5>
+                        <a aria-current="BLOGS" href="#">BLOGS</a>
+                    </h5>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Hero banner-->
+    <section class="hero-banner position-relative">
+    </section>
+
+    <!--Reserve table section-->
+    <section class="reserve-table">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 order-lg-2">
+                    <img class="jalsa-logo" src="images/jalsa-logo.png" width="312" alt="Jalsa Logo">
+                    <p class="mb-5">Resort Rio Goa celebrates the authentic flavours of Gujarati, Rajasthani and Jain cuisine, taking cultural norms into consideration with a separate kitchen and low yet comfortable seats for an absolutely traditional experience. 
+                    <br>The award-winning restaurant is known across Goa for its consistency and quality, boasting the best thalis in the region.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="content-wrapper">
+                        <h1 class="d-none d-lg-block reserve-h1-title h1-title">Experience a blend of luxury and comfort</h1>
+                        <a class="btn btn-outline-blue reserve-btn" href="#">Reserve a table</a>
+                        <div class="blue-bordered-img d-lg-none">
+                            <img class="img-fluid w-100" src="images/jalsa-entrance.jpg" alt="Jalsa Entrance">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Experiences section-->
+    <section class="experience-section">
+        <div class="container position-relative z-index-1">
+            <div class="text-center">
+                <h1 class="experience-h1-title h1-title text-white bordered-title">Experiences</h1>     
+            </div>      
+            <p class="text-white para-content">Experience a blend of luxury and comfort at Aur Jalsa restaurant, nestled in Resort Rio. Indulge in exquisite culinary delights, meticulously prepared by our talented chefs, while enjoying breathtaking views of the surrounding beauty. 
+            Immerse yourself in a world of culinary excellence and unforgettable dining experiences.</p>
+            <div id="experience-slider" class="carousel slide experience-slider-mob custom-slider-indicators mob-slider-only">
+                <div class="carousel-inner">
+                    <div class="carousel-item pure-veg active">
+                        <!-- First slide -->
+                        <div class="row row-cols-1 g-4">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title bordered-title w-100">Pure<br>Vegetarian Thali</h5>
+                                        <p class="card-text">Enjoy the flavours of a delicious Pure Vegetarian Thali at the restaurant Aur Jalsa.<br> A selection of delectable vegetarian meals are featured in our thoughtfully crafted thali, which is made from only the best ingredients. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item lower-seating">
+                        <!-- Second slide -->
+                        <div class="row row-cols-1 g-4">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title bordered-title w-100">Lower<br>Seating</h5>
+                                        <p class="card-text">At the restaurant Aur Jalsa, enjoy the appeal of low seating. You can unwind and relax while enjoying your lunch thanks to our warm and inviting floor sitting arrangement. Enjoy a traditional dining experience where low tables and comfortable chairs create a cosy ambiance.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item alcoholic-drink">
+                        <!-- Third slide -->
+                        <div class="row row-cols-1 g-4">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title bordered-title w-100">Alcoholic and Non Alcoholic drinks served</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel indicators (dots) -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#experience-slider" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#experience-slider" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#experience-slider" data-bs-slide-to="2"></button>
+                </div>
+            </div>                      
+        </div>
+    </section> 
+    
+    <!--Jalsa Gallery section-->
+    <section class="jalsa-gallery-section">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="h1-title bordered-title text-black-alt-100">Gallery</h1>     
+            </div>
+            <div id="jalsa-gallery-slider" class="carousel slide jalsa-gallery-slider custom-slider-indicators slider-indicators-btm  mob-slider-only" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <!-- First slide -->
+                        <img src="images/jalsa-gallery-thumb-1.jpg" class="d-block w-100" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <!-- Second slide -->
+                        <img src="images/jalsa-gallery-thumb-2.jpg" class="d-block w-100" alt="Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <!-- Third slide -->
+                        <img src="images/jalsa-gallery-thumb-3.jpg" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <!-- Add more carousel items for additional images -->
+                    <div class="carousel-item">
+                        <!-- Fourth slide -->
+                        <img src="images/jalsa-gallery-thumb-4.jpg" class="d-block w-100" alt="Image 4">
+                    </div>
+                    <div class="carousel-item">
+                        <!-- Fifth slide -->
+                        <img src="images/jalsa-gallery-thumb-5.jpg" class="d-block w-100" alt="Image 5">
+                    </div>
+                    <div class="carousel-item">
+                        <!-- Sixth slide -->
+                        <img src="images/jalsa-gallery-thumb-6.jpg" class="d-block w-100" alt="Image 6">
+                    </div>
+                    <div class="carousel-item">
+                        <!-- Seventh slide -->
+                        <img src="images/jalsa-gallery-thumb-7.jpg" class="d-block w-100" alt="Image 7">
+                    </div>
+                    <div class="carousel-item">
+                        <!-- Eighth slide -->
+                        <img src="images/jalsa-gallery-thumb-8.jpg" class="d-block w-100" alt="Image 8">
+                    </div>
+                    <div class="carousel-item">
+                        <!-- Ninth slide -->
+                        <img src="images/jalsa-gallery-thumb-9.jpg" class="d-block w-100" alt="Image 9">
+                    </div>
+                    <div class="carousel-item">
+                        <!-- Tenth slide -->
+                        <img src="images/jalsa-gallery-thumb-10.jpg" class="d-block w-100" alt="Image 10">
+                    </div>
+                    <div class="carousel-item">
+                        <!-- Eleventh slide -->
+                        <img src="images/jalsa-gallery-thumb-11.jpg" class="d-block w-100" alt="Image 11">
+                    </div>
+                    <div class="carousel-item">
+                        <!-- Twelfth slide -->
+                        <img src="images/jalsa-gallery-thumb-12.jpg" class="d-block w-100" alt="Image 12">
+                    </div>
+                </div>
+                <!-- Carousel indicators (dots) -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#jalsa-gallery-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#jalsa-gallery-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#jalsa-gallery-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <!-- Add more carousel indicators for additional images -->
+                    <button type="button" data-bs-target="#jalsa-gallery-slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#jalsa-gallery-slider" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#jalsa-gallery-slider" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#jalsa-gallery-slider" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#jalsa-gallery-slider" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#jalsa-gallery-slider" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                    <button type="button" data-bs-target="#jalsa-gallery-slider" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                    <button type="button" data-bs-target="#jalsa-gallery-slider" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                    <button type="button" data-bs-target="#jalsa-gallery-slider" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Our Menu section-->
+    <section class="our-menu-section">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="h1-title bordered-title text-black-alt-100">Our Menu</h1>     
+            </div>
+            <div id="our-menu-slider" class="carousel slide our-menu-slider custom-slider-indicators slider-indicators-btm  mob-slider-only">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <!-- First slide -->
+                        <div class="position-relative">
+                            <div class="weekday">
+                                <span class="lunch-type">LUNCH / DINNER</span>
+                                <span class="day text-uppercase">monday</span>
+                            </div>
+                            <img src="images/our-menu-thumb-1.jpg" class="d-block w-100" alt="Image 1">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!-- Second slide -->
+                        <div class="position-relative">
+                            <div class="weekday">
+                                <span class="lunch-type">LUNCH / DINNER</span>
+                                <span class="day text-uppercase">tuesday</span>
+                            </div>
+                            <img src="images/our-menu-thumb-2.jpg" class="d-block w-100" alt="Image 2">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!-- Third slide -->
+                        <div class="position-relative">
+                            <div class="weekday">
+                                <span class="lunch-type">LUNCH / DINNER</span>
+                                <span class="day text-uppercase">wednesday</span>                                
+                            </div>
+                            <img src="images/our-menu-thumb-3.jpg" class="d-block w-100" alt="Image 3">
+                        </div>
+                    </div>
+                    <!-- Add more carousel items for additional images -->
+                    <div class="carousel-item">
+                        <!-- Fourth slide -->
+                        <div class="position-relative">
+                            <div class="weekday">
+                                <span class="lunch-type">LUNCH / DINNER</span>
+                                <span class="day text-uppercase">thursday</span> 
+                            </div>
+                            <img src="images/our-menu-thumb-4.jpg" class="d-block w-100" alt="Image 4">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!-- Fifth slide -->
+                        <div class="position-relative">
+                            <div class="weekday">
+                                <span class="lunch-type">LUNCH / DINNER</span>
+                                <span class="day text-uppercase">friday</span> 
+                            </div>
+                            <img src="images/our-menu-thumb-5.jpg" class="d-block w-100" alt="Image 5">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!-- Sixth slide -->
+                        <div class="position-relative">
+                            <div class="weekday">
+                                <span class="lunch-type">LUNCH / DINNER</span>
+                                <span class="day text-uppercase">saturday</span> 
+                            </div>
+                            <img src="images/our-menu-thumb-6.jpg" class="d-block w-100" alt="Image 6">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!-- Seventh slide -->
+                        <div class="position-relative">
+                            <div class="weekday">
+                                <span class="lunch-type">LUNCH / DINNER</span>
+                                <span class="day text-uppercase">sunday</span> 
+                            </div>
+                            <img src="images/our-menu-thumb-7.jpg" class="d-block w-100" alt="Image 7">
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel indicators (dots) -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#our-menu-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#our-menu-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#our-menu-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <!-- Add more carousel indicators for additional images -->
+                    <button type="button" data-bs-target="#our-menu-slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#our-menu-slider" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#our-menu-slider" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#our-menu-slider" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Testimonials section-->
+    <section class="quotes-section wedding-wrap">
+        <div class="testimonial-section grey-bg text-center">
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="h1-title bordered-title text-black-alt-100">Happy Clients</h1>     
+                </div>
+                <div class="testimonial-wrap">
+                <h3>"</h3>
+                <p>Aur jalsa is a must go place to enjoy traditional Rajasthani cuisine and ambience. Highly recommended for pure vegetarian people who love authentic food and ambience from interiors to crockery to food to service.</p>
+                <small>MADHURGEET, PUNE INDIA</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!--Contact Us section-->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <h1 class="h1-title bordered-title text-black-alt-100">Reserve a Table</h1>     
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <h1 class="h1-title bordered-title text-black-alt-100">Contact Us</h1>  
+                    </div>
+                    <div class="location">
+                        <iframe width="100%" height="180" style="border: 0" loading="lazy" allowfullscreen
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15330.93745836162!2d73.759346!3d15.5644221!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfea19d6987849%3A0x3e1532f5d8f0136e!2sResort%20Rio!5e0!3m2!1sen!2sin!4v1647210975412!5m2!1sen!2sin">
+                        </iframe> 
+                    </div>
+                    <ul class="contact-list">
+                        <li>
+                            <img src="images/icons/call-icon.svg" alt="Call Icon">
+                            <span>
+                                <a href="tel:+919130036398">+91 9130036398</a>,
+                                <a href="tel:+919130036398">+91 9130036398</a>
+                            </span>
+                        </li>
+                        <li>
+                            <img src="images/icons/email-icon.svg" alt="Email Icon">
+                            <span><a href="mailto:rmgr@resortrio.com">rmgr@resortrio.com</a></span>
+                        </li>
+                        <li>
+                            <img src="images/icons/location-icon.svg" alt="Location Icon">
+                            <span>Near Baga Beach, Tambudki, Arpora, Bardez, Goa 403518</span>
+                        </li>
+                        <li>
+                            <img src="images/icons/whatsapp-icon.svg" alt="Whatsapp Icon">
+                            <span>
+                                <a href="https://wa.me/919130036398">+91 9130036398</a>,
+                                <a href="https://wa.me/919130036398">+91 9130036398</a>
+                            </span>
+                        </li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="accordion accordion-flush" id="footerAccordion">
+            <div class="row footer-parent-row">
+                <div class="col-lg-8 col-xl-9">
+                <div class="row gap-0">
+                    <div class="col-lg-7">
+                    <div class="row">
+                        <div class="col-lg-6">
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-mainMenu"
+                                aria-expanded="false"
+                                aria-controls="flush-mainMenu"
+                            >
+                                Main menu
+                            </button>
+                            </h2>
+                            <div
+                            id="flush-mainMenu"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#footerAccordion"
+                            >
+                            <div class="accordion-body">
+                                <ul class="nav flex-column">
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0">Home</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0">About Us</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0"
+                                    >Accommodation</a
+                                    >
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0">Gallery</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0">Contact Us</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0">Blog</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0"
+                                    >Virtual Tours
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0"
+                                    >Terms & Conditions
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0">Contact Us</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0"
+                                    >Liquor Policy</a
+                                    >
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0"
+                                    >Privacy Policy</a
+                                    >
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0"
+                                    >Cancellation Policy</a
+                                    >
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0">GDS CODES</a>
+                                </li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-6">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-thingsToDo"
+                                aria-expanded="false"
+                                aria-controls="flush-thingsToDo"
+                            >
+                                THINGS TO DO
+                            </button>
+                            </h2>
+                            <div
+                            id="flush-thingsToDo"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#footerAccordion"
+                            >
+                            <div class="accordion-body">
+                                <ul class="nav flex-column">
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0">Aur Jalsa </a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0"
+                                    >Rio Luxury Spa & Wellness</a
+                                    >
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0"
+                                    >Events & Conferences</a
+                                    >
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0"
+                                    >Weddings & Events</a
+                                    >
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0"
+                                    >Restaurants & Bars</a
+                                    >
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0"
+                                    >Discover More
+                                    </a>
+                                </li>
+                                </ul>
+
+                                <h5>DOWNLOAD</h5>
+                                <ul class="nav flex-column">
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0"
+                                    >DOWNLOAD BROCHURE</a
+                                    >
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link p-0"
+                                    >DOWNLOAD floor plan</a
+                                    >
+                                </li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-5">
+                    <div class="accordion-item last-accordion">
+                        <h2 class="accordion-header">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-upToDate"
+                            aria-expanded="false"
+                            aria-controls="flush-upToDate"
+                        >
+                            Stay up to date
+                        </button>
+                        </h2>
+                        <div
+                        id="flush-upToDate"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#footerAccordion"
+                        >
+                        <div class="accordion-body">
+                            <div
+                            class="d-flex flex-column flex-sm-row w-100 gap-2 input-wrapper"
+                            >
+                            <input
+                                id="newsletter1"
+                                type="text"
+                                class="form-control"
+                                placeholder="Email address"
+                            />
+                            </div>
+                            <div class="d-flex gap-2">
+                            <a href="#" class="nav-link link-body-emphasis">
+                                <img
+                                src="./images//icons/facebook.svg"
+                                alt="Facebook | Resort Rio"
+                                />
+                            </a>
+                            <a href="#" class="nav-link link-body-emphasis">
+                                <img
+                                src="./images//icons/instagram.svg"
+                                alt="Instagram | Resort Rio"
+                                />
+                            </a>
+                            <a href="#" class="nav-link link-body-emphasis">
+                                <img
+                                src="./images//icons/youtube.svg"
+                                alt="Youtube | Resort Rio"
+                                />
+                            </a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-4 col-xl-3">
+                <div class="px-3 mt-4">
+                    <a class="navbar-brand" href="#">
+                    <img src="./images/resort-rio-logo.png" alt="Resort Rio"
+                    /></a>
+                </div>
+                <div class="px-3 mt-4">
+                    <p class="mb-2"><strong>Address</strong></p>
+                    <p>Near Baga Beach,Tambudki,<br />Arpora, Bardez, Goa 403518</p>
+                </div>
+                <div class="px-3 mt-4">
+                    <p class="mb-2"><strong>Phone</strong></p>
+                    <p>0832 226 7300 / 0832 6658700</p>
+                </div>
+                <div class="px-3 mt-4">
+                    <p class="mb-2"><strong>Reservations</strong></p>
+                    <p>+91 9922996920 / 9922943436</p>
+                </div>
+                <div class="px-3 mt-4">
+                    <p class="mb-2"><strong>Email</strong></p>
+                    <p>reservations@resortrio.com</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,432 @@
+/*Jalsa Page CSS*/
+/*Reserve table section*/
+.hero-banner {
+    background: url('../images/jalsa-banner.jpg')  no-repeat center 60%/cover;
+    padding: 100px 0;
+}
+
+section.reserve-table {
+    padding: 50px 0 65px;
+}
+
+.reserve-table p {
+    font-size: 14px;
+    line-height: 26px;
+    color:#4C4C4C;
+}
+
+.reserve-table .jalsa-logo {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.btn.btn-outline-blue {
+    background:#344A71;
+    border: 1px solid #344A71;
+    border-radius: 6px;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    padding: 16px 24px;
+    text-transform: uppercase;
+}
+
+.btn.btn-outline-blue::after {
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 9px;
+    background: url('../images/icons/arrow-forward-white.svg') no-repeat center;
+    background-size: contain;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.reserve-btn {
+    margin-bottom: 35px;
+}
+
+.blue-bordered-img {
+    border: 2px solid #344A71;
+    max-width: 420px;
+    width: calc(100% - 10px);
+}
+
+.blue-bordered-img img {
+    position: relative;
+    top: 10px;
+    left: 10px
+}
+
+.h1-title {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+}
+
+.bordered-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.bordered-title::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -17px;
+}
+
+.text-white.bordered-title::after {
+    background: white;
+}
+
+.text-black-alt-100.bordered-title::after {
+    background:#1C1C1C;
+}
+
+.text-black-alt-100 {
+    color: #1C1C1C;
+}
+
+
+@media (min-width: 576px) {
+    .hero-banner {
+        padding: 150px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-banner {
+        padding: 250px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-banner {
+        padding: 330px 0;
+    }
+
+    .h1-title {
+        font-size: 50px;
+        line-height: 66px;
+    }
+
+    section.reserve-table {
+        padding: 82px 0 105px;
+        position: relative;
+    }
+
+    section.reserve-table::before {
+        position: absolute;
+        content: '';
+        background:url('../images/bg-design.png') no-repeat left bottom;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        top: 0;
+        opacity: .7;
+    }
+
+    .reserve-table .jalsa-logo {
+        width: 171px;
+        margin-bottom: 55px;
+    }
+
+    .reserve-h1-title {
+        margin-bottom: 60px;
+        max-width: 456px;
+    }
+
+    .reserve-h1-title::after {
+        content: '';
+        position: relative;
+        border-bottom: 2px solid #4C4C4C;
+        display: inline-block;
+        width: 95px;
+        opacity: 0.5;
+        margin-left: 25px;
+    }
+
+    .reserve-table p {
+        max-width: 450px;
+    }
+
+    .content-wrapper {
+        max-width: 450px;
+        margin-left: auto;
+    }
+    
+}
+
+/*Experience section*/
+.experience-section {
+    position: relative;
+    background: rgba(0, 0, 0, 0.15) url('../images/jalsa-banner.jpg')  no-repeat center center/cover;
+    padding: 100px 0; 
+}
+
+.experience-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#344A71;
+    opacity: 0.86;
+}
+
+.experience-section .container {
+    opacity: 0.86;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.experience-section .para-content {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.experience-slider-mob {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.experience-slider-mob .card-body .card-title{
+    font-size: 22px;
+    line-height: 30px;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.experience-slider-mob .card {
+    border-radius: 0;
+    border: none;
+}
+
+.experience-slider-mob .carousel-item::before {
+    content: '';
+    width: 66px;
+    height: 66px;
+    border-radius: 50px;
+    background: white;
+    box-shadow: 0 4px 20px 0 rgba(12, 56, 99, 0.5);
+    display: block;
+    margin: 0 auto;
+    top: 33px;
+    position: relative;
+    z-index: 1;
+}
+
+.experience-slider-mob .card-title.bordered-title:after {
+    background: #4C4C4C;
+    opacity: 0.5;
+}
+
+.experience-slider-mob .card-text {
+    font-size: 14px;
+    line-height: 24px;
+    color: #4C4C4C;
+}
+
+.experience-slider-mob .card-body {
+    padding: 20px;
+    min-height: 417px;
+}
+
+.custom-slider-indicators .carousel-indicators {
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.custom-slider-indicators .carousel-indicators button {
+    border: 2px solid#6b7284;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+    opacity: 1;
+}
+
+.custom-slider-indicators .carousel-indicators button.active {
+    background-color: #6b7284;
+}
+
+.experience-slider-mob .carousel-item.pure-veg::before {
+    background: url('../images/icons/veg-icon.svg') no-repeat center center white;
+}
+
+.experience-slider-mob .carousel-item.lower-seating::before {
+    background: url('../images/icons/bed-icon.svg') no-repeat center center white;
+}
+
+.experience-slider-mob .carousel-item.alcoholic-drink::before {
+    background: url('../images/icons/glass-icon.svg') no-repeat center center white;
+}
+
+@media (min-width: 768px) {
+    .experience-slider-mob {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .experience-slider-mob .card-body {
+        padding: 20px 30px;
+        min-height: 420px;
+    }
+}
+
+@media (min-width: 992px) {
+    .mob-slider-only {
+        max-width: 100%;
+    }
+
+    .mob-slider-only .carousel-item {
+        display: block;
+        float: none;
+        margin-right: 20px;
+    }
+
+    .mob-slider-only .carousel-indicators {
+        display: none;
+    }
+}
+
+
+/*Experience section*/
+
+section.jalsa-gallery-section {
+    padding: 40px 0 55px;
+}
+
+.jalsa-gallery-slider {
+    max-width: 390px;
+    margin: 0 auto;
+}
+
+.slider-indicators-btm .carousel-indicators {
+    bottom: -40px;
+    margin-bottom: 0;
+}
+
+/* Our menu section*/
+section.our-menu-section {
+    padding: 40px 0 90px;
+}
+
+.our-menu-slider {
+    max-width: 347px;
+    margin: 0 auto;
+}
+
+.our-menu-slider .carousel-item .weekday {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    left: 0;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    height: 92px;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+    opacity: 0.95;
+}
+
+.weekday .lunch-type {
+    font-size: 24px;
+    line-height: 40px;
+    font-family: "Playfair Display", serif;
+    display: block;
+    text-align: center;
+    color:#1C1C1C;
+    margin-top: 17px;
+}
+
+.weekday .day {
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+    text-align: center;
+    color:#1C1C1C;
+    opacity: 0.6;
+    position: relative;
+}
+
+.weekday .day::before,.weekday .day::after {
+    position: absolute;
+    content:'';
+    width: 46px;
+    height: 1px;
+    bottom: 10px;
+    background:rgba(76, 76, 76, 0.5);
+}
+
+.weekday .day::before {
+    left: 69px;
+}
+
+.weekday .day::after {
+    right: 69px;
+}
+
+/*Quotes section*/
+.quotes-section.wedding-wrap .testimonial-section {
+    padding: 40px 0 70px;
+}
+
+.quotes-section.wedding-wrap .testimonial-section p {
+    color: #1c1c1c;
+    opacity: 0.7;
+}
+
+/*Contact section*/
+section.contact-section {
+    padding: 40px 0;
+}
+
+.contact-section .location {
+    max-width: 576px;
+    border: 1px solid #f1f1f1;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-section .contact-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.contact-section .contact-list li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: -10px;
+}
+
+.contact-section .contact-list li span, .contact-section .contact-list li a {
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    line-height: 22px;
+    color: #1c1c1c;
+    text-decoration: none;
+    position: relative;
+    top: -2px;
+}
+
+
+
+
