@@ -303,6 +303,69 @@ section.reserve-table {
     .mob-slider-only .carousel-indicators {
         display: none;
     }
+
+    .experience-slider-mob .carousel-inner {
+        display: flex;
+        overflow: visible;
+    }
+
+    .experience-slider-mob .card-body .card-title{
+        font-size: 24px;
+        line-height: 32px;
+        margin-top: 30px;
+    }
+
+    .experience-section {
+        padding: 65px 0 25px;
+        margin-bottom: 200px;
+    }
+
+    .experience-section .container {
+        opacity: 1;
+        height: 630px;
+    }
+
+    .experience-slider-mob .card {
+        max-width: 350px;
+        box-shadow: 0 4px 20px 0 rgba(12, 56, 99, 0.04);
+
+    }
+
+    .experience-slider-mob .card-body {
+        padding: 20px 35px;
+    }
+
+    .experience-slider-mob .card-text {
+        opacity: 0.7;
+    }
+
+    .experience-section .para-content {
+        max-width: 730px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .experience-slider-mob {
+        max-width: 1110px;
+        position: absolute;
+        bottom: -140px;
+        left: 15px;
+        right: 15px;
+    }
+
+    .experience-slider-mob .carousel-item {
+        margin-right: 30px;
+    }
+
+    .experience-slider-mob .carousel-item.alcoholic-drink {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .experience-slider-mob .card-body {
+        min-height: 377px;
+    }
 }
 
 
@@ -320,6 +383,34 @@ section.jalsa-gallery-section {
 .slider-indicators-btm .carousel-indicators {
     bottom: -40px;
     margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+    .jalsa-gallery-slider {
+        max-width: 100%;
+    }
+
+    .jalsa-gallery-slider .carousel-inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .jalsa-gallery-slider .carousel-item {
+        width: 33.33%;
+        padding-right: 15px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .h1-title.bordered-title {
+        bottom: -27px;
+        margin-bottom: 100px;
+    }
+
+    .video-slides {
+        display: flex;
+        margin-top: 80px;
+    }
 }
 
 /* Our menu section*/
@@ -343,6 +434,25 @@ section.our-menu-section {
     background: #fff;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
     opacity: 0.95;
+    transition: 0.3s all;
+    text-align: center;
+    overflow: hidden;
+}
+
+.our-menu-slider .carousel-item{
+    padding: 0 20px;
+}
+
+.our-menu-slider .carousel-item:hover .weekday {
+    height: calc(100% - 20px);
+}
+
+.our-menu-slider .carousel-item:hover .weekday .day:after, .our-menu-slider .carousel-item:hover .weekday .day:before {
+    width: 70px;
+} 
+
+.our-menu-slider .carousel-item:hover .weekday .day span {
+    margin: 0 84px;
 }
 
 .weekday .lunch-type {
@@ -358,7 +468,7 @@ section.our-menu-section {
 .weekday .day {
     font-size: 16px;
     line-height: 24px;
-    display: block;
+    display: inline-block;
     text-align: center;
     color:#1C1C1C;
     opacity: 0.6;
@@ -374,14 +484,60 @@ section.our-menu-section {
     background:rgba(76, 76, 76, 0.5);
 }
 
+.weekday .items {
+    font-size: 13px;
+    line-height: 26px;
+    font-weight: 600;
+    padding: 15px 22px 0;
+}
+
 .weekday .day::before {
-    left: 69px;
+    left: 0;
 }
 
 .weekday .day::after {
-    right: 69px;
+    right: 0;
 }
 
+.weekday .day span {
+    margin: 0 60px;
+}
+
+@media (min-width:992px) {
+    .our-menu-slider {
+        max-width: 100%;
+    }
+
+    .our-menu-slider .carousel-inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .our-menu-slider .carousel-item {
+        width: 33.33%;
+        padding-right: 15px;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    section.our-menu-section {
+        padding: 25px 0 120px;
+    }
+
+    .weekday .items {
+        font-size: 12px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .weekday .items {
+        font-size: 14px;
+        line-height: 27px;
+        padding-top: 30px;
+    } 
+}
 /*Quotes section*/
 .quotes-section.wedding-wrap .testimonial-section {
     padding: 40px 0 70px;
