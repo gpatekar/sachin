@@ -7,8 +7,8 @@ body {
 
 /* Button */
 .btn.btn-primary {
-  background: #344A71;
-  border: 1px solid #344A71;
+  background: #344a71;
+  border: 1px solid #344a71;
   text-transform: uppercase;
   font-size: 14px;
   margin: 0 20px 35px 0;
@@ -39,6 +39,48 @@ h2.heading:after {
   background: #a5a5a5;
   bottom: -3px;
   left: 0;
+}
+
+h2.heading.left-line:after {
+  display: none;
+}
+
+h2.heading.left-line span {
+  width: 90px;
+  height: 1px;
+  background: #1c1c1c;
+  display: inline-block;
+}
+
+h2.heading.center-line {
+  margin: 0 0 30px;
+  position: relative;
+  text-align: center;
+  padding: 0 0 20px;
+}
+
+h2.heading.center-line:after {
+  left: calc(50% - 45px);
+}
+
+.sub-heading {
+  font-size: 1rem;
+  text-align: center;
+  color: #4c4c4c;
+}
+
+@media (min-width: 992px) {
+  .sub-heading {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+}
+
+/* cards */
+.card-secondary .card-body {
+  margin: -72px 22px 16px;
+  background: #fff;
+  box-shadow: 1px 5px 10px #e7e7e7;
 }
 
 /* top header */
@@ -361,6 +403,90 @@ h2.heading:after {
   padding-right: 42px;
 }
 
+/* slider */
+.slider-box h4 {
+  font-size: 24px;
+  line-height: 1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 20px 0;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+.slick-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.slick-prev,
+.slick-next {
+  color: #fff;
+  border: 0;
+  margin: 0 5px 0 0;
+  background: #1c1c1c;
+}
+.slick-nav .line {
+  height: 4px;
+  border-bottom: 1px solid rgba(97, 97, 97, 0.5);
+  position: relative;
+  width: calc(100% - 100px);
+}
+.slick-nav .line:after {
+  content: "";
+  height: 2px;
+  background: rgba(97, 97, 97, 0.5);
+  position: absolute;
+  width: 90%;
+  left: 0;
+  top: 2px;
+}
+
+.slick-dots {
+  bottom: -45px;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: 0;
+  background: 0 0;
+}
+.slick-dots li button:before {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  content: "";
+  text-align: center;
+  border: 1px solid #1c1c1c;
+  border-radius: 50%;
+}
+.slick-dots li.slick-active button:before {
+  background: #1c1c1c;
+}
+
 /* banner */
 .banner .col {
   height: 230px;
@@ -527,4 +653,73 @@ h2.heading:after {
   font-size: 14px;
   border-radius: 6px;
   color: #fff;
+}
+
+/* dine and drink */
+.drink-and-dine {
+  overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+  .drink-and-dine {
+    background: url("../images/texture-01.svg") no-repeat;
+    background-position: 0 -73px;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.drink-and-dine-slider {
+  margin-top: 2rem;
+}
+
+/* .drink-and-dine .title p{
+  margin-left: 20px;
+} */
+
+.drink-and-dine .slider-box h4 {
+  border-bottom: 1px solid rgba(97, 97, 97, 0.5);
+}
+
+.drink-and-dine .slider-box p {
+  color: #4c4c4c;
+}
+
+.drink-and-dine .slider-box p.sub-details {
+  margin: 0;
+  padding: 9px 0 0;
+  color: #1c1c1c;
+  font-size: 1rem;
+}
+
+.drink-and-dine .slider-box p.sub-details small {
+  font-size: 1rem;
+}
+
+.drink-and-dine .slider-box p.sub-details {
+  margin-bottom: 15px;
+}
+
+.drink-and-dine .link {
+  font-size: 14px;
+  color: #344a71;
+  margin: 0;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.drink-and-dine .slider-box {
+ padding-bottom: 50px;
+}
+
+@media (min-width: 1200px) {
+  .drink-and-dine .slider-box {
+    margin: 0 50px 0 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .drink-and-dine .slick-list {
+    overflow: visible;
+  }
 }
