@@ -1,349 +1,533 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-    rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-    rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
 
-  <link rel="stylesheet"
-    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" href="./css/main.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+    <title>Resort Rio</title>
+  </head>
 
-  <title>Resort Rio</title>
-</head>
+  <body>
+    <img
+      src="./Home.png"
+      style="
+        position: fixed;
+        display: none;
+        opacity: 0.5;
+        right: 59px;
+        top: -573px;
+      "
+      alt=""
+    />
+    <img
+      src="./Home_Mobile.png"
+      style="position: fixed; display: none; opacity: 0.5; top: -72px"
+      alt=""
+    />
 
-<body>
-  <img src="./Home.png" style="position: fixed; display: none; opacity: 0.5; right: 59px; top: -573px" alt="" />
-  <img src="./Home_Mobile.png" style="position: fixed;
-      display: none;
-      opacity: 0.5;
-      top: -72PX;" alt="" />
+    <img
+      src="./Menu.png"
+      style="position: fixed; display: none; opacity: 0.5"
+      alt=""
+    />
 
-  <img src="./Menu.png" style="position: fixed; display: none; opacity: 0.5" alt="" />
+    <!-- top header starts here -->
+    <nav class="d-none d-lg-block header-top">
+      <div class="container d-flex">
+        <ul class="nav ms-auto">
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link link-body-emphasis align-items-center home"
+            >
+              <img src="./images//icons/home.svg" alt="Home | Resort Rio" />
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis">
+              <img
+                src="./images//icons/review.svg"
+                alt="Reviews | Resort Rio"
+              />
+              Reviews
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis">
+              <img
+                src="./images//icons/deals.svg"
+                alt="Today's deals | Resort Rio"
+              />
+              Today's deals
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis">
+              <img
+                src="./images//icons/quick-pay.svg"
+                alt="Quick pay | Resort Rio"
+              />
+              Quick pay
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis">
+              <img
+                src="./images//icons/contact.svg"
+                alt="Contact | Resort Rio"
+              />
+              +91 9922996920
+            </a>
+          </li>
+          <li class="nav-item d-flex social-media">
+            <a href="#" class="nav-link link-body-emphasis">
+              <img
+                src="./images//icons/facebook.svg"
+                alt="Facebook | Resort Rio"
+              />
+            </a>
+            <a href="#" class="nav-link link-body-emphasis">
+              <img
+                src="./images//icons/instagram.svg"
+                alt="Instagram | Resort Rio"
+              />
+            </a>
+            <a href="#" class="nav-link link-body-emphasis">
+              <img
+                src="./images//icons/youtube.svg"
+                alt="Youtube | Resort Rio"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-  <!-- top header starts here -->
-  <nav class="d-none d-lg-block header-top">
-    <div class="container d-flex">
-      <ul class="nav ms-auto">
-        <li class="nav-item">
-          <a href="#" class="nav-link link-body-emphasis align-items-center home">
-            <img src="./images//icons/home.svg" alt="Home | Resort Rio" />
-            Home
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link link-body-emphasis">
-            <img src="./images//icons/review.svg" alt="Reviews | Resort Rio" />
-            Reviews
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link link-body-emphasis">
-            <img src="./images//icons/deals.svg" alt="Today's deals | Resort Rio" />
-            Today's deals
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link link-body-emphasis">
-            <img src="./images//icons/quick-pay.svg" alt="Quick pay | Resort Rio" />
-            Quick pay
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link link-body-emphasis">
-            <img src="./images//icons/contact.svg" alt="Contact | Resort Rio" />
-            +91 9922996920
-          </a>
-        </li>
-        <li class="nav-item d-flex social-media">
-          <a href="#" class="nav-link link-body-emphasis">
-            <img src="./images//icons/facebook.svg" alt="Facebook | Resort Rio" />
-          </a>
-          <a href="#" class="nav-link link-body-emphasis">
-            <img src="./images//icons/instagram.svg" alt="Instagram | Resort Rio" />
-          </a>
-          <a href="#" class="nav-link link-body-emphasis">
-            <img src="./images//icons/youtube.svg" alt="Youtube | Resort Rio" />
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+    <!-- main header starts here -->
+    <div class="main-header">
+      <div class="container d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+          <button
+            class="navbar-toggler d-none d-lg-block"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="./images/resort-rio-logo.png" alt="Resort Rio"
+          /></a>
+        </div>
 
-  <!-- main header starts here -->
-  <div class="main-header">
-    <div class="container d-flex justify-content-between">
-      <div class="d-flex align-items-center">
-        <button class="navbar-toggler d-none d-lg-block" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">
-          <img src="./images/resort-rio-logo.png" alt="Resort Rio" /></a>
-      </div>
+        <nav class="d-none d-lg-flex align-items-center ms-md-auto">
+          <a class="py-2 text-decoration-none" href="#">ROOMS</a>
+          <a class="py-2 text-decoration-none" href="#">VILLAS</a>
+          <a class="py-2 text-decoration-none" href="#">OFFERS</a>
+          <a class="py-2 text-decoration-none" href="#">Pricing</a>
+          <a class="py-2 text-decoration-none" href="#">DINNING</a>
+          <a class="py-2 text-decoration-none" href="#">Wedding</a>
+          <a class="py-2 text-decoration-none" href="#">events</a>
+          <a class="py-2 text-decoration-none" href="#">CONTACT</a>
+          <a class="py-2 text-decoration-none btn btn-outline-light" href="#"
+            >BOOK NOW</a
+          >
+        </nav>
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+        >
+          <div class="offcanvas-header align-items-center">
+            <div class="container">
+              <button
+                type="button"
+                class="btn-close btn-close-white d-none d-lg-block"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+              <div
+                class="d-flex justify-content-between align-items-center w-100"
+              >
+                <a class="navbar-brand" href="#">
+                  <img src="./images/resort-rio-logo.png" alt="Resort Rio"
+                /></a>
 
-      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <nav class="d-none d-lg-flex align-items-center ms-md-auto">
-        <a class="py-2 text-decoration-none" href="#">ROOMS</a>
-        <a class="py-2 text-decoration-none" href="#">VILLAS</a>
-        <a class="py-2 text-decoration-none" href="#">OFFERS</a>
-        <a class="py-2 text-decoration-none" href="#">Pricing</a>
-        <a class="py-2 text-decoration-none" href="#">DINNING</a>
-        <a class="py-2 text-decoration-none" href="#">Wedding</a>
-        <a class="py-2 text-decoration-none" href="#">events</a>
-        <a class="py-2 text-decoration-none" href="#">CONTACT</a>
-        <a class="py-2 text-decoration-none btn btn-outline-light" href="#">BOOK NOW</a>
-      </nav>
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
-        <div class="offcanvas-header align-items-center">
-          <div class="container">
-            <button type="button" class="btn-close btn-close-white d-none d-lg-block" data-bs-dismiss="offcanvas"
-              aria-label="Close"></button>
-            <div class="d-flex justify-content-between align-items-center w-100">
-              <a class="navbar-brand" href="#">
-                <img src="./images/resort-rio-logo.png" alt="Resort Rio" /></a>
+                <a href="#" class="btn btn-lg btn-light d-none d-lg-block"
+                  >BOOK NOW</a
+                >
 
-              <a href="#" class="btn btn-lg btn-light d-none d-lg-block">BOOK NOW</a>
-
-              <button type="button" class="btn-close btn-close-white d-lg-none" data-bs-dismiss="offcanvas"
-                aria-label="Close"></button>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white d-lg-none"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="offcanvas-body">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6 col-lg-4">
-                <h5><a aria-current="Home" href="#">Resort rio</a></h5>
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="About" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="facilities" href="#">Facilities</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="Why choose Resort Rio" href="#">Why choose resort Rio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="Why Book Direct" href="#">Why book direct</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="Guest Reviews" href="#">Guest reviews</a>
-                  </li>
-                </ul>
-                <h5><a aria-current="Others" href="#">Others</a></h5>
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="career" href="#">Career</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="awards" href="#">Awards</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="brochures" href="#">Brochures</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-4 col-sm-6">
-                <h5>
-                  <a aria-current="DINING & BAR" href="#">DINING & BAR</a>
-                </h5>
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="AUR JALSA
-                      (pure vEG RESTAURENT)" href="#">Aur Jalsa (pure veg restaurant)</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pickled Mango</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Sweet Caju</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Cafe Rio bar</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Rio beach shack</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Bebdo bar</a>
-                  </li>
-                </ul>
-                <h5>
-                  <a aria-current="ROOMS" href="#">ROOMS</a>
-                </h5>
-                <h5>
-                  <a aria-current="villas" href="#">Villas</a>
-                </h5>
-                <h5>
-                  <a aria-current="OFFERS & PACKAGE" href="#">OFFERS & PACKAGE</a>
-                </h5>
-              </div>
-              <div class="col-lg-4">
-                <h5>
-                  <a aria-current="MEETINGS & EVENTS" href="#">MEETINGS & EVENTS</a>
-                </h5>
-                <h5>
-                  <a aria-current="WEDDINGS & FUNCTIONS" href="#">WEDDINGS & FUNCTIONS</a>
-                </h5>
-                <h5>
-                  <a aria-current="riO LUXURY SPA & WELLNESS" href="#">RiO LUXURY SPA & WELLNESS</a>
-                </h5>
-                <h5>
-                  <a aria-current="GALLERY" href="#">GALLERY</a>
-                </h5>
-                <h5>
-                  <a aria-current="360 VIRTUAL TOUR" href="#">360 VIRTUAL TOUR</a>
-                </h5>
-                <h5>
-                  <a aria-current="CONTACT US" href="#">CONTACT US</a>
-                </h5>
-                <h5>
-                  <a aria-current="BLOGS" href="#">BLOGS</a>
-                </h5>
+          <div class="offcanvas-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                  <h5><a aria-current="Home" href="#">Resort rio</a></h5>
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="About" href="#"
+                        >About</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="facilities" href="#"
+                        >Facilities</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        aria-current="Why choose Resort Rio"
+                        href="#"
+                        >Why choose resort Rio</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        aria-current="Why Book Direct"
+                        href="#"
+                        >Why book direct</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="Guest Reviews" href="#"
+                        >Guest reviews</a
+                      >
+                    </li>
+                  </ul>
+                  <h5><a aria-current="Others" href="#">Others</a></h5>
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="career" href="#"
+                        >Career</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="awards" href="#"
+                        >Awards</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="brochures" href="#"
+                        >Brochures</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <h5>
+                    <a aria-current="DINING & BAR" href="#">DINING & BAR</a>
+                  </h5>
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        aria-current="AUR JALSA
+                      (pure vEG RESTAURENT)"
+                        href="#"
+                        >Aur Jalsa (pure veg restaurant)</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Pickled Mango</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Sweet Caju</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Cafe Rio bar</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Rio beach shack</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Bebdo bar</a>
+                    </li>
+                  </ul>
+                  <h5>
+                    <a aria-current="ROOMS" href="#">ROOMS</a>
+                  </h5>
+                  <h5>
+                    <a aria-current="villas" href="#">Villas</a>
+                  </h5>
+                  <h5>
+                    <a aria-current="OFFERS & PACKAGE" href="#"
+                      >OFFERS & PACKAGE</a
+                    >
+                  </h5>
+                </div>
+                <div class="col-lg-4">
+                  <h5>
+                    <a aria-current="MEETINGS & EVENTS" href="#"
+                      >MEETINGS & EVENTS</a
+                    >
+                  </h5>
+                  <h5>
+                    <a aria-current="WEDDINGS & FUNCTIONS" href="#"
+                      >WEDDINGS & FUNCTIONS</a
+                    >
+                  </h5>
+                  <h5>
+                    <a aria-current="riO LUXURY SPA & WELLNESS" href="#"
+                      >RiO LUXURY SPA & WELLNESS</a
+                    >
+                  </h5>
+                  <h5>
+                    <a aria-current="GALLERY" href="#">GALLERY</a>
+                  </h5>
+                  <h5>
+                    <a aria-current="360 VIRTUAL TOUR" href="#"
+                      >360 VIRTUAL TOUR</a
+                    >
+                  </h5>
+                  <h5>
+                    <a aria-current="CONTACT US" href="#">CONTACT US</a>
+                  </h5>
+                  <h5>
+                    <a aria-current="BLOGS" href="#">BLOGS</a>
+                  </h5>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Wedding body -->
-  <section class="wedding-wrap">
-    <div class="banner"></div>
+    <!-- Wedding body -->
+    <section class="wedding-wrap">
+      <div class="banner"></div>
 
-    <!-- Intro -->
-    <div class="intro">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-6">
-            <h2 class="left-line">Create your <br class="d-none d-md-block" />dream<br /> destination<br /> wedding in
-              Goa &nbsp; <span></span>
-            </h2>
-            <div class="d-none d-md-block">
-              <button type="button" class="btn btn-primary">Enquire Now <i class="las la-arrow-right"></i></button>
-              <a href="javascript:(0);" class="btn btn-primary">Download Brochure <i class="las la-download"></i></a>
+      <!-- Intro -->
+      <div class="intro">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+              <h2 class="left-line">
+                Create your <br class="d-none d-md-block" />dream<br />
+                destination<br />
+                wedding in Goa &nbsp; <span></span>
+              </h2>
+              <div class="d-none d-md-block">
+                <button type="button" class="btn btn-primary">
+                  Enquire Now <i class="las la-arrow-right"></i>
+                </button>
+                <a href="javascript:(0);" class="btn btn-primary"
+                  >Download Brochure <i class="las la-download"></i
+                ></a>
+              </div>
             </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <p>We take the stress out of organising destination weddings in Goa with a complete suite of services that
-              can
-              be customised according to your vision. Imagine aromatic floral mandaps set on verdant green lawns, themed
-              sangeet nights with colour and verve, lavish receptions that soak in the colours of Goa's natural beauty.
-              Or
-              even simple, rustic furniture overseeing vows at sunset for small intimate weddings, tea parties for an
-              unconventional late afternoon do or pheras at sunrise with family looking on.</p>
-            <p class="d-none d-md-block">Go big with our hospitality special featuring two separate resorts in a single
-              location - Resort Rio and
-              Rio Royale - one exclusively for the bride and the other for the groom, so you can literally come together
-              at your destination wedding in Goa. Resort Rio Goa celebrates you by offering the largest banquet hall in
-              north Goa, 10 acres of gorgeous riverside locales, and endless flexible indoor and outdoor venues that can
-              cater to a range of events, including a sound-proof club that promises an unending night of stress-free
-              revelry.</p>
+            <div class="col-12 col-md-6">
+              <p>
+                We take the stress out of organising destination weddings in Goa
+                with a complete suite of services that can be customised
+                according to your vision. Imagine aromatic floral mandaps set on
+                verdant green lawns, themed sangeet nights with colour and
+                verve, lavish receptions that soak in the colours of Goa's
+                natural beauty. Or even simple, rustic furniture overseeing vows
+                at sunset for small intimate weddings, tea parties for an
+                unconventional late afternoon do or pheras at sunrise with
+                family looking on.
+              </p>
+              <p class="d-none d-md-block">
+                Go big with our hospitality special featuring two separate
+                resorts in a single location - Resort Rio and Rio Royale - one
+                exclusively for the bride and the other for the groom, so you
+                can literally come together at your destination wedding in Goa.
+                Resort Rio Goa celebrates you by offering the largest banquet
+                hall in north Goa, 10 acres of gorgeous riverside locales, and
+                endless flexible indoor and outdoor venues that can cater to a
+                range of events, including a sound-proof club that promises an
+                unending night of stress-free revelry.
+              </p>
 
-            <div class="d-block d-md-none text-center">
-              <button type="button" class="btn btn-primary">Enquire Now <i class="las la-arrow-right"></i></button>
-              <a href="javascript:void(0);" class="btn btn-primary mx-0">Download Brochure <i
-                  class="las la-download"></i></a>
+              <div class="d-block d-md-none text-center">
+                <button type="button" class="btn btn-primary">
+                  Enquire Now <i class="las la-arrow-right"></i>
+                </button>
+                <a href="javascript:void(0);" class="btn btn-primary mx-0"
+                  >Download Brochure <i class="las la-download"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Why Choose Resort Rio -->
-    <div class="resort-promo-section grey-bg">
-      <div class="container px-md-100px">
-        <h2 class="center-line">Why Choose Resort Rio</h2>
-        <div class="row">
-          <div class="col-12 col-md-6 order-md-2">
-            <ul class="list">
-              <li>The Best 5* Deluxe Value for your Event in Goa, Guaranteed</li>
-              <li>Goa's largest banquet resort with multiple indoor and outdoor venues totaling over 61,000 sq ft
-                providing a variety of options for all your events : both formal and informal.</li>
-              <li>Probably the only wedding hotel in the world with two luxurious resorts sitting side by side: Resort
-                Rio exclusively perhaps for the Bride and Rio Royale for the Groom.</li>
-              <li>Beautiful Art Resort with the Rio Royale wing inspired by the world famous Khajurao Temples.</li>
-              <li>Multiple Dining Venues and Options.</li>
-              <li>Over 300 luxuriously appointed rooms many of which are Family Suites accommodating 2 rooms with 2
-                bathrooms within a room.</li>
-            </ul>
-          </div>
-          <div class="col-12 col-md-6 order-md-1">
-            <div class="img-frame">
-              <div class="resort-img"></div>
+      <!-- Why Choose Resort Rio -->
+      <div class="resort-promo-section grey-bg">
+        <div class="container px-md-100px">
+          <h2 class="center-line">Why Choose Resort Rio</h2>
+          <div class="row">
+            <div class="col-12 col-md-6 order-md-2">
+              <ul class="list">
+                <li>
+                  The Best 5* Deluxe Value for your Event in Goa, Guaranteed
+                </li>
+                <li>
+                  Goa's largest banquet resort with multiple indoor and outdoor
+                  venues totaling over 61,000 sq ft providing a variety of
+                  options for all your events : both formal and informal.
+                </li>
+                <li>
+                  Probably the only wedding hotel in the world with two
+                  luxurious resorts sitting side by side: Resort Rio exclusively
+                  perhaps for the Bride and Rio Royale for the Groom.
+                </li>
+                <li>
+                  Beautiful Art Resort with the Rio Royale wing inspired by the
+                  world famous Khajurao Temples.
+                </li>
+                <li>Multiple Dining Venues and Options.</li>
+                <li>
+                  Over 300 luxuriously appointed rooms many of which are Family
+                  Suites accommodating 2 rooms with 2 bathrooms within a room.
+                </li>
+              </ul>
             </div>
-            <h3 class="left-line d-none d-md-block">The only choice for an extraordinary wedding and priceless memories
-              <span></span>
-            </h3>
+            <div class="col-12 col-md-6 order-md-1">
+              <div class="img-frame">
+                <div class="resort-img"></div>
+              </div>
+              <h3 class="left-line d-none d-md-block">
+                The only choice for an extraordinary wedding and priceless
+                memories
+                <span></span>
+              </h3>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Our Speciality -->
-    <div class="speciality-section">
-      <div class="container">
-        <h2 class="center-line">Our Speciality</h2>
-        <div class="slick-slider slick-slider5">
-          <div class="special-wrap">
-            <div class="text-center"><img src="./images/speciality-thumb1.png" alt="our speciality" class="img-fluid">
+      <!-- Our Speciality -->
+      <div class="speciality-section">
+        <div class="container">
+          <h2 class="center-line">Our Speciality</h2>
+          <div class="slick-slider slick-slider5">
+            <div class="special-wrap">
+              <div class="text-center">
+                <img
+                  src="./images/speciality-thumb1.png"
+                  alt="our speciality"
+                  class="img-fluid"
+                />
+              </div>
+              <h4>Resort Rio & Rio Royale</h4>
+              <p>
+                Two Deluxe Resorts side by side, One exclusively for the Bride &
+                the other specially for the Groom.
+              </p>
+              <a href="javascript:void(0);" class="link"
+                >VIEW DETAILS <i class="las la-arrow-right"></i
+              ></a>
             </div>
-            <h4>Resort Rio & Rio Royale</h4>
-            <p>Two Deluxe Resorts side by side, One exclusively for the Bride & the other specially for the Groom.
-            </p>
-            <a href="javascript:void(0);" class="link">VIEW DETAILS <i class="las la-arrow-right"></i></a>
-          </div>
 
-          <div class="special-wrap">
-            <div class="text-center"><img src="./images/speciality-thumb2.png" alt="our speciality" class="img-fluid">
+            <div class="special-wrap">
+              <div class="text-center">
+                <img
+                  src="./images/speciality-thumb2.png"
+                  alt="our speciality"
+                  class="img-fluid"
+                />
+              </div>
+              <h4>Family Rooms</h4>
+              <p>
+                Two rooms and two bathrooms within each room easily
+                accommodating up to 4 persons and thus providing value.
+              </p>
+              <a href="javascript:void(0);" class="link"
+                >VIEW DETAILS <i class="las la-arrow-right"></i
+              ></a>
             </div>
-            <h4>Family Rooms</h4>
-            <p>Two rooms and two bathrooms within each room easily accommodating up to 4 persons and thus providing
-              value.</p>
-            <a href="javascript:void(0);" class="link">VIEW DETAILS <i class="las la-arrow-right"></i></a>
-          </div>
 
-          <div class="special-wrap">
-            <div class="text-center"><img src="./images/speciality-thumb3.png" alt="our speciality" class="img-fluid">
+            <div class="special-wrap">
+              <div class="text-center">
+                <img
+                  src="./images/speciality-thumb3.png"
+                  alt="our speciality"
+                  class="img-fluid"
+                />
+              </div>
+              <h4>Goa's largest resort</h4>
+              <p>
+                Goa's largest banquet resort with multiple indoor and outdoor
+                venues totaling over 61,000 sq ft
+              </p>
+              <a href="javascript:void(0);" class="link"
+                >VIEW DETAILS <i class="las la-arrow-right"></i
+              ></a>
             </div>
-            <h4>Goa's largest resort</h4>
-            <p>Goa's largest banquet resort with multiple indoor and outdoor venues totaling over 61,000 sq ft </p>
-            <a href="javascript:void(0);" class="link">VIEW DETAILS <i class="las la-arrow-right"></i></a>
           </div>
-        </div>
-        <!-- <div class="row">
+          <!-- <div class="row">
           <div class="col-12 col-md-4">
             <div class="special-wrap">
               <div class="text-center"><img src="./images/speciality-thumb1.png" alt="our speciality" class="img-fluid">
@@ -374,568 +558,783 @@
             </div>
           </div>
         </div> -->
-      </div>
-    </div>
-
-    <!-- Wedding Setup -->
-    <div class="wedding-setup-section">
-      <div class="container">
-        <h2 class="center-line">Wedding setup</h2>
-
-        <div class="slick-slider slick-slider3">
-          <div class="slider-box text-center">
-            <img src="./images/wedding-setup-thumb1.png" alt="Wedding setup" class="img-fluid">
-          </div>
-          <div class="slider-box text-center">
-            <img src="./images/wedding-setup-thumb2.png" alt="Wedding setup" class="img-fluid">
-          </div>
-          <div class="slider-box text-center">
-            <img src="./images/wedding-setup-thumb3.png" alt="Wedding setup" class="img-fluid">
-          </div>
-          <div class="slider-box text-center">
-            <img src="./images/wedding-setup-thumb4.png" alt="Wedding setup" class="img-fluid">
-          </div>
-          <div class="slider-box text-center">
-            <img src="./images/wedding-setup-thumb2.png" alt="Wedding setup" class="img-fluid">
-          </div>
-          <div class="slider-box text-center">
-            <img src="./images/wedding-setup-thumb3.png" alt="Wedding setup" class="img-fluid">
-          </div>
-        </div>
-        <div class="slick-nav d-none d-xl-flex align-items-end justify-content-between">
-          <div class="line"></div>
-          <div>
-            <button class="slick-prev slick-prev3"><i class="las la-angle-left"></i></button>
-            <button class="slick-next slick-next3"><i class="las la-angle-right"></i></button>
-          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Creating the Best -->
-    <div class="best-day-section blue-bg">
-      <div class="container">
-        <div class="d-lg-flex align-items-end title">
-          <h2 class="center-line d-block d-lg-none">Creating the Best<br> Day Ever</h2>
-          <h2 class="left-line d-none d-lg-block">Creating the Best<br> Day Ever <span></span></h2>
-          <p>Indoor and outdoor venues including one of the Largest open air venue in Goa</p>
-        </div>
+      <!-- Wedding Setup -->
+      <div class="wedding-setup-section">
+        <div class="container">
+          <h2 class="center-line">Wedding setup</h2>
 
-        <div class="slick-slider slick-slider1">
-          <div class="slider-box">
-            <div class="text-center"><img src="./images/event-1.png" alt="Event" class="img-fluid">
+          <div class="slick-slider slick-slider3">
+            <div class="slider-box text-center">
+              <img
+                src="./images/wedding-setup-thumb1.png"
+                alt="Wedding setup"
+                class="img-fluid"
+              />
             </div>
-            <h4>Rio Ballroom</h4>
-            <p class="d-flex justify-content-between"><small>16,000 Sq Ft</small> <small>1500 PAX</small></p>
-          </div>
-          <div class="slider-box">
-            <div class="text-center"><img src="./images/event-2.png" alt="Event" class="img-fluid">
+            <div class="slider-box text-center">
+              <img
+                src="./images/wedding-setup-thumb2.png"
+                alt="Wedding setup"
+                class="img-fluid"
+              />
             </div>
-            <h4>Rio Royale Lawns</h4>
-            <p class="d-flex justify-content-between"><small>9,975 Sq Ft</small> <small>600 PAX</small></p>
-          </div>
-          <div class="slider-box">
-            <div class="text-center"><img src="./images/event-3.png" alt="Event" class="img-fluid">
+            <div class="slider-box text-center">
+              <img
+                src="./images/wedding-setup-thumb3.png"
+                alt="Wedding setup"
+                class="img-fluid"
+              />
             </div>
-            <h4>Rio Courtyard</h4>
-            <p class="d-flex justify-content-between"><small>2,300 SQ FT</small> <small>150 PAX</small></p>
-          </div>
-          <div class="slider-box">
-            <div class="text-center"><img src="./images/event-1.png" alt="Event" class="img-fluid">
+            <div class="slider-box text-center">
+              <img
+                src="./images/wedding-setup-thumb4.png"
+                alt="Wedding setup"
+                class="img-fluid"
+              />
             </div>
-            <h4>Rio Ballroom</h4>
-            <p class="d-flex justify-content-between"><small>16,000 Sq Ft</small> <small>1500 PAX</small></p>
-          </div>
-        </div>
-        <div class="slick-nav d-none d-xl-flex align-items-end justify-content-between">
-          <div class="line"></div>
-          <div>
-            <button class="slick-prev slick-prev1"><i class="las la-angle-left"></i></button>
-            <button class="slick-next slick-next1"><i class="las la-angle-right"></i></button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Stay at Resort Rio -->
-    <div class="stay-section">
-      <div class="container">
-        <div class="d-lg-flex align-items-end title">
-          <h2 class="center-line d-block d-lg-none">Stay at Resort Rio<br> Luxury Hotel Goa</h2>
-          <h2 class="left-line d-none d-lg-block">Stay at Resort Rio<br> Luxury Hotel Goa <span></span></h2>
-          <p>The pleasure of luxury</p>
-        </div>
-
-        <div class="slick-slider slick-slider2">
-          <div class="slider-box">
-            <div class="text-center"><img src="./images/stay-1.png" alt="stay" class="img-fluid">
+            <div class="slider-box text-center">
+              <img
+                src="./images/wedding-setup-thumb2.png"
+                alt="Wedding setup"
+                class="img-fluid"
+              />
             </div>
-            <h4>luxury villa</h4>
-            <p class="d-flex justify-content-between"><small>3 AND 4 Bedroom Villa</small> <small>2800 Sq Ft</small></p>
-            <a href="javascript:void(0);" class="link">VIEW DETAILS <i class="las la-arrow-right"></i></a>
-          </div>
-          <div class="slider-box">
-            <div class="text-center"><img src="./images/stay-2.png" alt="stay" class="img-fluid">
+            <div class="slider-box text-center">
+              <img
+                src="./images/wedding-setup-thumb3.png"
+                alt="Wedding setup"
+                class="img-fluid"
+              />
             </div>
-            <h4>4 Bedroom Villa</h4>
-            <p class="d-flex justify-content-between"><small>3 Bedroom Villa</small> <small>2800 Sq Ft</small></p>
-            <a href="javascript:void(0);" class="link">VIEW DETAILS <i class="las la-arrow-right"></i></a>
           </div>
-          <div class="slider-box">
-            <div class="text-center"><img src="./images/stay-3.png" alt="stay" class="img-fluid">
-            </div>
-            <h4>Villa Rooms</h4>
-            <p class="d-flex justify-content-between"><small>4 Bedroom Villa</small> <small>2800 Sq Ft</small></p>
-            <a href="javascript:void(0);" class="link">VIEW DETAILS <i class="las la-arrow-right"></i></a>
-          </div>
-          <div class="slider-box">
-            <div class="text-center"><img src="./images/stay-1.png" alt="stay" class="img-fluid">
-            </div>
-            <h4>Rio Wing</h4>
-            <p class="d-flex justify-content-between"><small>3 Bedroom Villa</small> <small>2800 Sq Ft</small></p>
-            <a href="javascript:void(0);" class="link">VIEW DETAILS <i class="las la-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="slick-nav d-none d-xl-flex align-items-end justify-content-between">
-          <div class="line"></div>
-          <div>
-            <button class="slick-prev slick-prev2"><i class="las la-angle-left"></i></button>
-            <button class="slick-next slick-next2"><i class="las la-angle-right"></i></button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Location -->
-    <div class="location-section">
-      <div class="container">
-        <h2 class="center-line">Location</h2>
-        <div class="text-center"><img src="./images/location.png" alt="location" class="img-fluid"></div>
-      </div>
-    </div>
-
-    <!-- Testimonial -->
-    <div class="testimonial-section grey-bg text-center">
-      <div class="container">
-        <h2 class="center-line">Testimonials</h2>
-        <div class="testimonial-wrap">
-          <h3>"</h3>
-          <div class="slick-slider slick-slider4">
+          <div
+            class="slick-nav d-none d-xl-flex align-items-end justify-content-between"
+          >
+            <div class="line"></div>
             <div>
-              <p>The staff at the hotel are courteous. The breakfast is excellent. Couldn't manage to use the rest of
-                the
-                restaurants. Overall a lovely place to unwind!. Wish they had a private beach or access to a beach from
-                the
-                property.</p>
-              <small>MADHURGEET, PUNE INDIA</small>
-            </div>
-            <div>
-              <p>The staff at the hotel are courteous. The breakfast is excellent. Couldn't manage to use the rest of
-                the
-                restaurants. Overall a lovely place to unwind!. Wish they had a private beach or access to a beach from
-                the
-                property.</p>
-              <small>MADHURGEET, PUNE INDIA</small>
-            </div>
-            <div>
-              <p>The staff at the hotel are courteous. The breakfast is excellent. Couldn't manage to use the rest of
-                the
-                restaurants. Overall a lovely place to unwind!. Wish they had a private beach or access to a beach from
-                the
-                property.</p>
-              <small>MADHURGEET, PUNE INDIA</small>
+              <button class="slick-prev slick-prev3">
+                <i class="las la-angle-left"></i>
+              </button>
+              <button class="slick-next slick-next3">
+                <i class="las la-angle-right"></i>
+              </button>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  
 
-  <!-- footer -->
-  <footer class="main-footer">
-    <div class="container">
-      <div class="accordion accordion-flush" id="footerAccordion">
-        <div class="row footer-parent-row">
-          <div class="col-lg-8 col-xl-9">
-            <div class="row gap-0">
-              <div class="col-lg-7">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="accordion-item border-0">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#flush-mainMenu"
-                          aria-expanded="false"
-                          aria-controls="flush-mainMenu"
+      <!-- Creating the Best -->
+      <div class="best-day-section blue-bg">
+        <div class="container">
+          <div class="d-lg-flex align-items-end title">
+            <h2 class="center-line d-block d-lg-none">
+              Creating the Best<br />
+              Day Ever
+            </h2>
+            <h2 class="left-line d-none d-lg-block">
+              Creating the Best<br />
+              Day Ever <span></span>
+            </h2>
+            <p>
+              Indoor and outdoor venues including one of the Largest open air
+              venue in Goa
+            </p>
+          </div>
+
+          <div class="slick-slider slick-slider1">
+            <div class="slider-box">
+              <div class="text-center">
+                <img src="./images/event-1.png" alt="Event" class="img-fluid" />
+              </div>
+              <h4>Rio Ballroom</h4>
+              <p class="d-flex justify-content-between">
+                <small>16,000 Sq Ft</small> <small>1500 PAX</small>
+              </p>
+            </div>
+            <div class="slider-box">
+              <div class="text-center">
+                <img src="./images/event-2.png" alt="Event" class="img-fluid" />
+              </div>
+              <h4>Rio Royale Lawns</h4>
+              <p class="d-flex justify-content-between">
+                <small>9,975 Sq Ft</small> <small>600 PAX</small>
+              </p>
+            </div>
+            <div class="slider-box">
+              <div class="text-center">
+                <img src="./images/event-3.png" alt="Event" class="img-fluid" />
+              </div>
+              <h4>Rio Courtyard</h4>
+              <p class="d-flex justify-content-between">
+                <small>2,300 SQ FT</small> <small>150 PAX</small>
+              </p>
+            </div>
+            <div class="slider-box">
+              <div class="text-center">
+                <img src="./images/event-1.png" alt="Event" class="img-fluid" />
+              </div>
+              <h4>Rio Ballroom</h4>
+              <p class="d-flex justify-content-between">
+                <small>16,000 Sq Ft</small> <small>1500 PAX</small>
+              </p>
+            </div>
+          </div>
+          <div
+            class="slick-nav d-none d-xl-flex align-items-end justify-content-between"
+          >
+            <div class="line"></div>
+            <div>
+              <button class="slick-prev slick-prev1">
+                <i class="las la-angle-left"></i>
+              </button>
+              <button class="slick-next slick-next1">
+                <i class="las la-angle-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stay at Resort Rio -->
+      <div class="stay-section">
+        <div class="container">
+          <div class="d-lg-flex align-items-end title">
+            <h2 class="center-line d-block d-lg-none">
+              Stay at Resort Rio<br />
+              Luxury Hotel Goa
+            </h2>
+            <h2 class="left-line d-none d-lg-block">
+              Stay at Resort Rio<br />
+              Luxury Hotel Goa <span></span>
+            </h2>
+            <p>The pleasure of luxury</p>
+          </div>
+
+          <div class="slick-slider slick-slider2">
+            <div class="slider-box">
+              <div class="text-center">
+                <img src="./images/stay-1.png" alt="stay" class="img-fluid" />
+              </div>
+              <h4>luxury villa</h4>
+              <p class="d-flex justify-content-between">
+                <small>3 AND 4 Bedroom Villa</small> <small>2800 Sq Ft</small>
+              </p>
+              <a href="javascript:void(0);" class="link"
+                >VIEW DETAILS <i class="las la-arrow-right"></i
+              ></a>
+            </div>
+            <div class="slider-box">
+              <div class="text-center">
+                <img src="./images/stay-2.png" alt="stay" class="img-fluid" />
+              </div>
+              <h4>4 Bedroom Villa</h4>
+              <p class="d-flex justify-content-between">
+                <small>3 Bedroom Villa</small> <small>2800 Sq Ft</small>
+              </p>
+              <a href="javascript:void(0);" class="link"
+                >VIEW DETAILS <i class="las la-arrow-right"></i
+              ></a>
+            </div>
+            <div class="slider-box">
+              <div class="text-center">
+                <img src="./images/stay-3.png" alt="stay" class="img-fluid" />
+              </div>
+              <h4>Villa Rooms</h4>
+              <p class="d-flex justify-content-between">
+                <small>4 Bedroom Villa</small> <small>2800 Sq Ft</small>
+              </p>
+              <a href="javascript:void(0);" class="link"
+                >VIEW DETAILS <i class="las la-arrow-right"></i
+              ></a>
+            </div>
+            <div class="slider-box">
+              <div class="text-center">
+                <img src="./images/stay-1.png" alt="stay" class="img-fluid" />
+              </div>
+              <h4>Rio Wing</h4>
+              <p class="d-flex justify-content-between">
+                <small>3 Bedroom Villa</small> <small>2800 Sq Ft</small>
+              </p>
+              <a href="javascript:void(0);" class="link"
+                >VIEW DETAILS <i class="las la-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="slick-nav d-none d-xl-flex align-items-end justify-content-between"
+          >
+            <div class="line"></div>
+            <div>
+              <button class="slick-prev slick-prev2">
+                <i class="las la-angle-left"></i>
+              </button>
+              <button class="slick-next slick-next2">
+                <i class="las la-angle-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drink and dine -->
+      <section class="drink-and-dine">
+        <div class="container">
+          <div class="d-lg-flex align-items-end title">
+            <h2 class="heading center-line d-block d-lg-none">
+              Drink <br />& Dine
+            </h2>
+            <h2 class="heading left-line d-none d-lg-block">
+              Drink <br />& Dine <span></span>
+            </h2>
+            <p class="sub-heading ms-4">
+              Resort Rio Goa celebrates the authentic flavours of
+              <br />Gujarati, Rajasthani and Jain cuisine
+            </p>
+          </div>
+
+          <div class="slick-slider drink-and-dine-slider">
+            <div class="slider-box">
+              <div class="card border-0 card-secondary">
+                <img src="./images/stay-1.png" alt="stay" class="img-fluid" />
+                <div class="card-body">
+                  <h4>Pickled Mango</h4>
+                  <p class="d-flex justify-content-between sub-details">
+                    <small>3,240 Sq Ft</small> <small>124 pax</small>
+                  </p>
+
+                  <p class="mb-4">
+                    Set the tone for a lively vacation in one of the best 5 star
+                    hotels in Goa with culinary delights from around the world
+                  </p>
+                  <a href="javascript:void(0);" class="link"
+                    >VIEW DETAILS <i class="las la-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-box">
+              <div class="card border-0 card-secondary">
+                <img src="./images/stay-1.png" alt="stay" class="img-fluid" />
+                <div class="card-body">
+                  <h4>SWEET CAJU</h4>
+                  <p class="d-flex justify-content-between sub-details">
+                    <small>1,812 Sq Ft</small> <small>85 pax</small>
+                  </p>
+
+                  <p class="mb-4">
+                    Soak in the poolside serenity at Sweet Caju as you
+                    experiment with food innovation.
+                  </p>
+                  <a href="javascript:void(0);" class="link"
+                    >VIEW DETAILS <i class="las la-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-box">
+              <div class="card border-0 card-secondary">
+                <img src="./images/stay-1.png" alt="stay" class="img-fluid" />
+                <div class="card-body">
+                  <h4>Pickled Mango</h4>
+                  <p class="d-flex justify-content-between sub-details">
+                    <small>3,240 Sq Ft</small> <small>124 pax</small>
+                  </p>
+
+                  <p class="mb-4">
+                    Set the tone for a lively vacation in one of the best 5 star
+                    hotels in Goa with culinary delights from around the world
+                  </p>
+                  <a href="javascript:void(0);" class="link"
+                    >VIEW DETAILS <i class="las la-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="slick-nav d-none d-xl-flex align-items-end justify-content-between"
+          >
+            <div class="line"></div>
+            <div>
+              <button class="slick-prev slick-prev2">
+                <i class="las la-angle-left"></i>
+              </button>
+              <button class="slick-next slick-next2">
+                <i class="las la-angle-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Location -->
+      <div class="location-section">
+        <div class="container">
+          <h2 class="center-line">Location</h2>
+          <div class="text-center">
+            <img src="./images/location.png" alt="location" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial -->
+      <div class="testimonial-section grey-bg text-center">
+        <div class="container">
+          <h2 class="center-line">Testimonials</h2>
+          <div class="testimonial-wrap">
+            <h3>"</h3>
+            <div class="slick-slider slick-slider4">
+              <div>
+                <p>
+                  The staff at the hotel are courteous. The breakfast is
+                  excellent. Couldn't manage to use the rest of the restaurants.
+                  Overall a lovely place to unwind!. Wish they had a private
+                  beach or access to a beach from the property.
+                </p>
+                <small>MADHURGEET, PUNE INDIA</small>
+              </div>
+              <div>
+                <p>
+                  The staff at the hotel are courteous. The breakfast is
+                  excellent. Couldn't manage to use the rest of the restaurants.
+                  Overall a lovely place to unwind!. Wish they had a private
+                  beach or access to a beach from the property.
+                </p>
+                <small>MADHURGEET, PUNE INDIA</small>
+              </div>
+              <div>
+                <p>
+                  The staff at the hotel are courteous. The breakfast is
+                  excellent. Couldn't manage to use the rest of the restaurants.
+                  Overall a lovely place to unwind!. Wish they had a private
+                  beach or access to a beach from the property.
+                </p>
+                <small>MADHURGEET, PUNE INDIA</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="accordion accordion-flush" id="footerAccordion">
+          <div class="row footer-parent-row">
+            <div class="col-lg-8 col-xl-9">
+              <div class="row gap-0">
+                <div class="col-lg-7">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-mainMenu"
+                            aria-expanded="false"
+                            aria-controls="flush-mainMenu"
+                          >
+                            Main menu
+                          </button>
+                        </h2>
+                        <div
+                          id="flush-mainMenu"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#footerAccordion"
                         >
-                          Main menu
-                        </button>
-                      </h2>
-                      <div
-                        id="flush-mainMenu"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#footerAccordion"
-                      >
-                        <div class="accordion-body">
-                          <ul class="nav flex-column">
-                            <li class="nav-item mb-2">
-                              <a href="#" class="nav-link p-0">Home</a>
-                            </li>
-                            <li class="nav-item mb-2">
-                              <a href="#" class="nav-link p-0">About Us</a>
-                            </li>
-                            <li class="nav-item mb-2">
-                              <a href="#" class="nav-link p-0"
-                                >Accommodation</a
-                              >
-                            </li>
-                            <li class="nav-item mb-2">
-                              <a href="#" class="nav-link p-0">Gallery</a>
-                            </li>
-                            <li class="nav-item mb-2">
-                              <a href="#" class="nav-link p-0">Contact Us</a>
-                            </li>
-                            <li class="nav-item mb-2">
-                              <a href="#" class="nav-link p-0">Blog</a>
-                            </li>
-                            <li class="nav-item mb-2">
-                              <a href="#" class="nav-link p-0"
-                                >Virtual Tours
-                              </a>
-                            </li>
-                            <li class="nav-item mb-2">
-                              <a href="#" class="nav-link p-0"
-                                >Terms & Conditions
-                              </a>
-                            </li>
-                            <li class="nav-item mb-2">
-                              <a href="#" class="nav-link p-0">Contact Us</a>
-                            </li>
-                            <li class="nav-item mb-2">
-                              <a href="#" class="nav-link p-0"
-                                >Liquor Policy</a
-                              >
-                            </li>
-                            <li class="nav-item mb-2">
-                              <a href="#" class="nav-link p-0"
-                                >Privacy Policy</a
-                              >
-                            </li>
-                            <li class="nav-item mb-2">
-                              <a href="#" class="nav-link p-0"
-                                >Cancellation Policy</a
-                              >
-                            </li>
-                            <li class="nav-item mb-2">
-                              <a href="#" class="nav-link p-0">GDS CODES</a>
-                            </li>
-                          </ul>
+                          <div class="accordion-body">
+                            <ul class="nav flex-column">
+                              <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">Home</a>
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">About Us</a>
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0"
+                                  >Accommodation</a
+                                >
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">Gallery</a>
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">Contact Us</a>
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">Blog</a>
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0"
+                                  >Virtual Tours
+                                </a>
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0"
+                                  >Terms & Conditions
+                                </a>
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">Contact Us</a>
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0"
+                                  >Liquor Policy</a
+                                >
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0"
+                                  >Privacy Policy</a
+                                >
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0"
+                                  >Cancellation Policy</a
+                                >
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">GDS CODES</a>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#flush-thingsToDo"
-                          aria-expanded="false"
-                          aria-controls="flush-thingsToDo"
+                    <div class="col-lg-6">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-thingsToDo"
+                            aria-expanded="false"
+                            aria-controls="flush-thingsToDo"
+                          >
+                            THINGS TO DO
+                          </button>
+                        </h2>
+                        <div
+                          id="flush-thingsToDo"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#footerAccordion"
                         >
-                          THINGS TO DO
-                        </button>
-                      </h2>
-                      <div
-                        id="flush-thingsToDo"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#footerAccordion"
-                      >
-                        <div class="accordion-body">
-                          <ul class="nav flex-column">
-                            <li class="nav-item mb-2">
-                              <a href="#" class="nav-link p-0">Aur Jalsa </a>
-                            </li>
-                            <li class="nav-item mb-2">
-                              <a href="#" class="nav-link p-0"
-                                >Rio Luxury Spa & Wellness</a
-                              >
-                            </li>
-                            <li class="nav-item mb-2">
-                              <a href="#" class="nav-link p-0"
-                                >Events & Conferences</a
-                              >
-                            </li>
-                            <li class="nav-item mb-2">
-                              <a href="#" class="nav-link p-0"
-                                >Weddings & Events</a
-                              >
-                            </li>
-                            <li class="nav-item mb-2">
-                              <a href="#" class="nav-link p-0"
-                                >Restaurants & Bars</a
-                              >
-                            </li>
-                            <li class="nav-item mb-2">
-                              <a href="#" class="nav-link p-0"
-                                >Discover More
-                              </a>
-                            </li>
-                          </ul>
+                          <div class="accordion-body">
+                            <ul class="nav flex-column">
+                              <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">Aur Jalsa </a>
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0"
+                                  >Rio Luxury Spa & Wellness</a
+                                >
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0"
+                                  >Events & Conferences</a
+                                >
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0"
+                                  >Weddings & Events</a
+                                >
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0"
+                                  >Restaurants & Bars</a
+                                >
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0"
+                                  >Discover More
+                                </a>
+                              </li>
+                            </ul>
 
-                          <h5>DOWNLOAD</h5>
-                          <ul class="nav flex-column">
-                            <li class="nav-item mb-2">
-                              <a href="#" class="nav-link p-0"
-                                >DOWNLOAD BROCHURE</a
-                              >
-                            </li>
-                            <li class="nav-item mb-2">
-                              <a href="#" class="nav-link p-0"
-                                >DOWNLOAD floor plan</a
-                              >
-                            </li>
-                          </ul>
+                            <h5>DOWNLOAD</h5>
+                            <ul class="nav flex-column">
+                              <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0"
+                                  >DOWNLOAD BROCHURE</a
+                                >
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0"
+                                  >DOWNLOAD floor plan</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-5">
-                <div class="accordion-item last-accordion">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-upToDate"
-                      aria-expanded="false"
-                      aria-controls="flush-upToDate"
+                <div class="col-lg-5">
+                  <div class="accordion-item last-accordion">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-upToDate"
+                        aria-expanded="false"
+                        aria-controls="flush-upToDate"
+                      >
+                        Stay up to date
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-upToDate"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#footerAccordion"
                     >
-                      Stay up to date
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-upToDate"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#footerAccordion"
-                  >
-                    <div class="accordion-body">
-                      <div
-                        class="d-flex flex-column flex-sm-row w-100 gap-2 input-wrapper"
-                      >
-                        <input
-                          id="newsletter1"
-                          type="text"
-                          class="form-control"
-                          placeholder="Email address"
-                        />
-                      </div>
-                      <div class="d-flex gap-2">
-                        <a href="#" class="nav-link link-body-emphasis">
-                          <img
-                            src="./images//icons/facebook.svg"
-                            alt="Facebook | Resort Rio"
+                      <div class="accordion-body">
+                        <div
+                          class="d-flex flex-column flex-sm-row w-100 gap-2 input-wrapper"
+                        >
+                          <input
+                            id="newsletter1"
+                            type="text"
+                            class="form-control"
+                            placeholder="Email address"
                           />
-                        </a>
-                        <a href="#" class="nav-link link-body-emphasis">
-                          <img
-                            src="./images//icons/instagram.svg"
-                            alt="Instagram | Resort Rio"
-                          />
-                        </a>
-                        <a href="#" class="nav-link link-body-emphasis">
-                          <img
-                            src="./images//icons/youtube.svg"
-                            alt="Youtube | Resort Rio"
-                          />
-                        </a>
+                        </div>
+                        <div class="d-flex gap-2">
+                          <a href="#" class="nav-link link-body-emphasis">
+                            <img
+                              src="./images//icons/facebook.svg"
+                              alt="Facebook | Resort Rio"
+                            />
+                          </a>
+                          <a href="#" class="nav-link link-body-emphasis">
+                            <img
+                              src="./images//icons/instagram.svg"
+                              alt="Instagram | Resort Rio"
+                            />
+                          </a>
+                          <a href="#" class="nav-link link-body-emphasis">
+                            <img
+                              src="./images//icons/youtube.svg"
+                              alt="Youtube | Resort Rio"
+                            />
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-xl-3">
-            <div class="px-3 mt-4">
-              <a class="navbar-brand" href="#">
-                <img src="./images/resort-rio-logo.png" alt="Resort Rio"
-              /></a>
-            </div>
-            <div class="px-3 mt-4">
-              <p class="mb-2"><strong>Address</strong></p>
-              <p>Near Baga Beach,Tambudki,<br />Arpora, Bardez, Goa 403518</p>
-            </div>
-            <div class="px-3 mt-4">
-              <p class="mb-2"><strong>Phone</strong></p>
-              <p>0832 226 7300 / 0832 6658700</p>
-            </div>
-            <div class="px-3 mt-4">
-              <p class="mb-2"><strong>Reservations</strong></p>
-              <p>+91 9922996920 / 9922943436</p>
-            </div>
-            <div class="px-3 mt-4">
-              <p class="mb-2"><strong>Email</strong></p>
-              <p>reservations@resortrio.com</p>
+            <div class="col-lg-4 col-xl-3">
+              <div class="px-3 mt-4">
+                <a class="navbar-brand" href="#">
+                  <img src="./images/resort-rio-logo.png" alt="Resort Rio"
+                /></a>
+              </div>
+              <div class="px-3 mt-4">
+                <p class="mb-2"><strong>Address</strong></p>
+                <p>Near Baga Beach,Tambudki,<br />Arpora, Bardez, Goa 403518</p>
+              </div>
+              <div class="px-3 mt-4">
+                <p class="mb-2"><strong>Phone</strong></p>
+                <p>0832 226 7300 / 0832 6658700</p>
+              </div>
+              <div class="px-3 mt-4">
+                <p class="mb-2"><strong>Reservations</strong></p>
+                <p>+91 9922996920 / 9922943436</p>
+              </div>
+              <div class="px-3 mt-4">
+                <p class="mb-2"><strong>Email</strong></p>
+                <p>reservations@resortrio.com</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script>
-    $(document).ready(function () {
-      $('.slick-slider1').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        // arrows: true,
-        // dots: true,
-        speed: 300,
-        infinite: false,
-        autoplaySpeed: 5000,
-        autoplay: true,
-        prevArrow: '.slick-prev1',
-        nextArrow: '.slick-next1',
-        responsive: [
-          {
-            breakpoint: 1200,
-            settings: {
-              slidesToShow: 2,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 1,
-              dots: true,
-            }
-          }
-        ]
+    <script>
+      $(document).ready(function () {
+        $(".slick-slider1").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          // arrows: true,
+          // dots: true,
+          speed: 300,
+          infinite: false,
+          autoplaySpeed: 5000,
+          autoplay: true,
+          prevArrow: ".slick-prev1",
+          nextArrow: ".slick-next1",
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                dots: true,
+              },
+            },
+          ],
+        });
+
+        $(".slick-slider2").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          // arrows: true,
+          // dots: true,
+          speed: 300,
+          infinite: false,
+          autoplaySpeed: 5000,
+          autoplay: true,
+          prevArrow: ".slick-prev2",
+          nextArrow: ".slick-next2",
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                dots: true,
+              },
+            },
+          ],
+        });
+
+        $(".slick-slider3").slick({
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          // arrows: true,
+          // dots: true,
+          speed: 300,
+          infinite: false,
+          autoplaySpeed: 5000,
+          autoplay: true,
+          prevArrow: ".slick-prev3",
+          nextArrow: ".slick-next3",
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                dots: true,
+              },
+            },
+          ],
+        });
+
+        $(".slick-slider4").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          // arrows: true,
+          dots: true,
+          speed: 300,
+          infinite: false,
+          autoplaySpeed: 5000,
+          autoplay: true,
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                dots: true,
+              },
+            },
+          ],
+        });
+
+        $(".slick-slider5").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          // arrows: true,
+          dots: true,
+          speed: 300,
+          infinite: false,
+          autoplaySpeed: 5000,
+          autoplay: true,
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                dots: true,
+              },
+            },
+          ],
+        });
+
+        $(".drink-and-dine-slider").slick({
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          // arrows: true,
+          // dots: true,
+          speed: 300,
+          infinite: false,
+          autoplaySpeed: 5000,
+          autoplay: true,
+          prevArrow: ".slick-prev2",
+          nextArrow: ".slick-next2",
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                dots: true,
+              },
+            },
+          ],
+        });
       });
-
-      $('.slick-slider2').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        // arrows: true,
-        // dots: true,
-        speed: 300,
-        infinite: false,
-        autoplaySpeed: 5000,
-        autoplay: true,
-        prevArrow: '.slick-prev2',
-        nextArrow: '.slick-next2',
-        responsive: [
-          {
-            breakpoint: 1200,
-            settings: {
-              slidesToShow: 2,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 1,
-              dots: true,
-            }
-          }
-        ]
-      });
-
-      $('.slick-slider3').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        // arrows: true,
-        // dots: true,
-        speed: 300,
-        infinite: false,
-        autoplaySpeed: 5000,
-        autoplay: true,
-        prevArrow: '.slick-prev3',
-        nextArrow: '.slick-next3',
-        responsive: [
-          {
-            breakpoint: 1200,
-            settings: {
-              slidesToShow: 3,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 1,
-              dots: true,
-            }
-          }
-        ]
-      });
-
-      $('.slick-slider4').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        // arrows: true,
-        dots: true,
-        speed: 300,
-        infinite: false,
-        autoplaySpeed: 5000,
-        autoplay: true,
-        responsive: [
-          {
-            breakpoint: 1200,
-            settings: {
-              slidesToShow: 3,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 1,
-              dots: true,
-            }
-          }
-        ]
-      });
-
-      $('.slick-slider5').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        // arrows: true,
-        dots: true,
-        speed: 300,
-        infinite: false,
-        autoplaySpeed: 5000,
-        autoplay: true,
-        responsive: [
-          {
-            breakpoint: 992,
-            settings: {
-              slidesToShow: 2,
-              dots: true,
-            }
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 1,
-              dots: true,
-            }
-          }
-        ]
-      });
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
