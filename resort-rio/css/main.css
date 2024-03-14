@@ -148,6 +148,10 @@ h2.heading.center-line:after {
   .main-header nav a {
     margin-left: 1.7rem;
   }
+
+  .main-header nav  a:hover { 
+    border-bottom: 2px solid #fff;
+}
 }
 
 .navbar-toggler-icon {
@@ -177,6 +181,12 @@ h2.heading.center-line:after {
   background-color: #344a71;
 }
 
+.offcanvas {
+  -webkit-transition: all 0.5s cubic-bezier(1, 0, 0.55, 1);
+  -o-transition: all 0.5s cubic-bezier(1, 0, 0.55, 1);
+  transition: all 0.5s cubic-bezier(1, 0, 0.55, 1);
+}
+
 .offcanvas.offcanvas-start {
   width: 100%;
 }
@@ -192,6 +202,10 @@ h2.heading.center-line:after {
     padding: 0;
     height: 162px;
   }
+}
+
+.mobile-header {
+  min-height: 72px;
 }
 
 @media (min-width: 992px) {
@@ -403,6 +417,17 @@ h2.heading.center-line:after {
   padding-right: 42px;
 }
 
+footer .map-iframe {
+  border: 5px solid #fff;
+}
+
+footer a:hover {
+  transition-duration: 0.2s;
+  padding-left: 2px !important;
+  text-decoration: underline;
+  color: #fff !important;
+}
+
 /* slider */
 .slider-box h4 {
   font-size: 24px;
@@ -413,6 +438,16 @@ h2.heading.center-line:after {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   margin: 0;
+}
+
+.slider-box {
+  padding-bottom: 50px;
+}
+
+@media (min-width: 1200px) {
+  .slider-box {
+    margin: 0 50px 0 0;
+  }
 }
 
 .slick-disabled {
@@ -656,7 +691,8 @@ h2.heading.center-line:after {
 }
 
 /* dine and drink */
-.drink-and-dine {
+.drink-and-dine,
+.stay-section {
   overflow: hidden;
 }
 
@@ -665,7 +701,7 @@ h2.heading.center-line:after {
     background: url("../images/texture-01.svg") no-repeat;
     background-position: 0 -73px;
     padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -708,18 +744,166 @@ h2.heading.center-line:after {
   font-weight: 600;
 }
 
-.drink-and-dine .slider-box {
- padding-bottom: 50px;
+@media (min-width: 1200px) {
+  .drink-and-dine .slick-list,
+  .stay-section .slick-list {
+    overflow: visible;
+  }
 }
 
-@media (min-width: 1200px) {
-  .drink-and-dine .slider-box {
+@media (min-width: 768px) {
+  .listing-impressions .slider-box,
+  .drink-and-dine .slider-box,
+  .resort-rio-experiences .slider-box,
+  .stay-section .slider-box {
     margin: 0 50px 0 0;
   }
 }
 
-@media (min-width: 1200px) {
-  .drink-and-dine .slick-list {
-    overflow: visible;
+/* Resort Rio Experiences  */
+
+.resort-rio-experiences {
+  background-image: url("../images/texture-02.svg");
+  background-repeat: no-repeat;
+  background-position: right -2px;
+}
+
+.resort-rio-experiences h2,
+.resort-rio-experiences h4,
+.resort-rio-experiences p {
+  color: #fff;
+}
+
+.resort-rio-experiences .card {
+  background-color: transparent;
+}
+
+.resort-rio-experiences p {
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.resort-rio-experiences h2.heading.left-line span {
+  background: #fff;
+}
+
+/* about section */
+.about-section {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 992px) {
+  .about-section {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-section .left {
+    text-align: right;
+  }
+}
+
+.about-section p {
+  color: #4c4c4c;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 1.4rem;
+}
+
+.about-section h1.heading {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+.about-section h1.heading:after {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 1px;
+  background: #a5a5a5;
+  bottom: -3px;
+  left: calc(50% - 45px);
+}
+
+@media (min-width: 992px) {
+  .about-section h1.heading {
+    text-align: right;
+    font-size: 64px;
+    line-height: 85px;
+    letter-spacing: 0.02em;
+    margin-right: 65px;
+  }
+
+  .about-section h1.heading::after {
+    display: none;
+  }
+}
+
+.about-section h2.heading {
+  margin-right: 65px;
+}
+.about-section h2.heading.left-line span {
+  margin-right: 20px;
+}
+
+.about-section .img-frame {
+  border: 2px solid #344a71;
+  position: relative;
+  padding: 0 8px 8px 0;
+  margin-top: 15px;
+  margin-left: -3px;
+}
+
+@media (min-width: 992px) {
+  .about-section .right {
+    text-align: left;
+    padding-top: 20px;
+  }
+}
+
+.about-section .right h2 {
+  font-size: 24px;
+  font-family: "Open Sans";
+  color: #4c4c4c;
+  margin-bottom: 1.5rem;
+}
+
+.about-section .right h2.heading:after {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 1px;
+  background: #a5a5a5;
+  bottom: -3px;
+  left: 0;
+}
+
+@media (min-width: 992px) {
+  .about-section .img-frame {
+    margin-top: 65px;
+  }
+}
+
+.about-section .img-wrapper {
+  margin-top: -15px;
+  margin-left: -3px;
+}
+
+.about-section .img-wrapper img {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .about-section .left img {
+    margin-left: auto;
   }
 }
