@@ -5,6 +5,10 @@
     padding: 100px 0;
 }
 
+.hero-banner {
+    background: url('../images/accomodation-banner.jpg')  no-repeat center 60%/cover;
+}
+
 section.reserve-table {
     padding: 50px 0 65px;
 }
