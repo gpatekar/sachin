@@ -672,6 +672,7 @@ section.contact-section {
 }
 
 @media (min-width: 992px) {
+
     .room-booking-section .reserve-h1-title.room-h1-title {
         max-width: 480px;
         margin-bottom: 60px;
@@ -680,6 +681,7 @@ section.contact-section {
     .room-booking-section .content-box {
         padding: 45px 45px 40px;
     }
+
 }
 
 section.rooms-booking {
@@ -736,6 +738,12 @@ form.rooms-booking-form select {
     color: #1c1c1c;
     outline: 0;
     padding: 10px 0;
+}
+
+@media (min-width: 992px) {
+    section.rooms-booking {
+        margin-bottom: 80px;
+    }
 }
 
 @media (min-width: 1200px) {
