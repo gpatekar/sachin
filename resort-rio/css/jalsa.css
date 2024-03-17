@@ -5,7 +5,7 @@
     padding: 100px 0;
 }
 
-.hero-banner {
+.hero-banner.accomodation-banner {
     background: url('../images/accomodation-banner.jpg')  no-repeat center 60%/cover;
 }
 
@@ -611,6 +611,8 @@ section.contact-section {
     top: -2px;
 }
 
+
+/* Accomodation Page CSS */
 /* Rooms booking section */
 
 .room-booking-section .content-box {
@@ -680,6 +682,70 @@ section.contact-section {
     }
 }
 
+section.rooms-booking {
+    margin-top: -30px;
+    position: relative;
+}
 
+form.rooms-booking-form{
+    padding: 35px 25px 40px;
+    box-shadow: 0 0 15px 0 rgba(52, 74, 113, 0.1);
+    background: white;
+}
 
+form.rooms-booking-form .btn.btn-outline-blue::after {
+    display: none;
+}
 
+form.rooms-booking-form .btn.btn-outline-blue {
+    padding: 16px 21px;
+}
+
+form.rooms-booking-form label {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #4c4c4c;
+    margin-bottom: 0;
+}
+
+form.rooms-booking-form input {
+    border: none;
+    border-bottom: 1px solid rgba(97, 97, 97, 0.5);
+    border-radius: 0;
+    padding: 10px 0;
+    color: #1C1C1C;
+}
+
+form.rooms-booking-form input:focus {
+    color: inherit;
+    box-shadow: none;
+    border-color: rgba(97, 97, 97, 0.5);
+}
+
+form.rooms-booking-form #promo-code::placeholder {
+    font-size: 16px;
+    color: rgba(28, 28, 28, 0.2);
+}
+
+form.rooms-booking-form select {
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid rgba(97, 97, 97, 0.5);
+    color: #1c1c1c;
+    outline: 0;
+    padding: 10px 0;
+}
+
+@media (min-width: 1200px) {
+    form.rooms-booking-form{
+        padding: 35px 40px 40px;
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+
+    form.rooms-booking-form .form-wrapper:last-child {
+        max-width: 150px;
+    }
+}

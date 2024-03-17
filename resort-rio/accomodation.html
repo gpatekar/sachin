@@ -329,6 +329,65 @@
     <section class="hero-banner accomodation-banner position-relative">
     </section>
 
+    <!--Room Booking form-->
+    <section class="rooms-booking d-none d-lg-block">
+        <div class="container">
+            <form class="rooms-booking-form">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-2 form-wrapper">
+                        <label class="form-label">Check-in</label>
+                        <div class="calendar-field">
+                            <input type="text" id="check-in-date" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-2 form-wrapper">
+                        <label class="form-label">Check-out</label>
+                        <div class="calendar-field">
+                            <input type="text" id="check-out-date" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-2 form-wrapper">
+                        <!-- Custom Select -->
+                        <div class="form-group">
+                            <label for="customSelect" class="form-label">Rooms</label>
+                            <div class="custom-select-wrapper">
+                                <select class="custom-select" id="customSelect">
+                                <option value="1">1 Room</option>
+                                <option value="2">2 Rooms</option>
+                                <option value="3">3 Rooms</option>
+                                </select>
+                                <i class="fas fa-chevron-down select-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 form-wrapper">
+                        <!-- Custom Select -->
+                        <div class="form-group">
+                            <label for="customSelect" class="form-label">Guests</label>
+                            <div class="custom-select-wrapper">
+                                <select class="custom-select" id="customSelect">
+                                <option value="1">2 Adult 1 Child</option>
+                                <option value="2">2 Adult 2 Child</option>
+                                <option value="3">3 Adult 2 Child</option>
+                                </select>
+                                <i class="fas fa-chevron-down select-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 form-wrapper">
+                        <label class="form-label">Promo code</label>
+                        <div class="calendar-field">
+                            <input type="text" id="promo-code" class="form-control" placeholder="Enter code here">
+                        </div>
+                    </div>
+                    <div class="col-2 form-wrapper">
+                        <a class="btn btn-outline-blue" href="#">Book Now</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
     <!--Rooms Booking section-->
     <section class="room-booking-section">
         <div class="container">
