@@ -2,7 +2,7 @@ h2.center-line {
   margin: 0 0 30px;
   position: relative;
   text-align: center;
-  padding: 0 0 20px;
+  padding: 0 0 30px;
 }
 
 h2.center-line:after {
@@ -59,7 +59,7 @@ h2.left-line span {
 }
 
 .speciality-section {
-  padding: 50px 0;
+  padding: 50px 0 70px;
 }
 
 .speciality-section h2 {
@@ -90,11 +90,12 @@ h2.left-line span {
   font-size: 24px;
   font-family: "Playfair Display", serif;
   font-weight: 400;
-  margin: 20px 0;
+  margin: 25px 0;
+  text-transform: uppercase;
 }
 
 .speciality-section .special-wrap p {
-  margin: 0 0 20px;
+  margin: 0 0 50px;
 }
 
 .speciality-section .slick-prev,
@@ -126,6 +127,9 @@ h2.left-line span {
 @media (min-width: 992px) {
   .title p {
     text-align: left;
+  }
+  .speciality-section {
+    padding: 120px 0;
   }
 }
 

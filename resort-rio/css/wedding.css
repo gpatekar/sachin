@@ -14,8 +14,8 @@
 }
 
 .wedding-wrap h2 {
-  font-size: 40px;
-  line-height: 1.4;
+  font-size: 30px;
+  line-height: 1.3;
   color: #1C1C1C;
   text-transform: capitalize;
 }
@@ -32,22 +32,26 @@
 }
 
 .slick-disabled {
-  opacity : 0.5;
-  pointer-events:none;
+  opacity: 0.5;
+  pointer-events: none;
 }
-.slick-prev, .slick-next{
+
+.slick-prev,
+.slick-next {
   color: #fff;
   border: 0;
   margin: 0 5px 0 0;
   background: #1C1C1C;
 }
-.slick-nav .line{
+
+.slick-nav .line {
   height: 4px;
   border-bottom: 1px solid rgba(97, 97, 97, 0.5);
   position: relative;
   width: calc(100% - 100px);
 }
-.slick-nav .line:after{
+
+.slick-nav .line:after {
   content: '';
   height: 2px;
   background: rgba(97, 97, 97, 0.5);
@@ -57,7 +61,7 @@
   top: 2px;
 }
 
-.slick-dots{
+.slick-dots {
   bottom: -45px;
   width: 100%;
   list-style: none;
@@ -65,7 +69,8 @@
   margin: 0;
   padding: 0;
 }
-.slick-dots li{
+
+.slick-dots li {
   position: relative;
   display: inline-block;
   width: 10px;
@@ -74,19 +79,21 @@
   padding: 0;
   cursor: pointer;
 }
-.slick-dots li button{
-    font-size: 0;
-    line-height: 0;
-    display: block;
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-    cursor: pointer;
-    color: transparent;
-    border: 0;
-    outline: 0;
-    background: 0 0;
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: 0;
+  background: 0 0;
 }
+
 .slick-dots li button:before {
   position: absolute;
   top: -20px;
@@ -98,24 +105,30 @@
   border: 1px solid #1C1C1C;
   border-radius: 50%;
 }
+
 .slick-dots li.slick-active button:before {
   background: #1C1C1C;
 }
 
-.blue-bg .slick-prev, .blue-bg .slick-next{
+.blue-bg .slick-prev,
+.blue-bg .slick-next {
   color: #1C1C1C;
   background: #fff;
 }
-.blue-bg .slick-nav .line{
+
+.blue-bg .slick-nav .line {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-.blue-bg .slick-nav .line:after{
+
+.blue-bg .slick-nav .line:after {
   content: '';
   background: rgba(255, 255, 255, 0.5);
 }
+
 .blue-bg .slick-dots li button:before {
   border: 1px solid #fff;
 }
+
 .blue-bg .slick-dots li.slick-active button:before {
   background: #fff;
 }
@@ -150,7 +163,7 @@
 
 /**** Sections ****/
 .wedding-wrap .intro {
-  padding: 35px 0;
+  padding: 30px 0;
   position: relative;
 }
 
@@ -169,12 +182,16 @@
 .wedding-wrap .intro p {
   font-size: 14px;
   line-height: 1.8;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   color: #1C1C1C;
 }
 
+.wedding-wrap .intro .btn.btn-primary {
+  padding: 15px 25px;
+}
+
 .wedding-wrap .resort-promo-section {
-  padding: 50px 0 90px;
+  padding: 40px 0 70px;
 }
 
 .wedding-wrap .resort-promo-section h2 {
@@ -196,15 +213,20 @@
   z-index: 2;
 }
 
-.wedding-wrap .location-section{
+.wedding-wrap .wedding-setup-section {
+  padding: 0 0 50px;
+}
+
+.wedding-wrap .location-section {
   padding: 50px 0 90px;
 }
 
-.wedding-wrap .testimonial-section{
+.wedding-wrap .testimonial-section {
   padding: 50px 0 70px;
   position: relative;
 }
-.wedding-wrap .testimonial-section h3{
+
+.wedding-wrap .testimonial-section h3 {
   font-size: 200px;
   line-height: 60px;
   font-family: "Catamaran", sans-serif;
@@ -217,20 +239,22 @@
   left: 0;
   width: 100%;
 }
-.wedding-wrap .testimonial-section p{
+
+.wedding-wrap .testimonial-section p {
   font-size: 20px;
   line-height: 1.4;
   margin: 120px 0 0;
 }
 
-.wedding-wrap .testimonial-section small{
+.wedding-wrap .testimonial-section small {
   display: block;
   font-size: 16px;
   margin: 30px 0 0;
   color: #4C4C4C;
+  text-transform: uppercase;
 }
 
-.wedding-wrap .slider-box{
+.wedding-wrap .slider-box {
   padding: 0 0 50px;
 }
 
@@ -238,7 +262,8 @@
   color: #fff;
   margin: 0;
 }
-.wedding-wrap .slider-box h4{
+
+.wedding-wrap .slider-box h4 {
   font-size: 24px;
   line-height: 1;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -248,15 +273,18 @@
   font-weight: 400;
   margin: 0;
 }
-.wedding-wrap .slider-box p{
+
+.wedding-wrap .slider-box p {
   margin: 0;
   padding: 20px 0 0;
 }
-.wedding-wrap .slider-box p small{
+
+.wedding-wrap .slider-box p small {
   font-size: 16px;
   line-height: 1;
   text-transform: uppercase;
 }
+
 .wedding-wrap .best-day-section h2 {
   color: #fff;
   margin: 0 0 40px;
@@ -266,42 +294,49 @@
 .wedding-wrap .blue-bg .title h2.center-line:after {
   background: #fff;
 }
-.wedding-wrap .title h2.left-line{
+
+.wedding-wrap .title h2.left-line {
   margin: 0;
 }
-.wedding-wrap .blue-bg .title h2.left-line span{
+
+.wedding-wrap .blue-bg .title h2.left-line span {
   background: #fff;
 }
 
-.wedding-wrap .blue-bg .title p{
+.wedding-wrap .blue-bg .title p {
   color: #fff;
 }
 
-.wedding-wrap .slick-nav{
+.wedding-wrap .slick-nav {
   padding: 0 0 80px;
 }
 
-.slick-slider img{
+.wedding-wrap .stay-section .slick-nav {
+  padding: 0;
+}
+
+.slick-slider img {
   display: inline-block !important;
 }
 
-.wedding-wrap .stay-section .title p{
+.wedding-wrap .stay-section .title p {
   margin-left: 20px;
 }
 
-.wedding-wrap .stay-section .slider-box h4{
+.wedding-wrap .stay-section .slider-box h4 {
   border-bottom: 1px solid rgba(97, 97, 97, 0.5);
 }
 
-.wedding-wrap .stay-section .slider-box p{
+.wedding-wrap .stay-section .slider-box p {
   margin-bottom: 30px;
 }
 
-.slick-slider4 .slick-prev, .slick-slider4 .slick-next {
+.slick-slider4 .slick-prev,
+.slick-slider4 .slick-next {
   display: none !important;
 }
 
-.slick-slider4 .slick-dots{
+.slick-slider4 .slick-dots {
   margin: 40px 0 0;
 }
 
@@ -312,7 +347,7 @@
   }
 
   .wedding-wrap .intro {
-    padding: 60px 0;
+    padding: 80px 0 120px;
   }
 
   .wedding-wrap h2 {
@@ -320,7 +355,7 @@
   }
 
   .wedding-wrap h2 {
-    margin: 0 0 50px;
+    margin: 0 0 60px;
   }
 
   .wedding-wrap .intro .btn.btn-primary {
@@ -329,6 +364,10 @@
 
   .wedding-wrap .img-frame {
     margin: 0 0 70px 0;
+  }
+
+  .wedding-wrap .resort-promo-section {
+    padding: 80px 0 100px;
   }
 
   .wedding-wrap .resort-promo-section h2 {
@@ -340,22 +379,27 @@
     line-height: 1.4;
     width: 80%;
   }
-  .wedding-wrap .testimonial-section .testimonial-wrap{
+
+  .wedding-wrap .testimonial-section .testimonial-wrap {
     width: 50%;
     margin: 0 auto;
   }
-  .wedding-wrap .testimonial-section h3{
-    top: 140px;
+
+  .wedding-wrap .testimonial-section h3 {
+    top: 200px;
   }
-  .wedding-wrap .testimonial-section p{
+
+  .wedding-wrap .testimonial-section p {
     margin: 110px 0 0;
     font-size: 24px;
     line-height: 1.7;
   }
+
   .wedding-wrap .slider-box {
     margin: 0 50px 0 0;
   }
-  .wedding-wrap .wedding-setup-section .slider-box{
+
+  .wedding-wrap .wedding-setup-section .slider-box {
     margin: 0 15px 0 0;
   }
 }
@@ -382,14 +426,41 @@
   .wedding-wrap .resort-promo-section h3 {
     width: 90%;
   }
+
   .wedding-wrap .best-day-section h2 {
     width: 40%;
     text-align: left;
+  }
+
+  .best-day-section{
+    padding: 20px 0;
+  }
+  .wedding-wrap .speciality-section .special-wrap {
+    min-height: 575px;
+  }
+  .wedding-wrap .testimonial-section{
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+  .wedding-wrap .stay-section{
+    padding: 105px 0 0;
   }
 }
 
 @media (min-width: 1200px) {
   .wedding-wrap .banner {
     height: 800px;
+  }
+
+  .best-day-section {
+    overflow: hidden;
+  }
+
+  .best-day-section .slick-list{
+    overflow: visible;
+  }
+  .wedding-wrap .location-section{
+    padding-top: 0;
+    padding-bottom: 120px;
   }
 }
