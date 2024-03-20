@@ -384,77 +384,58 @@
     <!-- booking section -->
     <div class="container">
       <section class="book-direct-offer">
-        <div class="row">
-          <div class="col-lg-6 col-xl-5 left wow fadeInUp">
-            <h2 class="heading">Unlock Your Book Direct Offer</h2>
-            <p>
-              Sign up for an exclusive accommodation discount on your next
-              booking and additional benefits for you to enjoy during your next
-              stay.
-            </p>
-            <a href="#">WHY BOOK DIRECT</a>
-            <a href="#" class="ms-2">WHY CHOOSE RISORT RIO</a>
-            <div>
-              <a
-                class="py-2 text-decoration-none btn btn-primary btn-lg d-lg-none"
-                href="#"
-                >BOOK NOW</a
-              >
-            </div>
-          </div>
-          <div class="col-lg-6 col-xl-7 d-none d-lg-block">
-            <div class="form wow fadeInUp">
-              <div class="row mb-4">
-                <div class="col">
-                  <label for="input-checkin" class="form-label"
-                    >CHECK - IN</label
+        <div class="book-direct-offer-wrapper">
+          <div class="row">
+            <div class="col-lg-6 wow fadeInUp">
+              <div class="left">
+                <h2 class="heading">
+                  Unlock Your Book <br class="d-lg-none" />Direct Offer
+                </h2>
+                <p>
+                  Sign up for an exclusive accommodation discount on your next
+                  booking and additional benefits for you to enjoy during your
+                  next stay.
+                </p>
+                <a href="#">WHY BOOK DIRECT</a>
+                <a href="#" class="ms-4">WHY CHOOSE RISORT RIO</a>
+                <div>
+                  <a
+                    class="text-decoration-none btn btn-primary btn-lg d-lg-none mb-0"
+                    href="#"
+                    >BOOK NOW</a
                   >
-                  <div class="form-input">
-                    <input
-                      type="text"
-                      class="form-control form-control-lg datepicker"
-                      id="input-checkin"
-                    />
-                  </div>
-                </div>
-                <div class="col">
-                  <label for="input-checkout" class="form-label"
-                    >CHECK - OUT</label
-                  >
-                  <div class="form-input">
-                    <input
-                      type="text"
-                      class="form-control form-control-lg datepicker"
-                      id="input-checkout"
-                    />
-                  </div>
-                </div>
-                <div class="col">
-                  <label for="select-rooms" class="form-label">ROOMS</label>
-                  <div class="dropdown">
-                    <button
-                      class="btn btn-lg btn-outline-light dropdown-toggle w-100"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      1 room
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                      <li>
-                        <a class="dropdown-item active" href="#">1 room</a>
-                      </li>
-                      <li><a class="dropdown-item" href="#">2 rooms</a></li>
-                      <li><a class="dropdown-item" href="#">3 rooms</a></li>
-                    </ul>
-                  </div>
                 </div>
               </div>
-              <div class="row mb-4">
-                <div class="col guest">
-                  <label for="select-rooms" class="form-label">GUESTS</label>
-
-                  <div class="d-flex">
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+              <div class="form wow fadeInUp">
+                <div class="row mb-4">
+                  <div class="col">
+                    <label for="input-checkin" class="form-label"
+                      >CHECK - IN</label
+                    >
+                    <div class="form-input">
+                      <input
+                        type="text"
+                        class="form-control form-control-lg datepicker"
+                        id="input-checkin"
+                      />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <label for="input-checkout" class="form-label"
+                      >CHECK - OUT</label
+                    >
+                    <div class="form-input">
+                      <input
+                        type="text"
+                        class="form-control form-control-lg datepicker"
+                        id="input-checkout"
+                      />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <label for="select-rooms" class="form-label">ROOMS</label>
                     <div class="dropdown">
                       <button
                         class="btn btn-lg btn-outline-light dropdown-toggle w-100"
@@ -462,60 +443,89 @@
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                       >
-                        2 Adult
+                        1 room
                       </button>
                       <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item active" href="#">1 </a></li>
-                        <li><a class="dropdown-item" href="#">2 </a></li>
-                        <li><a class="dropdown-item" href="#">3 </a></li>
-                      </ul>
-                    </div>
-                    <div class="dropdown ms-2">
-                      <button
-                        class="btn btn-lg btn-outline-light dropdown-toggle w-100"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        1 Child
-                      </button>
-                      <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item active" href="#">1 </a></li>
-                        <li><a class="dropdown-item" href="#">2 </a></li>
-                        <li><a class="dropdown-item" href="#">3 </a></li>
+                        <li>
+                          <a class="dropdown-item active" href="#">1 room</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">2 rooms</a></li>
+                        <li><a class="dropdown-item" href="#">3 rooms</a></li>
                       </ul>
                     </div>
                   </div>
                 </div>
+                <div class="row mb-4">
+                  <div class="col guest">
+                    <label for="select-rooms" class="form-label">GUESTS</label>
 
-                <div class="col">
-                  <label for="input-promocode" class="form-label"
-                    >PROMO CODE</label
-                  >
-                  <div class="form-input no-arrow">
+                    <div class="d-flex">
+                      <div class="dropdown">
+                        <button
+                          class="btn btn-lg btn-outline-light dropdown-toggle w-100"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          2 Adult
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li>
+                            <a class="dropdown-item active" href="#">1 </a>
+                          </li>
+                          <li><a class="dropdown-item" href="#">2 </a></li>
+                          <li><a class="dropdown-item" href="#">3 </a></li>
+                        </ul>
+                      </div>
+                      <div class="dropdown ms-2">
+                        <button
+                          class="btn btn-lg btn-outline-light dropdown-toggle w-100"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          1 Child
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li>
+                            <a class="dropdown-item active" href="#">1 </a>
+                          </li>
+                          <li><a class="dropdown-item" href="#">2 </a></li>
+                          <li><a class="dropdown-item" href="#">3 </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <label for="input-promocode" class="form-label"
+                      >PROMO CODE</label
+                    >
+                    <div class="form-input no-arrow">
+                      <input
+                        type="text"
+                        class="form-control form-control-lg"
+                        id="input-promocode"
+                        placeholder="Enter code here"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                  <div class="form-check">
                     <input
-                      type="text"
-                      class="form-control form-control-lg"
-                      id="input-promocode"
-                      placeholder="Enter code here"
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexible-dates"
                     />
+                    <label class="form-check-label ms-3" for="flexible-dates">
+                      Flexible dates
+                    </label>
                   </div>
+                  <button class="btn btn-lg btn-primary m-0">BOOK NOW</button>
                 </div>
-              </div>
-
-              <div class="d-flex justify-content-between">
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexible-dates"
-                  />
-                  <label class="form-check-label ms-3" for="flexible-dates">
-                    Flexible dates
-                  </label>
-                </div>
-                <button class="btn btn-lg btn-primary m-0">BOOK NOW</button>
               </div>
             </div>
           </div>
@@ -569,7 +579,7 @@
     <div class="speciality-section grey-bg">
       <div class="container">
         <div class="d-lg-flex align-items-end title">
-          <h2 class="center-line d-block d-lg-none mb-40">
+          <h2 class="center-line d-block d-lg-none">
             Special Offers And<br />
             Packages
           </h2>
@@ -593,9 +603,12 @@
               Two Deluxe Resorts side by side, One exclusively for the Bride &
               the other specially for the Groom.
             </p>
-            <a href="javascript:void(0);" class="link"
-              >VIEW DETAILS <i class="las la-arrow-right"></i
-            ></a>
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="javascript:void(0);" class="link"
+                >VIEW DETAILS <i class="las la-arrow-right"></i
+              ></a>
+              <a href="#" class="btn btn-outline-primary"> BOOK NOW </a>
+            </div>
           </div>
 
           <div class="special-wrap wow fadeInUp">
@@ -611,9 +624,12 @@
               Two rooms and two bathrooms within each room easily accommodating
               up to 4 persons and thus providing value.
             </p>
-            <a href="javascript:void(0);" class="link"
-              >VIEW DETAILS <i class="las la-arrow-right"></i
-            ></a>
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="javascript:void(0);" class="link"
+                >VIEW DETAILS <i class="las la-arrow-right"></i
+              ></a>
+              <a href="#" class="btn btn-outline-primary"> BOOK NOW </a>
+            </div>
           </div>
 
           <div class="special-wrap wow fadeInUp">
@@ -629,9 +645,12 @@
               Goa's largest banquet resort with multiple indoor and outdoor
               venues totaling over 61,000 sq ft
             </p>
-            <a href="javascript:void(0);" class="link"
-              >VIEW DETAILS <i class="las la-arrow-right"></i
-            ></a>
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="javascript:void(0);" class="link"
+                >VIEW DETAILS <i class="las la-arrow-right"></i
+              ></a>
+              <a href="#" class="btn btn-outline-primary"> BOOK NOW </a>
+            </div>
           </div>
         </div>
       </div>
@@ -649,7 +668,7 @@
             Stay at Resort Rio<br />
             Luxury Hotel Goa <span></span>
           </h2>
-          <p>The pleasure of luxury</p>
+          <p>THE PLEASURE OF LUXURY & Spacious Rooms</p>
         </div>
 
         <div class="slick-slider stay-at-resort-slider">
@@ -756,7 +775,7 @@
             </div>
           </div>
 
-          <div class="slider-box wow fadeInUp">
+          <!-- <div class="slider-box wow fadeInUp">
             <div class="card border-0">
               <img src="./images/stay-2.png" alt="stay" class="img-fluid" />
               <div class="card-body p-0">
@@ -780,7 +799,7 @@
                 </p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
