@@ -20,7 +20,7 @@ h2.center-line:after {
   position: absolute;
   width: 90px;
   height: 1px;
-  background: #1c1c1c;
+  background: #a5a5a5;
   bottom: 0;
   left: calc(50% - 45px);
 }
@@ -32,8 +32,9 @@ h2.left-line {
 h2.left-line span {
   width: 90px;
   height: 1px;
-  background: #1c1c1c;
+  background: #bbbbbb;
   display: inline-block;
+  margin-left: 5px;
 }
 
 .title {
@@ -68,6 +69,10 @@ h2.left-line span {
   background-color: #344a71;
 }
 
+.blue-bg .card {
+  background-color: transparent;
+}
+
 .speciality-section {
   padding: 50px 0 70px;
 }
@@ -87,7 +92,7 @@ h2.left-line span {
 
 @media (min-width: 992px) {
   .speciality-section .special-wrap {
-    padding: 25px;
+    padding: 25px 22px;
   }
 }
 
@@ -124,13 +129,13 @@ h2.left-line span {
 .mb-40 {
   margin-bottom: 40px !important;
 }
-.mt-76{
+.mt-76 {
   margin-top: 76px !important;
 }
-.mt-60{
+.mt-60 {
   margin-top: 60px !important;
 }
-.mt-57{
+.mt-57 {
   margin-top: 57px !important;
 }
 
@@ -173,7 +178,7 @@ h2.left-line span {
 }
 
 .ui-datepicker.ui-widget.ui-widget-content {
-  border: 2px solid #ccc !important;
+  border: 2px solid #f5f4f4 !important;
   border-radius: 6px;
   padding: 20px;
   background-color: #fff;
@@ -271,13 +276,32 @@ html .ui-button.ui-state-disabled:active {
   color: #fff;
 }
 
-.clearfix{
+.ui-widget-header .ui-icon {
+  background-image: url("../images/icons/arrow-next.svg");
+  background-position: 4px 2px;
+}
+
+.ui-datepicker-prev .ui-icon {
+  transform: rotatey(155deg);
+}
+
+.ui-datepicker-current-day .ui-state-active,
+.ui-datepicker-current-day .ui-state-highlight {
+  background-color: #344A71;
+  color: #fff;
+}
+
+.clearfix {
   clear: both;
 }
 
 .list {
-  color: #4C4C4C;
+  color: #4c4c4c;
   list-style: disc;
+}
+
+.list li::marker {
+  font-size: 10px;
 }
 
 .list li {
@@ -287,7 +311,8 @@ html .ui-button.ui-state-disabled:active {
 }
 
 /* icons */
-.link .la-long-arrow-alt-right {
+.link .la-long-arrow-alt-right,
+.btn .la-long-arrow-alt-right {
   font-size: 17px;
   position: relative;
   top: 1px;

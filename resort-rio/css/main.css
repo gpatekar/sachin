@@ -279,6 +279,10 @@ h2.heading.center-line:after {
   color: #fff;
 }
 
+.offcanvas-body a:hover { 
+  color: #fff;
+}
+
 .offcanvas-body ul,
 .offcanvas-body h5 {
   margin-bottom: 1.5rem;
@@ -332,12 +336,18 @@ h2.heading.center-line:after {
   background-color: #344a71;
   color: #fff;
   padding-top: 2.3rem;
+  padding-bottom: 2.3rem;
 }
 
-.main-footer a,
+.main-footer h2,
 .main-footer h5,
 .main-footer .accordion-header button {
   color: #fff;
+}
+
+.main-footer a,
+.main-footer p {
+  color: #caced6;
 }
 
 .main-footer h2 button,
@@ -368,6 +378,14 @@ h2.heading.center-line:after {
 @media (min-width: 992px) {
   #footerAccordion .accordion-button {
     pointer-events: none;
+  }
+}
+
+@media (max-width: 991px) {
+  #footerAccordion .accordion-button,
+  #footerAccordion .accordion-body {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -431,6 +449,10 @@ h2.heading.center-line:after {
   margin-bottom: 1.4rem;
 }
 
+.input-wrapper ::placeholder {
+  color: #caced6;
+}
+
 .input-wrapper::after {
   content: "";
   position: absolute;
@@ -460,9 +482,42 @@ footer .map-iframe {
 
 footer a:hover {
   transition-duration: 0.2s;
-  padding-left: 2px !important;
   text-decoration: underline;
   color: #fff !important;
+}
+
+.main-footer .extra-links a {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 1;
+}
+
+.main-footer .extra-links li + li a {
+  border-left: 1px solid #caced6;
+}
+
+@media (max-width: 991px) {
+  .main-footer .navbar-brand {
+    border-bottom: 1px solid #caced6;
+    display: block;
+    padding-bottom: 18px;
+  }
+
+  .main-footer .extra-links {
+    border-bottom: 1px solid #caced6;
+    border-top: 1px solid #caced6;
+    display: block;
+    padding-bottom: 18px;
+    margin-top: 1rem !important;
+    padding-top: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .bottom-footer {
+    border-top: 1px solid #4f6284;
+    padding-top: 15px;
+  }
 }
 
 /* slider */
@@ -497,8 +552,8 @@ footer a:hover {
   font-size: 24px;
 }
 .slick-disabled {
-  background: #F8F8F8;
-  color: #1C1C1C;
+  background: #f8f8f8;
+  color: #1c1c1c;
   pointer-events: none;
 }
 .slick-nav .line {
@@ -1251,7 +1306,6 @@ footer a:hover {
   background-position: right -73px;
   padding-bottom: 3rem;
 }
-
 
 @media (min-width: 992px) {
   .listing-impressions {

@@ -119,12 +119,12 @@
 }
 
 .blue-bg .slick-nav .line {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid #596a89;
 }
 
 .blue-bg .slick-nav .line:after {
   content: '';
-  background: rgba(255, 255, 255, 0.5);
+  background: #596a89;
 }
 
 .blue-bg .slick-dots li button:before {
@@ -239,7 +239,7 @@
 .wedding-wrap .testimonial-section small {
   display: block;
   font-size: 16px;
-  margin: 30px 0 0;
+  margin: 60px 0 0;
   color: #4C4C4C;
   text-transform: uppercase;
 }
@@ -248,16 +248,20 @@
   padding: 0 0 50px;
 }
 
-.best-day-section .slider-box {
-  color: #fff;
+.best-day-section .slider-box .card-body  {
+  color: #f2f4f6;;
   margin: 0;
+}
+
+.best-day-section .slider-box .card-body p {
+  color: #c2c8d4; 
 }
 
 .wedding-wrap .slider-box h4 {
   font-size: 24px;
   line-height: 1;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 20px 0;
+  border-bottom: 1px solid #5d6e8d;
+  padding: 25px 0;
   text-transform: uppercase;
   font-family: "Playfair Display", serif;
   font-weight: 400;
@@ -276,7 +280,7 @@
 }
 
 .wedding-wrap .best-day-section h2 {
-  color: #fff;
+  color: #f2f2f2;
   margin: 0 0 40px;
   text-align: center;
 }
@@ -417,17 +421,10 @@
     width: 90%;
   }
 
-  .wedding-wrap .best-day-section h2 {
-    width: 40%;
-    text-align: left;
-  }
-
   .best-day-section{
     padding: 20px 0;
   }
-  .wedding-wrap .speciality-section .special-wrap {
-    min-height: 575px;
-  }
+  
   .wedding-wrap .testimonial-section{
     padding-top: 80px;
     padding-bottom: 100px;
@@ -452,5 +449,9 @@
   .wedding-wrap .location-section{
     padding-top: 0;
     padding-bottom: 120px;
+  }
+
+  .wedding-wrap .best-day-section h2 { 
+    text-align: left;
   }
 }
