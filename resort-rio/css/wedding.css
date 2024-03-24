@@ -31,24 +31,26 @@
   display: inline-block;
 }
 
-.slick-disabled {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
 .slick-prev,
 .slick-next {
   color: #fff;
   border: 0;
   margin: 0 5px 0 0;
   background: #1C1C1C;
+  padding: 2px 8px;
+  font-size: 24px;
+}
+.slick-disabled {
+  background: #F8F8F8;
+  color: #1C1C1C;
+  pointer-events: none;
 }
 
 .slick-nav .line {
   height: 4px;
   border-bottom: 1px solid rgba(97, 97, 97, 0.5);
   position: relative;
-  width: calc(100% - 100px);
+  width: calc(100% - 130px);
 }
 
 .slick-nav .line:after {

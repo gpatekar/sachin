@@ -7,6 +7,9 @@
 
 /* Accomodation Page CSS */
 /* Rooms booking section */
+.room-booking-section {
+  padding: 25px 0 0;
+}
 
 .room-booking-section .content-box {
   box-shadow: 0 0 26px 0 rgba(0, 0, 0, 0.1);
@@ -138,7 +141,7 @@ form.rooms-booking-form select {
 
 @media (min-width: 992px) {
   section.rooms-booking {
-    margin-bottom: 80px;
+    margin-bottom: 55px;
   }
 }
 
@@ -160,7 +163,8 @@ form.rooms-booking-form select {
 
 .room-amenities-section h2,
 .accomodation-wrap .jalsa-gallery-section h2,
-.additional-info-section h2 {
+.additional-info-section h2,
+.other-suites-section h2 {
   font-size: 30px;
   line-height: 1.35;
 }
@@ -283,13 +287,77 @@ form.rooms-booking-form select {
   line-height: 1;
   color: #1C1C1C;
 }
+
 .additional-info-section .list {
   margin: 27px 0 30px 20px;
   padding: 0;
 }
+
 .additional-info-section .list li {
   margin: 0;
   padding-bottom: 18px;
+}
+
+.other-suites-section {
+  padding: 0 0 80px;
+  overflow: hidden;
+}
+
+.other-suites-section .title {
+  padding-bottom: 34px;
+}
+
+.other-suites-section h2 {
+  color: #1C1C1C;
+  padding-bottom: 23px;
+  margin-bottom: 26px;
+}
+
+.other-suites-section .sub-heading {
+  font-size: 16px;
+}
+
+.other-suites-section .slider-box {
+  padding: 0 0 50px;
+}
+
+.other-suites-section .slider-box h4 {
+  font-size: 24px;
+  line-height: 1;
+  border-bottom: 1px solid rgba(97, 97, 97, 0.5);
+  padding: 29px 0 20px;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+.other-suites-section .slider-box p {
+  margin: 0 0 53px;
+  padding: 20px 0 0;
+}
+
+.other-suites-section .slider-box p small {
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #1C1C1C;
+}
+.other-suites-section .slider-box p small:nth-of-type(2) {
+  font-size: 14px;
+}
+
+/* .other-suites-section .slick-prev, .other-suites-section .slick-next{
+  padding: 8px 12px;
+}
+.other-suites-section .slick-nav .line {
+  width: calc(100% - 130px);
+} */
+
+@media (min-width: 768px) {
+  .other-suites-section .slider-box {
+    margin: 0 50px 0 0;
+  }
 }
 
 @media (min-width: 992px) {
@@ -324,16 +392,47 @@ form.rooms-booking-form select {
     padding-bottom: 0;
     margin-bottom: 36px;
   }
+
   .additional-info-section {
     padding-top: 50px;
   }
+
   .additional-info-section h2 {
     font-size: 50px;
     line-height: 1.35;
     padding: 0;
     margin-bottom: 0;
   }
+
   .additional-info-section .additional-info-content {
     margin: -12px 0 0 484px;
+  }
+
+  .other-suites-section {
+    padding-top: 60px;
+    padding-bottom: 160px;
+  }
+
+  .other-suites-section .title {
+    padding-bottom: 58px;
+  }
+
+  .other-suites-section h2 {
+    font-size: 50px;
+    line-height: 1.35;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .room-booking-section .btn{
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .other-suites-section .slick-list {
+    overflow: visible;
+  }
+  .other-suites-section .slick-nav{
+    margin: 28px 0 0;
   }
 }
