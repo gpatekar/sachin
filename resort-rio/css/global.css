@@ -1,3 +1,13 @@
+h2.heading {
+  font-size: 30px;
+}
+
+@media (min-width: 992px) {
+  h2.heading {
+    font-size: 50px;
+  }
+}
+
 h2.center-line {
   margin: 0 0 30px;
   position: relative;
@@ -72,13 +82,19 @@ h2.left-line span {
   margin: 0 0 30px;
   position: relative;
   z-index: 1;
-  padding: 25px;
+  padding: 15px 15px 30px;
+}
+
+@media (min-width: 992px) {
+  .speciality-section .special-wrap {
+    padding: 25px;
+  }
 }
 
 .speciality-section .special-wrap:before {
   content: "";
   position: absolute;
-  height: 25%;
+  height: 144px;
   width: 100%;
   background: #344a71;
   z-index: -1;
@@ -95,7 +111,8 @@ h2.left-line span {
 }
 
 .speciality-section .special-wrap p {
-  margin: 0 0 50px;
+  margin: 0 0 43px;
+  color: #4c4c4c;
 }
 
 .speciality-section .slick-prev,
@@ -122,6 +139,13 @@ h2.left-line span {
   .title p {
     font-size: 20px;
     line-height: 1.6;
+    display: inline;
+    font-family: "Open Sans";
+    color: #4c4c4c;
+  }
+
+  .title h2 p {
+    color: #4c4c4c;
   }
 
   .speciality-section h2 {
@@ -160,7 +184,7 @@ h2.left-line span {
 }
 
 .ui-datepicker .ui-datepicker-title {
-    color: #1c1c1c;
+  color: #1c1c1c;
 }
 
 .ui-datepicker th {
@@ -260,4 +284,12 @@ html .ui-button.ui-state-disabled:active {
   padding: 0 0 25px;
   font-size: 16px;
   line-height: 1.6;
+}
+
+/* icons */
+.link .la-long-arrow-alt-right {
+  font-size: 17px;
+  position: relative;
+  top: 1px;
+  left: 7px;
 }

@@ -306,7 +306,7 @@
 }
 
 .slick-slider img {
-  display: inline-block !important;
+  border-radius: 0;
 }
 
 .wedding-wrap .stay-section .title p {

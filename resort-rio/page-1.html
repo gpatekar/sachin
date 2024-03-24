@@ -36,6 +36,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
 
     <link rel="stylesheet" href="./css/animate.min.css" />
 
@@ -47,21 +51,22 @@
     <img
       src="./Home.png"
       style="
-        position: fixed;
+        position: absolute;
         display: none;
         opacity: 0.5;
         right: 59px;
-        top: -573px;
+        top: 0;
+        z-index: 100520;
       "
       alt=""
     />
     <img
       src="./Home_Mobile.png"
       style="
-        position: fixed;
+        position: absolute;
         display: none;
         opacity: 0.5;
-        top: -4250px;
+        top: 0;
         z-index: 100520;
       "
       alt=""
@@ -385,19 +390,19 @@
     <div class="container">
       <section class="book-direct-offer">
         <div class="book-direct-offer-wrapper">
-          <div class="row">
+          <div class="row justify-content-around">
             <div class="col-lg-6 wow fadeInUp">
               <div class="left">
-                <h2 class="heading">
-                  Unlock Your Book <br class="d-lg-none" />Direct Offer
-                </h2>
+                <h2 class="heading">Unlock Your Book <br />Direct Offer</h2>
                 <p>
                   Sign up for an exclusive accommodation discount on your next
                   booking and additional benefits for you to enjoy during your
                   next stay.
                 </p>
                 <a href="#">WHY BOOK DIRECT</a>
-                <a href="#" class="ms-4">WHY CHOOSE RISORT RIO</a>
+                <a href="#" class="why-choose-resort-rio"
+                  >WHY CHOOSE RISORT RIO</a
+                >
                 <div>
                   <a
                     class="text-decoration-none btn btn-primary btn-lg d-lg-none mb-0"
@@ -410,7 +415,7 @@
             <div class="col-lg-6 d-none d-lg-block">
               <div class="form wow fadeInUp">
                 <div class="row mb-4">
-                  <div class="col">
+                  <div class="col-lg-4">
                     <label for="input-checkin" class="form-label"
                       >CHECK - IN</label
                     >
@@ -422,7 +427,7 @@
                       />
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col-lg-4">
                     <label for="input-checkout" class="form-label"
                       >CHECK - OUT</label
                     >
@@ -434,7 +439,7 @@
                       />
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col-lg-4">
                     <label for="select-rooms" class="form-label">ROOMS</label>
                     <div class="dropdown">
                       <button
@@ -534,122 +539,127 @@
     </div>
 
     <!-- about section -->
-    <section class="container about-section">
-      <div class="row">
-        <div class="col-lg-6 left wow fadeInUp">
-          <h1 class="heading center-line">Welcome to <br />Resort Rio</h1>
-          <img
-            src="./images/elephant-art.png"
-            alt="About us | Resort Rio"
-            class="d-none d-lg-block"
-          />
-          <h2 class="heading left-line d-none d-lg-block">
-            <span></span>Affordable <br />Luxury For All
-          </h2>
-        </div>
-        <div class="col-lg-6 right wow fadeInUp">
-          <h2 class="heading d-none d-lg-block">ABOUT US</h2>
-          <p>
-            Succumb to a sussegado state of mind in one of the best resorts in
-            Goa. Relax, rejuvenate and celebrate in style with world-class
-            amenities, decadent food & beverage, and pure opulence in the lap of
-            nature.
-          </p>
-          <p>
-            With Resort Rio Goa, discover perfect holidays filled with luxury
-            hospitality at incredibly affordable rates, steal quality time away
-            with loved ones, and take home lasting memories of culture,
-            flavours, nightlife, and stunning sunsets frozen in time.
-          </p>
-
-          <div class="img-frame">
-            <div class="img-wrapper">
+    <div class="container">
+      <section class="about-section">
+        <div class="row justify-content-around">
+          <div class="col-lg-6 wow fadeInUp">
+            <div class="left">
+              <h1 class="heading center-line">Welcome to <br />Resort Rio</h1>
               <img
-                src="./images/about-us.png"
-                class="img-fluid"
-                alt="About us | Resort Ri"
+                src="./images/elephant-art.png"
+                alt="About us | Resort Rio"
+                class="d-none d-lg-block"
               />
+              <h2 class="heading left-line d-none d-lg-block">
+                <span></span>Affordable <br />Luxury For All
+              </h2>
+            </div>
+          </div>
+          <div class="col-lg-6 right wow fadeInUp">
+            <div class="row"></div>
+            <h2 class="heading d-none d-lg-block">ABOUT US</h2>
+            <p>
+              Succumb to a sussegado state of mind in one of the best resorts in
+              Goa. Relax, rejuvenate and celebrate in style with world-class
+              amenities, decadent food & beverage, and pure opulence in the lap
+              of nature.
+            </p>
+            <p>
+              With Resort Rio Goa, discover perfect holidays filled with luxury
+              hospitality at incredibly affordable rates, steal quality time
+              away with loved ones, and take home lasting memories of culture,
+              flavours, nightlife, and stunning sunsets frozen in time.
+            </p>
+
+            <div class="img-frame">
+              <div class="img-wrapper">
+                <img
+                  src="./images/about-us.png"
+                  class="img-fluid"
+                  alt="About us | Resort Ri"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- Our Speciality -->
     <div class="speciality-section grey-bg">
       <div class="container">
         <div class="d-lg-flex align-items-end title">
-          <h2 class="center-line d-block d-lg-none">
+          <h2 class="heading center-line d-block d-lg-none">
             Special Offers And<br />
             Packages
           </h2>
-          <h2 class="left-line d-none d-lg-block">
+          <h2 class="heading left-line d-none d-lg-block">
             Special Offers And<br />
             Packages <span></span>
+            <p>Book Direct to avail Best discount</p>
           </h2>
-          <p>Book Direct to avail Best discount</p>
         </div>
         <div class="slick-slider slick-slider1">
-          <div class="special-wrap wow fadeInUp">
-            <div class="text-center">
-              <img
-                src="./images/speciality-thumb1.png"
-                alt="our speciality"
-                class="img-fluid"
-              />
-            </div>
-            <h4>Resort Rio & Rio Royale</h4>
-            <p>
-              Two Deluxe Resorts side by side, One exclusively for the Bride &
-              the other specially for the Groom.
-            </p>
-            <div class="d-flex justify-content-between align-items-center">
-              <a href="javascript:void(0);" class="link"
-                >VIEW DETAILS <i class="las la-arrow-right"></i
-              ></a>
-              <a href="#" class="btn btn-outline-primary"> BOOK NOW </a>
-            </div>
-          </div>
-
-          <div class="special-wrap wow fadeInUp">
-            <div class="text-center">
-              <img
-                src="./images/speciality-thumb2.png"
-                alt="our speciality"
-                class="img-fluid"
-              />
-            </div>
-            <h4>Family Rooms</h4>
-            <p>
-              Two rooms and two bathrooms within each room easily accommodating
-              up to 4 persons and thus providing value.
-            </p>
-            <div class="d-flex justify-content-between align-items-center">
-              <a href="javascript:void(0);" class="link"
-                >VIEW DETAILS <i class="las la-arrow-right"></i
-              ></a>
-              <a href="#" class="btn btn-outline-primary"> BOOK NOW </a>
+          <div class="special-wrap card border-0 wow fadeInUp">
+            <img
+              src="./images/home-special-offer-01.png"
+              alt="our speciality"
+              class="card-img-top"
+            />
+            <div class="card-body p-0">
+              <h4>Super Luxury Offer</h4>
+              <p>
+                Rate Starting form 10,000/- ++ Choice of a welcome drink
+                Accommodation in a well-appointed a...
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="javascript:void(0);" class="link"
+                  >VIEW DETAILS <i class="las la-long-arrow-alt-right"></i
+                ></a>
+                <a href="#" class="btn btn-outline-primary"> BOOK NOW </a>
+              </div>
             </div>
           </div>
 
-          <div class="special-wrap wow fadeInUp">
-            <div class="text-center">
-              <img
-                src="./images/speciality-thumb3.png"
-                alt="our speciality"
-                class="img-fluid"
-              />
+          <div class="special-wrap card border-0 wow fadeInUp">
+            <img
+              src="./images/home-special-offer-02.png"
+              alt="our speciality"
+              class="card-img-top"
+            />
+            <div class="card-body p-0">
+              <h4>SUMMER Offer</h4>
+              <p>
+                Rate Starting form 10,000/- ++ Choice of a welcome drink
+                Accommodation in a well-appointed a...
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="javascript:void(0);" class="link"
+                  >VIEW DETAILS <i class="las la-long-arrow-alt-right"></i
+                ></a>
+                <a href="#" class="btn btn-outline-primary"> BOOK NOW </a>
+              </div>
             </div>
-            <h4>Goa's largest resort</h4>
-            <p>
-              Goa's largest banquet resort with multiple indoor and outdoor
-              venues totaling over 61,000 sq ft
-            </p>
-            <div class="d-flex justify-content-between align-items-center">
-              <a href="javascript:void(0);" class="link"
-                >VIEW DETAILS <i class="las la-arrow-right"></i
-              ></a>
-              <a href="#" class="btn btn-outline-primary"> BOOK NOW </a>
+          </div>
+
+          <div class="special-wrap card border-0 wow fadeInUp">
+            <img
+              src="./images/home-special-offer-03.png"
+              alt="our speciality"
+              class="card-img-top"
+            />
+            <div class="card-body p-0">
+              <h4>WINTER Offer</h4>
+              <p>
+                Rate Starting form 10,000/- ++ Choice of a welcome drink
+                Accommodation in a well-appointed a...
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="javascript:void(0);" class="link"
+                  >VIEW DETAILS <i class="las la-long-arrow-alt-right"></i
+                ></a>
+                <a href="#" class="btn btn-outline-primary"> BOOK NOW </a>
+              </div>
             </div>
           </div>
         </div>
@@ -657,18 +667,18 @@
     </div>
 
     <!-- Stay at Resort Rio -->
-    <div class="stay-section pb-5">
+    <div class="stay-section">
       <div class="container">
-        <div class="d-lg-flex align-items-end title">
-          <h2 class="center-line d-block d-lg-none">
+        <div class="d-xl-flex align-items-end title">
+          <h2 class="heading center-line d-block d-xl-none">
             Stay at Resort Rio<br />
             Luxury Hotel Goa
           </h2>
-          <h2 class="left-line d-none d-lg-block">
+          <h2 class="heading left-line d-none d-xl-block">
             Stay at Resort Rio<br />
             Luxury Hotel Goa <span></span>
+            <p>The pleasure OF Luxury & Spacious Rooms</p>
           </h2>
-          <p>THE PLEASURE OF LUXURY & Spacious Rooms</p>
         </div>
 
         <div class="slick-slider stay-at-resort-slider">
@@ -678,10 +688,11 @@
               <div class="card-body p-0">
                 <h4>luxury villa</h4>
                 <p class="d-flex justify-content-between">
-                  <small>3 AND 4 Bedroom Villa</small> <small>2800 Sq Ft</small>
+                  <small>3 AND 4 Bedroom Villa</small>
+                  <small class="sqft">2800 Sq Ft</small>
                 </p>
                 <a href="javascript:void(0);" class="link"
-                  >VIEW DETAILS <i class="las la-arrow-right"></i
+                  >VIEW DETAILS <i class="las la-long-arrow-alt-right"></i
                 ></a>
               </div>
             </div>
@@ -692,10 +703,11 @@
               <div class="card-body p-0">
                 <h4>4 Bedroom Villa</h4>
                 <p class="d-flex justify-content-between">
-                  <small>3 Bedroom Villa</small> <small>2800 Sq Ft</small>
+                  <small>3 Bedroom Villa</small>
+                  <small class="sqft">2800 Sq Ft</small>
                 </p>
                 <a href="javascript:void(0);" class="link"
-                  >VIEW DETAILS <i class="las la-arrow-right"></i
+                  >VIEW DETAILS <i class="las la-long-arrow-alt-right"></i
                 ></a>
               </div>
             </div>
@@ -706,10 +718,11 @@
               <div class="card-body p-0">
                 <h4>Villa Rooms</h4>
                 <p class="d-flex justify-content-between">
-                  <small>4 Bedroom Villa</small> <small>2800 Sq Ft</small>
+                  <small>4 Bedroom Villa</small>
+                  <small class="sqft">2800 Sq Ft</small>
                 </p>
                 <a href="javascript:void(0);" class="link"
-                  >VIEW DETAILS <i class="las la-arrow-right"></i
+                  >VIEW DETAILS <i class="las la-long-arrow-alt-right"></i
                 ></a>
               </div>
             </div>
@@ -720,10 +733,11 @@
               <div class="card-body p-0">
                 <h4>Rio Wing</h4>
                 <p class="d-flex justify-content-between">
-                  <small>3 Bedroom Villa</small> <small>2800 Sq Ft</small>
+                  <small>3 Bedroom Villa</small>
+                  <small class="sqft">2800 Sq Ft</small>
                 </p>
                 <a href="javascript:void(0);" class="link"
-                  >VIEW DETAILS <i class="las la-arrow-right"></i
+                  >VIEW DETAILS <i class="las la-long-arrow-alt-right"></i
                 ></a>
               </div>
             </div>
@@ -746,38 +760,46 @@
     </div>
 
     <!-- Resort Rio Experiences  -->
-    <section class="resort-rio-experiences blue-bg pb-4">
+    <section class="resort-rio-experiences blue-bg">
       <div class="container">
-        <div class="d-lg-flex align-items-end title">
-          <h2 class="heading center-line d-block d-lg-none">
+        <div class="d-xl-flex align-items-end title">
+          <h2 class="heading center-line d-block d-xl-none">
             Resort Rio <br />Experiences
           </h2>
-          <h2 class="heading left-line d-none d-lg-block">
+          <h2 class="heading left-line d-none d-xl-block">
             Resort Rio <br />Experiences <span></span>
+            <p class="sub-heading ms-4">
+              Discover the exhilarating, the unknown and the extraordinary
+              Journeys
+            </p>
           </h2>
-          <p class="sub-heading ms-4">
-            Discover the exhilarating, the unknown and the extraordinary
-            Journeys
-          </p>
         </div>
 
         <div class="slick-slider1">
           <div class="slider-box wow fadeInUp">
             <div class="card border-0">
-              <img src="./images/stay-1.png" alt="stay" class="img-fluid" />
+              <img
+                src="./images/resot-rio-exp-03.png"
+                alt="stay"
+                class="img-fluid"
+              />
               <div class="card-body p-0">
-                <h4>Pickled Mango</h4>
+                <h4>Historic Artifacts</h4>
                 <p>
-                  Set the tone for a lively vacation in one of the best 5 star
-                  hotels in Goa with culinary delights from around the world
+                  Step back in time as you admire the rich history and stunning
+                  artwork of Khajuraho at our resort
                 </p>
               </div>
             </div>
           </div>
 
-          <!-- <div class="slider-box wow fadeInUp">
+          <div class="slider-box wow fadeInUp">
             <div class="card border-0">
-              <img src="./images/stay-2.png" alt="stay" class="img-fluid" />
+              <img
+                src="./images/resot-rio-exp-02.png"
+                alt="stay"
+                class="img-fluid"
+              />
               <div class="card-body p-0">
                 <h4>Dine Like Royals At Jalsa</h4>
                 <p>
@@ -790,7 +812,11 @@
 
           <div class="slider-box wow fadeInUp">
             <div class="card border-0">
-              <img src="./images/stay-3.png" alt="stay" class="img-fluid" />
+              <img
+                src="./images/resot-rio-exp-01.png"
+                alt="stay"
+                class="img-fluid"
+              />
               <div class="card-body p-0">
                 <h4>Spa & Wellness</h4>
                 <p>
@@ -799,7 +825,7 @@
                 </p>
               </div>
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
     </section>
@@ -823,7 +849,11 @@
         <div class="slick-slider drink-and-dine-slider">
           <div class="slider-box wow fadeInUp">
             <div class="card border-0 card-secondary">
-              <img src="./images/stay-1.png" alt="stay" class="img-fluid" />
+              <img
+                src="./images/drink-dine-03.png"
+                alt="stay"
+                class="img-fluid"
+              />
               <div class="card-body">
                 <h4>Pickled Mango</h4>
                 <p class="d-flex justify-content-between sub-details">
@@ -835,7 +865,7 @@
                   hotels in Goa with culinary delights from around the world
                 </p>
                 <a href="javascript:void(0);" class="link"
-                  >VIEW DETAILS <i class="las la-arrow-right"></i
+                  >VIEW DETAILS <i class="las la-long-arrow-alt-right"></i
                 ></a>
               </div>
             </div>
@@ -843,7 +873,11 @@
 
           <div class="slider-box wow fadeInUp">
             <div class="card border-0 card-secondary">
-              <img src="./images/stay-1.png" alt="stay" class="img-fluid" />
+              <img
+                src="./images/drink-dine-02.png"
+                alt="stay"
+                class="img-fluid"
+              />
               <div class="card-body">
                 <h4>SWEET CAJU</h4>
                 <p class="d-flex justify-content-between sub-details">
@@ -855,7 +889,7 @@
                   with food innovation.
                 </p>
                 <a href="javascript:void(0);" class="link"
-                  >VIEW DETAILS <i class="las la-arrow-right"></i
+                  >VIEW DETAILS <i class="las la-long-arrow-alt-right"></i
                 ></a>
               </div>
             </div>
@@ -863,7 +897,11 @@
 
           <div class="slider-box wow fadeInUp">
             <div class="card border-0 card-secondary">
-              <img src="./images/stay-1.png" alt="stay" class="img-fluid" />
+              <img
+                src="./images/drink-dine-03.png"
+                alt="stay"
+                class="img-fluid"
+              />
               <div class="card-body">
                 <h4>Pickled Mango</h4>
                 <p class="d-flex justify-content-between sub-details">
@@ -875,7 +913,7 @@
                   hotels in Goa with culinary delights from around the world
                 </p>
                 <a href="javascript:void(0);" class="link"
-                  >VIEW DETAILS <i class="las la-arrow-right"></i
+                  >VIEW DETAILS <i class="las la-long-arrow-alt-right"></i
                 ></a>
               </div>
             </div>
@@ -899,37 +937,59 @@
     </section>
 
     <!-- LASTING  IMPRESSIONS-->
-    <section class="listing-impressions pb-5">
+    <section class="listing-impressions">
       <div class="container">
         <div class="d-lg-flex align-items-end title">
           <h2 class="heading center-line d-block d-lg-none">
-            LASTING <br />IMPRESSIONS
+            Lasting <br />Impressions
           </h2>
           <h2 class="heading left-line d-none d-lg-block">
-            LASTING <br />IMPRESSIONS <span></span>
+            Lasting <br />Impressions <span></span>
           </h2>
           <p class="sub-heading ms-4">
-            A collection of journeys, a signature Resort Rio experience.
-            <br />Discover guest stories from hotels
+            A collection of journeys, a signature Resort Rio <br />experience.
+            Discover guest stories from hotels
           </p>
         </div>
 
         <div class="slick-slider listing-impressions-slider">
           <div class="slider-box wow fadeInUp">
             <div class="card border-0 card-secondary">
-              <img src="./images/stay-1.png" alt="stay" class="img-fluid" />
+              <img
+                src="./images/listing-impressions-01.png"
+                alt="stay"
+                class="img-fluid"
+              />
             </div>
           </div>
 
           <div class="slider-box wow fadeInUp">
             <div class="card border-0 card-secondary">
-              <img src="./images/stay-1.png" alt="stay" class="img-fluid" />
+              <img
+                src="./images/listing-impressions-02.png"
+                alt="stay"
+                class="img-fluid"
+              />
             </div>
           </div>
 
           <div class="slider-box wow fadeInUp">
             <div class="card border-0 card-secondary">
-              <img src="./images/stay-1.png" alt="stay" class="img-fluid" />
+              <img
+                src="./images/listing-impressions-03.png"
+                alt="stay"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+
+          <div class="slider-box wow fadeInUp">
+            <div class="card border-0 card-secondary">
+              <img
+                src="./images/listing-impressions-03.png"
+                alt="stay"
+                class="img-fluid"
+              />
             </div>
           </div>
         </div>
@@ -1341,7 +1401,7 @@
         autoplay: true,
         responsive: [
           {
-            breakpoint: 992,
+            breakpoint: 1200,
             settings: {
               slidesToShow: 2,
               dots: true,

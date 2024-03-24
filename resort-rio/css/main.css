@@ -3,6 +3,18 @@
 @import url("jalsa.css");
 @import url("accomodation.css");
 
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -30,6 +42,7 @@ h2.heading {
 @media (min-width: 992px) {
   h2.heading {
     font-size: 48px;
+    letter-spacing: 1px;
   }
 }
 
@@ -50,7 +63,7 @@ h2.heading.left-line:after {
 h2.heading.left-line span {
   width: 90px;
   height: 1px;
-  background: #1c1c1c;
+  background: #a5a5a5;
   display: inline-block;
 }
 
@@ -587,10 +600,16 @@ footer a:hover {
   }
 }
 
-.book-direct-offer-wrapper {
+@media (min-width: 1200px) {
+  .book-direct-offer {
+    padding: 35px 98px;
+  }
+}
+
+/* .book-direct-offer-wrapper {
   max-width: 919px;
   margin: 0 auto;
-}
+} */
 
 /* @media (min-width: 1200px) {
   .book-direct-offer {
@@ -600,7 +619,7 @@ footer a:hover {
 
 @media (min-width: 992px) {
   .book-direct-offer .left {
-    max-width: 395px;
+    padding-right: 50px;
   }
 }
 
@@ -624,6 +643,7 @@ footer a:hover {
 @media (min-width: 992px) {
   .book-direct-offer .left h2 {
     margin-bottom: 3.6rem;
+    letter-spacing: 0.5px;
   }
 
   .book-direct-offer .left h2.heading:after {
@@ -645,6 +665,9 @@ footer a:hover {
 @media (min-width: 992px) {
   .book-direct-offer .left p {
     margin-bottom: 2.1rem;
+    letter-spacing: -0.1px;
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 
@@ -653,7 +676,10 @@ footer a:hover {
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
-  letter-spacing: -0.2px;
+}
+
+.why-choose-resort-rio {
+  margin-left: 15px;
 }
 
 .book-direct-offer .left .btn-primary {
@@ -702,6 +728,8 @@ footer a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .book-direct-offer .form .form-input {
@@ -768,9 +796,19 @@ footer a:hover {
   }
 }
 
+@media (min-width: 768px) {
+  .listing-impressions .slider-box,
+  .drink-and-dine .slider-box,
+  .resort-rio-experiences .slider-box,
+  .stay-section .slider-box {
+    margin: 0 50px 0 0;
+  }
+}
+
 /* dine and drink */
 .drink-and-dine,
-.stay-section {
+.stay-section,
+.listing-impressions {
   overflow: hidden;
 }
 
@@ -778,7 +816,7 @@ footer a:hover {
   .drink-and-dine {
     background: url("../images/texture-01.svg") no-repeat;
     background-position: 0 -73px;
-    padding-top: 6rem;
+    padding-top: 4.4rem;
     padding-bottom: 3rem;
   }
 }
@@ -791,12 +829,29 @@ footer a:hover {
   margin-left: 20px;
 } */
 
+@media (min-width: 768px) {
+  .drink-and-dine .title {
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .drink-and-dine .slider-box {
+    margin: 0 25px 0 0;
+  }
+}
+
 .drink-and-dine .slider-box h4 {
   border-bottom: 1px solid rgba(97, 97, 97, 0.5);
 }
 
 .drink-and-dine .slider-box p {
-  color: #4c4c4c;
+  color: #828282;
+  font-size: 14px;
+}
+
+.drink-and-dine .slider-box img {
+  max-height: 500px;
 }
 
 .drink-and-dine .slider-box p.sub-details {
@@ -824,17 +879,9 @@ footer a:hover {
 
 @media (min-width: 1200px) {
   .drink-and-dine .slick-list,
-  .stay-section .slick-list {
+  .stay-section .slick-list,
+  .listing-impressions .slick-list {
     overflow: visible;
-  }
-}
-
-@media (min-width: 768px) {
-  .listing-impressions .slider-box,
-  .drink-and-dine .slider-box,
-  .resort-rio-experiences .slider-box,
-  .stay-section .slider-box {
-    margin: 0 50px 0 0;
   }
 }
 
@@ -844,6 +891,13 @@ footer a:hover {
   background-image: url("../images/texture-02.svg");
   background-repeat: no-repeat;
   background-position: right -2px;
+  padding-bottom: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .resort-rio-experiences {
+    padding-top: 30px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -851,9 +905,22 @@ footer a:hover {
     padding: 35px 0 40px;
   }
 }
+
+@media (min-width: 992px) {
+  .resort-rio-experiences .title {
+    padding-bottom: 91px;
+  }
+}
+
 @media (max-width: 991px) {
   h2.heading.center-line {
     margin: 0 0 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .resort-rio-experiences .slider-box {
+    margin: 0 25px 0 0;
   }
 }
 
@@ -867,24 +934,42 @@ footer a:hover {
   line-height: 1.4;
 }
 
-
 .resort-rio-experiences h2,
 .resort-rio-experiences h4,
-.resort-rio-experiences p {
+.resort-rio-experiences .title .heading p {
   color: #fff;
+}
+
+.resort-rio-experiences h4 {
+  color: #f2f4f6;
+}
+
+@media (min-width: 768px) {
+  .resort-rio-experiences h4 {
+    padding: 30px 0;
+  }
+}
+
+.resort-rio-experiences p {
+  color: #c2c8d4;
 }
 
 .resort-rio-experiences .card {
   background-color: transparent;
 }
 
-.resort-rio-experiences p {
+.resort-rio-experiences .heading p {
+  max-width: 520px;
+  display: inline-block;
+}
+
+.resort-rio-experiences .card-body p {
   padding-top: 20px;
   font-size: 14px;
 }
 
 .resort-rio-experiences h2.heading.left-line span {
-  background: #fff;
+  background: #9aa5b8;
 }
 
 /* about section */
@@ -897,13 +982,20 @@ footer a:hover {
 @media (min-width: 992px) {
   .about-section {
     padding-top: 4rem;
-    padding-bottom: 5rem;
+    padding-bottom: 7rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-section {
+    padding: 4rem 98px 7rem;
   }
 }
 
 @media (min-width: 992px) {
   .about-section .left {
     text-align: right;
+    padding-right: 100px;
   }
 }
 
@@ -946,7 +1038,6 @@ footer a:hover {
     font-size: 64px;
     line-height: 85px;
     letter-spacing: 0.02em;
-    margin-right: 100px;
   }
 
   .about-section h1.heading::after {
@@ -954,9 +1045,9 @@ footer a:hover {
   }
 }
 
-.about-section h2.heading {
+/* .about-section h2.heading {
   margin-right: 65px;
-}
+} */
 
 .about-section h2.heading.left-line span {
   margin-right: 20px;
@@ -988,13 +1079,13 @@ footer a:hover {
 @media (min-width: 992px) {
   .about-section .left img {
     margin-left: auto;
-    margin-top: -83px;
-    margin-right: 25px;
+    position: relative;
+    right: -70px;
+    top: -83px;
   }
 
   .about-section .left h2.heading {
-    margin-right: 105px;
-    margin-top: 115px;
+    margin-top: 32px;
   }
 }
 
@@ -1009,7 +1100,8 @@ footer a:hover {
   font-size: 24px;
   font-family: "Open Sans";
   color: #4c4c4c;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 21px;
 }
 
 .about-section .right h2.heading:after {
@@ -1023,21 +1115,33 @@ footer a:hover {
 }
 
 /* speciality-section */
+
 .speciality-section {
-  padding: 0 0 29px;
+  padding: 43px 0 43px;
+}
+
+@media (min-width: 991px) {
+  .speciality-section {
+    padding: 44px 0 59px;
+    margin-bottom: 23px;
+  }
 }
 
 .speciality-section .title {
   padding: 37px 0 36px;
 }
 
+@media (min-width: 991px) {
+  .speciality-section .title {
+    padding: 37px 0 59px;
+  }
+}
 .speciality-section h2 {
   font-family: "Playfair Display", serif;
-  font-size: 30px;
-  font-weight: normal;
-  line-height: 1.4;
-  margin-bottom: 25px;
-  padding: 0 0 20px;
+}
+
+.speciality-section h2.center-line:after {
+  background-color: #a5a5a5;
 }
 
 @media (max-width: 991px) {
@@ -1047,21 +1151,17 @@ footer a:hover {
   }
 }
 
-.speciality-section p {
+.speciality-section .card-body p {
   font-size: 16px;
   line-height: 1.4;
 }
 
-.speciality-section .special-wrap:before {
+/* .speciality-section .special-wrap:before {
   height: 29%;
-}
+} */
 
 .speciality-section .special-wrap h4 {
   margin: 26px 0;
-}
-
-.speciality-section .special-wrap p {
-  margin: 0 0 46px;
 }
 
 .speciality-section .special-wrap .btn {
@@ -1070,23 +1170,40 @@ footer a:hover {
   color: #344a71;
 }
 
-.speciality-section .special-wrap {
+/* .speciality-section .special-wrap {
   padding: 25px 25px 35px;
-}
+} */
 
 /* stay-section */
 
-.stay-section .title {
+/* .stay-section .title {
   padding: 37px 0 36px;
-}
+} */
 
-.stay-section h2 {
+/* .stay-section h2 {
   font-family: "Playfair Display", serif;
   font-size: 30px;
   font-weight: normal;
   line-height: 1.4;
   margin-bottom: 25px;
   padding: 0 0 20px;
+} */
+
+.stay-section {
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 992px) {
+  .stay-section {
+    padding-top: 50px;
+    padding-bottom: 123px;
+  }
+}
+
+@media (min-width: 992px) {
+  .stay-section .title {
+    padding: 50px 0 92px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -1096,18 +1213,55 @@ footer a:hover {
   }
 }
 
-.stay-section p {
+.stay-section .card-body p {
   font-size: 16px;
   line-height: 1.4;
 }
 
 .stay-section .slider-box .card-body h4 {
   padding: 28px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin: 0 0 10px 0px;
+}
+
+.stay-section .slider-box .card-body h4 {
+  margin: 0 0 20px 0px;
 }
 
 .stay-section .card-body p {
   font-size: 16px;
   line-height: 1.4;
+}
+
+.stay-section .card-body p {
+  margin-bottom: 42px;
+}
+
+.stay-section .card-body p small {
+  color: #1c1c1c;
+}
+
+.stay-section .card-body p small.sqft {
+  color: #4c4c4c;
+}
+
+/* Listing impressions */
+.listing-impressions {
+  background: url(../images/texture-03.svg) no-repeat;
+  background-position: right -73px;
+  padding-bottom: 3rem;
+}
+
+
+@media (min-width: 992px) {
+  .listing-impressions {
+    padding-top: 63px;
+    padding-bottom: 63px;
+  }
+}
+
+@media (min-width: 768px) {
+  .listing-impressions .slider-box {
+    margin: 0 25px 0 0;
+  }
 }
