@@ -1,0 +1,339 @@
+.accomodation-wrap h1,
+.accomodation-wrap h2,
+.accomodation-wrap h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+/* Accomodation Page CSS */
+/* Rooms booking section */
+
+.room-booking-section .content-box {
+  box-shadow: 0 0 26px 0 rgba(0, 0, 0, 0.1);
+  height: 100%;
+  background: white;
+  padding: 30px 20px;
+}
+
+.room-booking-section .product-details small {
+  font-size: 12px;
+  line-height: 16px;
+  color: #4C4C4C;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.room-booking-section .product-details p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #1C1C1C;
+  margin-bottom: 25px;
+}
+
+.room-booking-section .product-info {
+  font-size: 14px;
+  line-height: 26px;
+  color: #4C4C4C;
+  opacity: 0.8;
+  margin-bottom: 0;
+}
+
+.room-booking-section .read-more {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #344A71;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  display: block;
+}
+
+.room-booking-section .reserve-h1-title.room-h1-title {
+  max-width: 370px;
+  margin-bottom: 30px;
+}
+
+.room-booking-section .image-box,
+.room-booking-section .image-box img {
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .room-booking-section .content-box {
+    padding: 35px 35px 30px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .room-booking-section .reserve-h1-title.room-h1-title {
+    max-width: 552px;
+    margin-bottom: 58px;
+    font-size: 64px;
+    line-height: 1.36;
+  }
+
+  .room-booking-section .content-box {
+    padding: 45px 45px 40px;
+  }
+
+}
+
+section.rooms-booking {
+  margin-top: -30px;
+  position: relative;
+}
+
+form.rooms-booking-form {
+  padding: 35px 25px 40px;
+  box-shadow: 0 0 15px 0 rgba(52, 74, 113, 0.1);
+  background: white;
+}
+
+form.rooms-booking-form .btn.btn-outline-blue::after {
+  display: none;
+}
+
+form.rooms-booking-form .btn.btn-outline-blue {
+  padding: 16px 21px;
+}
+
+form.rooms-booking-form label {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #4c4c4c;
+  margin-bottom: 0;
+}
+
+form.rooms-booking-form input {
+  border: none;
+  border-bottom: 1px solid rgba(97, 97, 97, 0.5);
+  border-radius: 0;
+  padding: 10px 0;
+  color: #1C1C1C;
+}
+
+form.rooms-booking-form input:focus {
+  color: inherit;
+  box-shadow: none;
+  border-color: rgba(97, 97, 97, 0.5);
+}
+
+form.rooms-booking-form #promo-code::placeholder {
+  font-size: 16px;
+  color: rgba(28, 28, 28, 0.2);
+}
+
+form.rooms-booking-form select {
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid rgba(97, 97, 97, 0.5);
+  color: #1c1c1c;
+  outline: 0;
+  padding: 10px 0;
+}
+
+@media (min-width: 992px) {
+  section.rooms-booking {
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  form.rooms-booking-form {
+    padding: 35px 40px 40px;
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+
+  form.rooms-booking-form .form-wrapper:last-child {
+    max-width: 150px;
+  }
+}
+
+.room-amenities-section {
+  margin: 30px 0 0;
+}
+
+.room-amenities-section h2,
+.accomodation-wrap .jalsa-gallery-section h2,
+.additional-info-section h2 {
+  font-size: 30px;
+  line-height: 1.35;
+}
+
+.room-amenities-section h2.center-line {
+  padding: 0 0 23px;
+}
+
+.amenities-list {
+  margin: 45px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.amenities-list li {
+  margin: 0 0 42px;
+  padding: 0 0 0 45px;
+  position: relative;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.amenities-list li span {
+  margin: 0;
+  padding: 0;
+  width: 45px;
+  position: absolute;
+  height: 30px;
+  left: 0;
+  top: 0;
+}
+
+.amenities-list li span.elec {
+  background: url('../images/icons/elec.png') no-repeat 0 0;
+}
+
+.amenities-list li span.tbl {
+  background: url('../images/icons/tbl.png') no-repeat 0 0;
+}
+
+.amenities-list li span.wifi {
+  background: url('../images/icons/wifi.png') no-repeat 0 0;
+}
+
+.amenities-list li span.iron {
+  background: url('../images/icons/iron.png') no-repeat 0 0;
+}
+
+.amenities-list li span.tea {
+  background: url('../images/icons/tea.png') no-repeat 0 0;
+}
+
+.amenities-list li span.bar {
+  background: url('../images/icons/bar.png') no-repeat 0 0;
+}
+
+.amenities-list li span.serve {
+  background: url('../images/icons/serve.png') no-repeat 0 0;
+}
+
+.amenities-list li span.tv {
+  background: url('../images/icons/tv.png') no-repeat 0 0;
+}
+
+.amenities-list li span.water {
+  background: url('../images/icons/water.png') no-repeat 0 0;
+}
+
+.amenities-list li span.sofa {
+  background: url('../images/icons/sofa.png') no-repeat 0 0;
+}
+
+.amenities-list li span.bed {
+  background: url('../images/icons/bed.png') no-repeat 0 0;
+}
+
+.amenities-list li span.dine {
+  background: url('../images/icons/dine.png') no-repeat 0 0;
+}
+
+.amenities-list li span.pool {
+  background: url('../images/icons/pool.png') no-repeat 0 0;
+}
+
+.amenities-list li span.offer {
+  background: url('../images/icons/offer.png') no-repeat 0 0;
+}
+
+.amenities-list li span.activity {
+  background: url('../images/icons/activity.png') no-repeat 0 0;
+}
+
+.amenities-list li span.spa {
+  background: url('../images/icons/spa.png') no-repeat 0 0;
+}
+
+/* jalsa-gallery-section */
+.accomodation-wrap .jalsa-gallery-section {
+  padding: 35px 0 55px;
+}
+
+.accomodation-wrap .jalsa-gallery-section h2 {
+  padding-bottom: 24px;
+  margin-bottom: 36px;
+}
+
+.additional-info-section {
+  padding: 55px 0 0;
+}
+
+.additional-info-section h2 {
+  padding: 0 0 25px;
+  margin-bottom: 50px;
+}
+
+.additional-info-section h4 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  color: #1C1C1C;
+}
+.additional-info-section .list {
+  margin: 27px 0 30px 20px;
+  padding: 0;
+}
+.additional-info-section .list li {
+  margin: 0;
+  padding-bottom: 18px;
+}
+
+@media (min-width: 992px) {
+  .amenities-list li {
+    width: 33.33%;
+    float: left;
+    margin: 0 0 50px;
+  }
+
+  .amenities-list li:nth-child(3n):after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .room-amenities-section {
+    margin: 126px 0 0;
+  }
+
+  .room-amenities-section h2 {
+    font-size: 36px;
+    line-height: 1;
+    margin-bottom: 89px;
+  }
+
+  .accomodation-wrap .jalsa-gallery-section {
+    padding: 95px 0 55px;
+  }
+
+  .accomodation-wrap .jalsa-gallery-section h2 {
+    font-size: 52px;
+    padding-bottom: 0;
+    margin-bottom: 36px;
+  }
+  .additional-info-section {
+    padding-top: 50px;
+  }
+  .additional-info-section h2 {
+    font-size: 50px;
+    line-height: 1.35;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .additional-info-section .additional-info-content {
+    margin: -12px 0 0 484px;
+  }
+}
