@@ -368,10 +368,14 @@
     <div class="banner row gap-0 m-0 p-0">
       <div class="col m-0 p-0">
         <video controls autoplay muted>
-          <source src="./images/videos/banner-vid-01.mp4" type="video/mp4" fullscreen />
+          <source
+            src="./images/videos/banner-vid-01.mp4"
+            type="video/mp4"
+            fullscreen
+          />
           Your browser does not support the video tag.
         </video>
-      </div> 
+      </div>
     </div>
 
     <!-- booking section -->
@@ -438,7 +442,7 @@
                       >
                         1 room
                       </button>
-                      <ul class="dropdown-menu dropdown-menu-dark">
+                      <ul class="dropdown-menu">
                         <li>
                           <a class="dropdown-item active" href="#">1 room</a>
                         </li>
@@ -458,34 +462,55 @@
                           class="btn btn-lg btn-outline-light dropdown-toggle w-100"
                           type="button"
                           data-bs-toggle="dropdown"
+                          data-bs-auto-close="outside"
                           aria-expanded="false"
                         >
-                          2 Adult
+                          2 Adult 1 Child
                         </button>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                          <li>
-                            <a class="dropdown-item active" href="#">1 </a>
-                          </li>
-                          <li><a class="dropdown-item" href="#">2 </a></li>
-                          <li><a class="dropdown-item" href="#">3 </a></li>
-                        </ul>
-                      </div>
-                      <div class="dropdown ms-2">
-                        <button
-                          class="btn btn-lg btn-outline-light dropdown-toggle w-100"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
+                        <div
+                          class="dropdown-menu dropdown-menu-wrap dropdown-contain"
                         >
-                          1 Child
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                          <li>
-                            <a class="dropdown-item active" href="#">1 </a>
-                          </li>
-                          <li><a class="dropdown-item" href="#">2 </a></li>
-                          <li><a class="dropdown-item" href="#">3 </a></li>
-                        </ul>
+                          <div class="dropdown-item">
+                            <div
+                              class="qty-box d-flex align-items-center justify-content-between"
+                            >
+                              <label>Adults </label>
+                              <div class="qtyBtn d-flex align-items-center">
+                                <div class="qtyDec">
+                                  <i class="la la-minus"></i>
+                                </div>
+                                <input
+                                  type="text"
+                                  name="adult_number"
+                                  value="0"
+                                />
+                                <div class="qtyInc">
+                                  <i class="la la-plus"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="dropdown-item">
+                            <div
+                              class="qty-box d-flex align-items-center justify-content-between"
+                            >
+                              <label>Children</label>
+                              <div class="qtyBtn d-flex align-items-center">
+                                <div class="qtyDec">
+                                  <i class="la la-minus"></i>
+                                </div>
+                                <input
+                                  type="text"
+                                  name="child_number"
+                                  value="0"
+                                />
+                                <div class="qtyInc">
+                                  <i class="la la-plus"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1139,12 +1164,14 @@
                             <ul class="nav flex-column">
                               <li class="nav-item mb-2">
                                 <a href="#" class="nav-link p-0"
-                                  ><i class="las la-download mr-1"></i> DOWNLOAD BROCHURE</a
+                                  ><i class="las la-download mr-1"></i> DOWNLOAD
+                                  BROCHURE</a
                                 >
                               </li>
                               <li class="nav-item mb-2">
                                 <a href="#" class="nav-link p-0"
-                                  ><i class="las la-download mr-1"></i> DOWNLOAD floor plan</a
+                                  ><i class="las la-download mr-1"></i> DOWNLOAD
+                                  floor plan</a
                                 >
                               </li>
                             </ul>

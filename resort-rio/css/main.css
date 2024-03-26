@@ -279,7 +279,7 @@ h2.heading.center-line:after {
   color: #fff;
 }
 
-.offcanvas-body a:hover { 
+.offcanvas-body a:hover {
   color: #fff;
 }
 
@@ -752,6 +752,67 @@ footer a:hover {
 
 .book-direct-offer .form-control-lg {
   padding: 0.7rem 1rem;
+}
+
+/*======= qty =======*/
+.dropdown-contain.dropdown-menu {
+  width: 350px;
+}
+
+.dropdown-contain .dropdown-item:active {
+  background-color: transparent;
+}
+
+.qty-box label {
+  color: #0d233e;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.qty-box label span {
+  display: block;
+  font-size: 13px;
+  margin-top: -10px;
+  color: #5d646d;
+}
+
+.roomInc,
+.roomDec,
+.qtyInc,
+.qtyDec {
+  width: 28px;
+  height: 28px;
+  line-height: 29px;
+  font-size: 18px;
+  background-color: rgba(128, 137, 150, 0.08);
+  color: #0d233e;
+  display: inline-block;
+  text-align: center;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.roomInc:hover,
+.roomDec:hover,
+.qtyInc:hover,
+.qtyDec:hover {
+  background-color: #287dfa;
+  color: #fff;
+}
+
+.roomBtn input,
+.qtyBtn input {
+  width: 35px;
+  border: none;
+  text-align: center;
+  color: #0d233e;
+  font-weight: 500;
 }
 
 .book-direct-offer label {
